@@ -1,4 +1,5 @@
-### MCPS 22-23 notes
+## Mobile and cyber-physical systems 
+### A.Y. 22-2023 notes
 
 The course is organized in two modules that run in parallel, and 4 hands-on classes   
 The timetable can be found here: [https://www.di.unipi.it/it/didattica/wif-lm/orario](https://www.di.unipi.it/it/didattica/wif-lm/orario)  
@@ -6,7 +7,7 @@ The timetable can be found here: [https://www.di.unipi.it/it/didattica/wif-lm/o
 ### Lectures 
 - **Prof. Chessa**:
 	- [[L1 - 21-02-2023]] 
-	- [[L2 - 22-02-23]]
+	- [[L2 - 22-02-2023]]
 
 - **Prof.ssa Paganelli**:
 	- 
