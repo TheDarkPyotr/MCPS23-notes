@@ -3,6 +3,14 @@
 The course is organized in two modules that run in parallel, and 4 hands-on classes   
 The timetable can be found here: [https://www.di.unipi.it/it/didattica/wif-lm/orario](https://www.di.unipi.it/it/didattica/wif-lm/orario)  
 
+### Lectures 
+- **Prof. Chessa**:
+	- [[L1 - 21-02-2023]] 
+	- [[L2 - 22-02-23]]
+
+- **Prof.ssa Paganelli**:
+	- 
+
 ##### Module 1, Prof. Stefano Chessa:
 
 -   IoT & smart environments;
