@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "1ff6fcbdfe46cb5a",
+    "type": "split",
+    "children": [
+      {
+        "id": "d0414c9a4675386e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9caa406d57b7161f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "chessa/L2 - 22-02-2023.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e315bbc306ffc80c",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d059cafc3eac28d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78f9f788595c3993",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6b6725a0b76dc900",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9fc66ba49519e454",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 321.5
+  },
+  "right": {
+    "id": "b1b59c5e8ad6f57f",
+    "type": "split",
+    "children": [
+      {
+        "id": "62184f03c897e0b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62e52a08c0c13731",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "chessa/L2 - 22-02-2023.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "53fcc894f4cfef38",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "chessa/L2 - 22-02-2023.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "09c188ecb2ea9384",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7cee85dadec1729d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "chessa/L2 - 22-02-2023.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9caa406d57b7161f",
+  "lastOpenFiles": [
+    "images/Pasted image 20230223102134.png",
+    "images/Pasted image 20230223100530.png",
+    "images/Pasted image 20230222212922.png",
+    "images/Pasted image 20230222192441.png",
+    "chessa/L1 - 21-02-2023.md",
+    "chessa/L2 - 22-02-2023.md",
+    "images/Pasted image 20230222191530.png",
+    "images/Pasted image 20230222185842.png",
+    "images/Pasted image 20230222185737.png"
+  ]
+}
