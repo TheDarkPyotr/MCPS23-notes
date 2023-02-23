@@ -3,21 +3,20 @@
 
 The course is organized in two modules that run in parallel, and 4 hands-on classes   
 The timetable can be found here: [https://www.di.unipi.it/it/didattica/wif-lm/orario](https://www.di.unipi.it/it/didattica/wif-lm/orario)  
+See [[README#Contributing]] for submit lectures notes.
 
 ### Lectures 
 - **Prof. Chessa**:
-	- [[L1 - 21-02-2023]] 
-	- [[L2 - 22-02-2023]]
-
+	- [[L1 - 21-02-2023]] : Introduction to IoT architecture
+	- [[L2 - 22-02-2023]] : IoT issues and protocol families
 - **Prof.ssa Paganelli**:
-	- 
+	- [[L3 - 24-02-2023]] : 
 
 ##### Module 1, Prof. Stefano Chessa:
 
 -   IoT & smart environments;
 -   IoT case studies;
 -   MQTT, IEEE 802.15.4, ZigBee and Bluetooth standards;  
-    
 -   design aspects of IoT; 
 -   energy harvesting IoT;
 -   introduction to embedded programming;
