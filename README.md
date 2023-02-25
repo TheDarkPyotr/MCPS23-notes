@@ -10,7 +10,7 @@ See [[README#Contributing]] for submit lectures notes.
 	- [[L1 - 21-02-2023]] : Introduction to IoT architecture
 	- [[L2 - 22-02-2023]] : IoT issues and protocol families
 - **Prof.ssa Paganelli**:
-	- [[L3 - 24-02-2023]] : 
+	- [[L3 - 24-02-2023]] : Wireless Network (*CSMA/CD, MACA, Binary Exponential Backoff*)
 
 ##### Module 1, Prof. Stefano Chessa:
 
