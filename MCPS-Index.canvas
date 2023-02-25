@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"type":"group","label":"IoT, smart environments & case studies","id":"2ab26d62db30f827","x":-1040,"y":-660,"width":520,"height":460,"color":"4"},
+		{"id":"a65567c50f1bcbe1","x":-410,"y":-706,"width":400,"height":400,"type":"file","file":"paganelli/L3 - 24-02-2023.md"},
+		{"type":"file","file":"chessa/L1 - 21-02-2023.md","id":"a4bb8a26a3936296","x":-1020,"y":-640,"width":437,"height":169},
+		{"type":"file","file":"chessa/L2 - 22-02-2023.md","id":"aa916f18249f2d56","x":-1020,"y":-460,"width":418,"height":200}
+	],
+	"edges":[]
+}
