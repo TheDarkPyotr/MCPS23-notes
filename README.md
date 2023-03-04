@@ -10,6 +10,7 @@ See [[README#Contributing]] for submit lectures notes.
 	- [[L1 - 21-02-2023]] : Introduction to IoT architecture
 	- [[L2 - 22-02-2023]] : IoT issues and protocol families
 	- [[L4 - 28-02-2023]] : Brief IoT Security and intro to MQTT
+	- [[L6 - 03-03-2023]] : MQTT basic features, QoS, retained messages, last will and packet structure
 - **Prof.ssa Paganelli**:
 	- [[L3 - 24-02-2023]] : Wireless Network (*CSMA/CD, MACA, Binary Exponential Backoff*)
 	- [[L5 - 01-03-2023]]: IEEE 802.11
