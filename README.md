@@ -14,7 +14,8 @@ See [[README#Contributing]] for submit lectures notes.
 	- [[L7 - 07-03-203]]: MQTT problems, brief CoAP, introduction to ZigBee
 - **Prof.ssa Paganelli**:
 	- [[L3 - 24-02-2023]] : Wireless Network (*CSMA/CD, MACA, Binary Exponential Backoff*)
-	- [[L5 - 01-03-2023]]: IEEE 802.11
+	- [[L5 - 01-03-2023]]: IEEE 802.11 (Wireless Network)
+	- [[L8 - 08-03-2023]]: Mobile Networks (4G, 5G and mobility topics)
 
 ##### Module 1, Prof. Stefano Chessa:
 
