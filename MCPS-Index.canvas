@@ -1,9 +1,30 @@
 {
 	"nodes":[
-		{"type":"group","label":"IoT, smart environments & case studies","id":"2ab26d62db30f827","x":-1040,"y":-660,"width":520,"height":460,"color":"4"},
-		{"id":"a65567c50f1bcbe1","x":-410,"y":-706,"width":400,"height":400,"type":"file","file":"paganelli/L3 - 24-02-2023.md"},
+		{"type":"group","id":"82b27fcb687921e7","x":-1540,"y":-160,"width":1020,"height":1600,"color":"2","label":"MQTT & ZigBee"},
+		{"type":"group","id":"d24c050b2aa5d3e5","x":-160,"y":-660,"width":710,"height":1820,"color":"3","label":"Wireless Networks & Mobile Networks"},
+		{"type":"group","id":"14eeb4adaed2e0b7","x":-1540,"y":1560,"width":1020,"height":840,"color":"5","label":"IoT Case Studies"},
+		{"type":"group","id":"2ab26d62db30f827","x":-1540,"y":-660,"width":1020,"height":440,"color":"4","label":"IoT & smart environments"},
 		{"type":"file","file":"chessa/L1 - 21-02-2023.md","id":"a4bb8a26a3936296","x":-1020,"y":-640,"width":437,"height":169},
-		{"type":"file","file":"chessa/L2 - 22-02-2023.md","id":"aa916f18249f2d56","x":-1020,"y":-460,"width":418,"height":200}
+		{"type":"file","file":"chessa/L6 - 03-03-2023.md","id":"9bb78190fd25af4a","x":-1480,"y":-40,"width":400,"height":400},
+		{"type":"file","file":"paganelli/L3 - 24-02-2023.md","id":"a65567c50f1bcbe1","x":10,"y":-628,"width":400,"height":400},
+		{"type":"file","file":"chessa/L2 - 22-02-2023.md","id":"aa916f18249f2d56","x":-1480,"y":-471,"width":418,"height":200},
+		{"type":"file","file":"paganelli/L5 - 01-03-2023.md","id":"98830fc5a685745a","x":10,"y":-174,"width":400,"height":334},
+		{"type":"file","file":"paganelli/L8 - 08-03-2023.md","id":"29316d2e2d3c2fe1","x":10,"y":280,"width":400,"height":320},
+		{"type":"file","file":"chessa/L4 - 28-02-2023.md","id":"19033f1f7b17bd2e","x":-983,"y":-40,"width":400,"height":400,"color":"3"},
+		{"type":"file","file":"chessa/L10 - 14-03-2023.md","id":"117f092b26159ea3","x":-983,"y":1000,"width":400,"height":400},
+		{"type":"file","file":"chessa/L7 - 07-03-203.md","id":"e4ef64e4669c54be","x":-1480,"y":480,"width":400,"height":400},
+		{"type":"file","file":"chessa/L9 - 10-03-2023.md","id":"c94abc41ed00ec0a","x":-983,"y":480,"width":400,"height":400},
+		{"type":"file","file":"chessa/L12 - 17-03-2023.md","id":"4248fc4c5776ac51","x":-983,"y":1640,"width":400,"height":400}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"fa7cbe9e0676259a","fromNode":"19033f1f7b17bd2e","fromSide":"left","toNode":"9bb78190fd25af4a","toSide":"right"},
+		{"id":"d0271cbc3e6609b2","fromNode":"a4bb8a26a3936296","fromSide":"bottom","toNode":"aa916f18249f2d56","toSide":"right"},
+		{"id":"76e1cb46d9dbf535","fromNode":"9bb78190fd25af4a","fromSide":"bottom","toNode":"e4ef64e4669c54be","toSide":"top"},
+		{"id":"563ca6201a2b4781","fromNode":"a65567c50f1bcbe1","fromSide":"bottom","toNode":"98830fc5a685745a","toSide":"top"},
+		{"id":"6e9fe30237022066","fromNode":"aa916f18249f2d56","fromSide":"bottom","toNode":"19033f1f7b17bd2e","toSide":"top"},
+		{"id":"760935cd102c5d82","fromNode":"98830fc5a685745a","fromSide":"bottom","toNode":"29316d2e2d3c2fe1","toSide":"top"},
+		{"id":"3331847037959bed","fromNode":"e4ef64e4669c54be","fromSide":"right","toNode":"c94abc41ed00ec0a","toSide":"left"},
+		{"id":"e75c9c5c3922108a","fromNode":"c94abc41ed00ec0a","fromSide":"bottom","toNode":"117f092b26159ea3","toSide":"top"},
+		{"id":"9841a52be68b3ae2","fromNode":"117f092b26159ea3","fromSide":"bottom","toNode":"4248fc4c5776ac51","toSide":"top"}
+	]
 }
