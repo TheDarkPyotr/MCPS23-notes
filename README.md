@@ -14,12 +14,15 @@ See [[README#Contributing]] for submit lectures notes.
 	- [[L7 - 07-03-203]]: MQTT problems, brief CoAP, introduction to ZigBee
 	- [[L9 - 10-03-2023]]: ZigBee network joining, management, formation; APO, APS
 	- [[L10 - 14-03-2023]]: ZDO, ZCL #TODO **waiting update materials**
-	- [[L12 - 17-03-2023]]
+	- [[L11 - 15-03-2023]]: Greenhouse and DOREMI Use cases
+	- [[L13 - 21-03-2023]]: Iot Design aspect intro
+	- [[L15 - 24-03-2023]]: Energy efficiency, duty cycle
 - **Prof.ssa Paganelli**:
 	- [[L3 - 24-02-2023]] : Wireless Network (*CSMA/CD, MACA, Binary Exponential Backoff*)
 	- [[L5 - 01-03-2023]]: IEEE 802.11 (Wireless Network)
 	- [[L8 - 08-03-2023]]: Mobile Networks (4G, 5G and mobility topics)
-	- [[L11 - 15-03-2023]] : 
+	-  [[L12 - 17-03-2023]]: SDN Intro
+	- [[L14 - 22-03-2023]]: SDN Architecture
 
 ##### Module 1, Prof. Stefano Chessa:
 
