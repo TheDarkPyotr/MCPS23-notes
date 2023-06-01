@@ -14,7 +14,7 @@
 		{"type":"file","file":"chessa/L10 - 14-03-2023.md","id":"117f092b26159ea3","x":-983,"y":1000,"width":400,"height":400},
 		{"type":"file","file":"chessa/L7 - 07-03-203.md","id":"e4ef64e4669c54be","x":-1480,"y":480,"width":400,"height":400},
 		{"type":"file","file":"chessa/L9 - 10-03-2023.md","id":"c94abc41ed00ec0a","x":-983,"y":480,"width":400,"height":400},
-		{"type":"file","file":"chessa/L12 - 17-03-2023.md","id":"4248fc4c5776ac51","x":-983,"y":1640,"width":400,"height":400}
+		{"type":"file","file":"paganelli/L12 - 17-03-2023.md","id":"4248fc4c5776ac51","x":-983,"y":1640,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"fa7cbe9e0676259a","fromNode":"19033f1f7b17bd2e","fromSide":"left","toNode":"9bb78190fd25af4a","toSide":"right"},

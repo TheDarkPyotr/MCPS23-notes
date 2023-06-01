@@ -1,0 +1,282 @@
+\contentsline {chapter}{\numberline {1}IoT \& Smart Environment}{4}{chapter.1}%
+\contentsline {paragraph}{IoT Devices}{4}{section*.3}%
+\contentsline {paragraph}{Platforms for IoT}{5}{section*.6}%
+\contentsline {subsubsection}{NoSQL databases}{6}{section*.9}%
+\contentsline {paragraph}{Queries}{7}{section*.10}%
+\contentsline {subsection}{\numberline {1.0.1}IoT issues}{7}{subsection.1.0.1}%
+\contentsline {subsection}{\numberline {1.0.2}AI approach to IoT}{10}{subsection.1.0.2}%
+\contentsline {subsubsection}{IoT and emerging Paradigms}{10}{section*.17}%
+\contentsline {subsection}{\numberline {1.0.3}Interoperability \& Reference Standards}{11}{subsection.1.0.3}%
+\contentsline {subsection}{\numberline {1.0.4}Brief Security in IoT}{13}{subsection.1.0.4}%
+\contentsline {subparagraph}{Security Standards}{14}{section*.24}%
+\contentsline {chapter}{\numberline {2}MQTT - Message Queueing Telemetry Transport}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Publish/subscribe model}{16}{section.2.1}%
+\contentsline {subsubsection}{Filtering}{16}{section*.29}%
+\contentsline {paragraph}{Highlights}{17}{section*.30}%
+\contentsline {subsection}{\numberline {2.1.1}MQTT operations}{18}{subsection.2.1.1}%
+\contentsline {subparagraph}{CONNECT}{18}{section*.32}%
+\contentsline {subsubsection}{PUBLISH}{19}{section*.33}%
+\contentsline {paragraph}{SUBSCRIBE}{20}{section*.35}%
+\contentsline {paragraph}{UNSUBSCRIBE}{20}{section*.36}%
+\contentsline {subsection}{\numberline {2.1.2}Topics}{20}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Quality of Service}{20}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Persistent sessions}{21}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Retained messages}{22}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Last will and testament}{22}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}KeepAlive}{23}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}Packet format}{23}{subsection.2.1.8}%
+\contentsline {section}{\numberline {2.2}MQTT on Arduino}{24}{section.2.2}%
+\contentsline {paragraph}{Constructors}{25}{section*.43}%
+\contentsline {paragraph}{Functions}{25}{section*.44}%
+\contentsline {subsection}{\numberline {2.2.1}MQTT Competitors}{26}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Brief CoAP (Constrained Application Protocol)}{26}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}ZigBee}{28}{chapter.3}%
+\contentsline {paragraph}{IEEE 801.15.4 Standard}{28}{section*.47}%
+\contentsline {section}{\numberline {3.1}ZigBee Standard}{28}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Service primitives}{29}{subsection.3.1.1}%
+\contentsline {paragraph}{Data trasnfer}{29}{section*.51}%
+\contentsline {subsection}{\numberline {3.1.2}Network Layer}{30}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Network Formation}{31}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Device join}{33}{subsection.3.1.4}%
+\contentsline {paragraph}{Join through association (\texttt {CHILD-SIDE})}{33}{section*.57}%
+\contentsline {paragraph}{Tree routing}{34}{section*.60}%
+\contentsline {paragraph}{Mesh routing}{35}{section*.62}%
+\contentsline {subsection}{\numberline {3.1.5}Application Layer}{35}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}1. Application Framework}{36}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}2. Application Support Sublayer (APS)}{36}{subsection.3.1.7}%
+\contentsline {subsubsection}{APS Services}{37}{section*.68}%
+\contentsline {subparagraph}{APS Binding}{38}{section*.70}%
+\contentsline {subsection}{\numberline {3.1.8}3. ZigBee Device Object (ZDO)}{39}{subsection.3.1.8}%
+\contentsline {subsubsection}{Device and service discovery}{40}{section*.73}%
+\contentsline {subparagraph}{Binding management}{40}{section*.74}%
+\contentsline {subparagraph}{Managing network and nodes}{40}{section*.75}%
+\contentsline {subsection}{\numberline {3.1.9}ZigBee Cluster Library (ZCL)}{40}{subsection.3.1.9}%
+\contentsline {subsection}{\numberline {3.1.10}ZigBee Security Specification}{43}{subsection.3.1.10}%
+\contentsline {subparagraph}{Security Design Choices}{44}{section*.83}%
+\contentsline {paragraph}{The keys}{45}{section*.84}%
+\contentsline {chapter}{\numberline {4}IoT Design Aspects}{47}{chapter.4}%
+\contentsline {subparagraph}{Moore's Law}{47}{section*.85}%
+\contentsline {section}{\numberline {4.1}Energy efficiency}{47}{section.4.1}%
+\contentsline {paragraph}{Example 2}{50}{section*.92}%
+\contentsline {subsection}{\numberline {4.1.1}Measuring energy}{51}{subsection.4.1.1}%
+\contentsline {subsubsection}{Example on computing consumption per duty cycle}{51}{section*.95}%
+\contentsline {subsection}{\numberline {4.1.2}Exercise}{54}{subsection.4.1.2}%
+\contentsline {subsubsection}{Answer}{54}{section*.100}%
+\contentsline {subsubsection}{Exercise 2}{55}{section*.101}%
+\contentsline {subsubsection}{Solution 2}{55}{section*.103}%
+\contentsline {subsubsection}{Exercise 3}{56}{section*.104}%
+\contentsline {subsubsection}{Solution 3}{56}{section*.106}%
+\contentsline {subsection}{\numberline {4.1.3}Exercise 4}{57}{subsection.4.1.3}%
+\contentsline {paragraph}{Solution 4}{57}{section*.108}%
+\contentsline {chapter}{\numberline {5}MAC Protocols}{58}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Syncrhonization: S-MAC}{58}{section.5.1}%
+\contentsline {subsubsection}{Latency}{59}{section*.112}%
+\contentsline {section}{\numberline {5.2}Preamble Sampling: B-MAC}{60}{section.5.2}%
+\contentsline {subsubsection}{Lifetimes}{62}{section*.118}%
+\contentsline {subsubsection}{Stenghts and drawbacks}{63}{section*.121}%
+\contentsline {subsection}{\numberline {5.2.1}X-MAC}{64}{subsection.5.2.1}%
+\contentsline {subparagraph}{X-MAC vs B-MAC}{64}{section*.123}%
+\contentsline {subparagraph}{BoX-MAX}{65}{section*.125}%
+\contentsline {subparagraph}{Polling}{66}{section*.128}%
+\contentsline {chapter}{\numberline {6}IEEE 802.15.4}{67}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Physical layer}{67}{subsection.6.0.1}%
+\contentsline {paragraph}{Data services}{68}{section*.131}%
+\contentsline {subsection}{\numberline {6.0.2}MAC Layer}{69}{subsection.6.0.2}%
+\contentsline {subsection}{\numberline {6.0.3}Channel access}{70}{subsection.6.0.3}%
+\contentsline {subparagraph}{Access with superframe}{70}{section*.134}%
+\contentsline {subsection}{\numberline {6.0.4}Data transfer models}{71}{subsection.6.0.4}%
+\contentsline {subsubsection}{Data transfers in beacon-enabled networks}{71}{section*.137}%
+\contentsline {subsubsection}{Data transfers in non beacon-enabled networks}{71}{section*.140}%
+\contentsline {subsection}{\numberline {6.0.5}MAC Layer Service primitives}{73}{subsection.6.0.5}%
+\contentsline {paragraph}{Data service}{73}{section*.143}%
+\contentsline {paragraph}{Management service}{73}{section*.145}%
+\contentsline {subsubsection}{\texttt {ASSOCIATE} service flow example}{74}{section*.147}%
+\contentsline {subsubsection}{MAC layer security}{75}{section*.149}%
+\contentsline {chapter}{\numberline {7}Embedded Programming}{76}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Arduino model}{77}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Case Study: TinyOS}{78}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Case Study: Arduino}{79}{section.7.3}%
+\contentsline {paragraph}{Exercise}{82}{section*.156}%
+\contentsline {subsection}{\numberline {7.3.1}Arduino interrupts}{82}{subsection.7.3.1}%
+\contentsline {chapter}{\numberline {8}Energy Harvesting}{84}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Harvesting architectures}{84}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Direct harvesting model}{84}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Energy buffer model}{85}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Non-ideal energy buffer model}{86}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}Exercise}{87}{subsection.8.1.4}%
+\contentsline {section}{\numberline {8.2}Energy sources}{88}{section.8.2}%
+\contentsline {subparagraph}{1. Radio Frequency (RF)}{88}{section*.164}%
+\contentsline {subparagraph}{2. Piezo-electric}{89}{section*.166}%
+\contentsline {paragraph}{3. Wind turbines}{89}{section*.168}%
+\contentsline {paragraph}{4. Solar energy}{90}{section*.172}%
+\contentsline {paragraph}{Limitations}{91}{section*.177}%
+\contentsline {subsection}{\numberline {8.2.1}Storage technologies}{92}{subsection.8.2.1}%
+\contentsline {subsubsection}{Supercapacitors}{92}{section*.179}%
+\contentsline {section}{\numberline {8.3}Measuring energy production}{93}{section.8.3}%
+\contentsline {paragraph}{Exercise}{95}{section*.184}%
+\contentsline {paragraph}{Solution}{95}{section*.185}%
+\contentsline {section}{\numberline {8.4}Energy neutrality}{95}{section.8.4}%
+\contentsline {subsubsection}{Harvest-store-use architecture revisited}{97}{section*.189}%
+\contentsline {section}{\numberline {8.5}Kansal’s model for energy neutrality}{98}{section.8.5}%
+\contentsline {subparagraph}{Conditions}{98}{section*.191}%
+\contentsline {paragraph}{Kansal theorem}{98}{section*.194}%
+\contentsline {paragraph}{Utility and duty cycle measurements}{99}{section*.196}%
+\contentsline {subparagraph}{Example}{99}{section*.199}%
+\contentsline {subsection}{\numberline {8.5.1}Duty cycle modulation}{101}{subsection.8.5.1}%
+\contentsline {subsubsection}{Kansal's optimization problem formalization}{102}{section*.203}%
+\contentsline {subsection}{\numberline {8.5.2}Kansal's algorithm}{103}{subsection.8.5.2}%
+\contentsline {paragraph}{Highlights and drawbacks}{104}{section*.206}%
+\contentsline {section}{\numberline {8.6}Task-based model for energy neutrality}{104}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}Task-based model}{104}{subsection.8.6.1}%
+\contentsline {subsubsection}{Optimization problem formalization}{105}{section*.210}%
+\contentsline {subsection}{\numberline {8.6.2}Dynamic Programming formalization}{106}{subsection.8.6.2}%
+\contentsline {subsection}{\numberline {8.6.3}Execution Time}{106}{subsection.8.6.3}%
+\contentsline {chapter}{\numberline {9}Wireless Sensor Networks}{109}{chapter.9}%
+\contentsline {subsection}{\numberline {9.0.1}Data centric vs node centric}{110}{subsection.9.0.1}%
+\contentsline {subsubsection}{Implosion and overlap issues}{111}{section*.216}%
+\contentsline {section}{\numberline {9.1}Directed Diffusion}{111}{section.9.1}%
+\contentsline {subsubsection}{Interest query}{112}{section*.218}%
+\contentsline {subsubsection}{State machine}{113}{section*.220}%
+\contentsline {subsubsection}{Reinforcement}{113}{section*.223}%
+\contentsline {subsection}{\numberline {9.1.1}Scalability, pros and cons}{114}{subsection.9.1.1}%
+\contentsline {subsubsection}{Directed Acyclic Graph Scalability}{114}{section*.226}%
+\contentsline {paragraph}{Drawbacks}{115}{section*.229}%
+\contentsline {section}{\numberline {9.2}Greedy Perimeter Stateless Routing (GPSR)}{115}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Protocol overview}{116}{subsection.9.2.1}%
+\contentsline {subsubsection}{Perimeter mode}{117}{section*.233}%
+\contentsline {subsubsection}{Graph Planarization}{118}{section*.236}%
+\contentsline {paragraph}{Relative Neighborhood Graph (RNG)}{118}{section*.237}%
+\contentsline {paragraph}{Gabriel Graph (GG)}{119}{section*.239}%
+\contentsline {paragraph}{GPSR with graph planarization}{119}{section*.242}%
+\contentsline {subparagraph}{Delivery failure}{120}{figure.caption.246}%
+\contentsline {subsubsection}{Simulations}{121}{section*.247}%
+\contentsline {subsection}{\numberline {9.2.2}Drawback}{121}{subsection.9.2.2}%
+\contentsline {chapter}{\numberline {10}Wireless Networks}{123}{chapter.10}%
+\contentsline {subsection}{\numberline {10.0.1}Wireless networks}{123}{subsection.10.0.1}%
+\contentsline {subparagraph}{Wireless Network taxonomy}{124}{section*.252}%
+\contentsline {subsection}{\numberline {10.0.2}Charateristics of wireless communications}{124}{subsection.10.0.2}%
+\contentsline {subsubsection}{Communication Environment metrics}{124}{section*.254}%
+\contentsline {subsection}{\numberline {10.0.3}Obstacles}{125}{subsection.10.0.3}%
+\contentsline {subsection}{\numberline {10.0.4}CMSA/CD - Carrier Sense Multiple Accesses with Collision Detection}{126}{subsection.10.0.4}%
+\contentsline {paragraph}{Binary Exponential Backoff}{127}{section*.261}%
+\contentsline {paragraph}{Why does this approach not work with wireless network?}{127}{section*.262}%
+\contentsline {subsection}{\numberline {10.0.5}Hidden terminal problem}{128}{subsection.10.0.5}%
+\contentsline {subsection}{\numberline {10.0.6}Exposed terminal problem}{128}{subsection.10.0.6}%
+\contentsline {subsection}{\numberline {10.0.7}MACA - Multiple Access with Collision Avoidance}{129}{subsection.10.0.7}%
+\contentsline {paragraph}{MACA collisions}{130}{section*.272}%
+\contentsline {subsection}{\numberline {10.0.8}MACAW: MACA for Wireless Network}{130}{subsection.10.0.8}%
+\contentsline {subsubsection}{Questions (1)}{131}{section*.273}%
+\contentsline {subsubsection}{Questions (2)}{132}{section*.275}%
+\contentsline {section}{\numberline {10.1}IEEE 802.11}{133}{section.10.1}%
+\contentsline {paragraph}{Architecture}{133}{section*.277}%
+\contentsline {subsection}{\numberline {10.1.1}Channel association}{133}{subsection.10.1.1}%
+\contentsline {paragraph}{Active/Passive scanning}{134}{section*.278}%
+\contentsline {subsection}{\numberline {10.1.2}MAC Sublayer}{134}{subsection.10.1.2}%
+\contentsline {section}{\numberline {10.2}Mobile Networks}{135}{section.10.2}%
+\contentsline {paragraph}{Components of cellular network architecture}{135}{figure.caption.282}%
+\contentsline {subsection}{\numberline {10.2.1}FDMA/TDMA and CDMA for first hop access}{136}{subsection.10.2.1}%
+\contentsline {subparagraph}{2G Network Architecture (voice)}{137}{figure.caption.287}%
+\contentsline {subparagraph}{3G Network Architecture (voice+data)}{138}{section*.288}%
+\contentsline {subsection}{\numberline {10.2.2}3G vs. 4G LTE (Long Term Evolution) network architecture}{138}{subsection.10.2.2}%
+\contentsline {section}{\numberline {10.3}4G/5G cellular networks}{138}{section.10.3}%
+\contentsline {paragraph}{Architecture}{139}{section*.292}%
+\contentsline {subsection}{\numberline {10.3.1}Elements of 4G architecture}{139}{subsection.10.3.1}%
+\contentsline {paragraph}{LTE: Link Layer Protocol}{141}{section*.299}%
+\contentsline {subsection}{\numberline {10.3.2}Associating with a base station}{142}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}5G architecture}{143}{subsection.10.3.3}%
+\contentsline {subsubsection}{5G User Plane}{143}{section*.302}%
+\contentsline {subsubsection}{5G Control Plane}{144}{section*.304}%
+\contentsline {subsection}{\numberline {10.3.4}Deployment options}{144}{subsection.10.3.4}%
+\contentsline {section}{\numberline {10.4}Mobility}{145}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Mobility in 4G}{148}{subsection.10.4.1}%
+\contentsline {subparagraph}{1. Base Station association}{149}{section*.314}%
+\contentsline {subparagraph}{2. Configuring the LTE control-plane elements}{149}{section*.315}%
+\contentsline {subparagraph}{3. Configuring data-plane tunnels for mobile}{149}{section*.317}%
+\contentsline {subparagraph}{4. Handover between BSs in same cellular network}{149}{section*.319}%
+\contentsline {subsubsection}{Mobile IP}{150}{section*.322}%
+\contentsline {chapter}{\numberline {11}Software Defined Networking (SDN)}{152}{chapter.11}%
+\contentsline {subsubsection}{Per-router control plane}{152}{section*.323}%
+\contentsline {subsubsection}{Software-Defined Networking control plane}{152}{section*.325}%
+\contentsline {subsection}{\numberline {11.0.1}SDN Architecture}{154}{subsection.11.0.1}%
+\contentsline {section}{\numberline {11.1}Data Plane}{155}{section.11.1}%
+\contentsline {subsubsection}{OpenFlow flow table entries}{156}{section*.334}%
+\contentsline {paragraph}{OpenFlow abstraction}{157}{section*.336}%
+\contentsline {subparagraph}{Example}{157}{section*.337}%
+\contentsline {subsubsection}{OpenFlow Switch}{157}{section*.339}%
+\contentsline {section}{\numberline {11.2}Control Plane}{159}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}OpenFlow}{159}{subsection.11.2.1}%
+\contentsline {subsubsection}{Control/data plane interaction example}{160}{section*.345}%
+\contentsline {section}{\numberline {11.3}Topology discovery and forwarding}{161}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}LLDP - Link Layer Discovery Protocol}{161}{subsection.11.3.1}%
+\contentsline {subsubsection}{Switch initialization}{162}{section*.348}%
+\contentsline {subparagraph}{Exercise}{163}{section*.352}%
+\contentsline {section}{\numberline {11.4}Application of SDN}{163}{section.11.4}%
+\contentsline {subsubsection}{Google WAN}{164}{section*.353}%
+\contentsline {subsubsection}{B4 Architecture Overview}{165}{section*.354}%
+\contentsline {paragraph}{Improvements results}{166}{section*.358}%
+\contentsline {chapter}{\numberline {12}Network Function Virtualization}{168}{chapter.12}%
+\contentsline {subsection}{\numberline {12.0.1}Overview}{169}{subsection.12.0.1}%
+\contentsline {subsubsection}{Use case: vEPS}{169}{section*.362}%
+\contentsline {subsection}{\numberline {12.0.2}Network service}{170}{subsection.12.0.2}%
+\contentsline {subsection}{\numberline {12.0.3}NFV Architectural Framework}{172}{subsection.12.0.3}%
+\contentsline {paragraph}{NFV Infrastructure}{172}{section*.368}%
+\contentsline {subsection}{\numberline {12.0.4}Management and Orchestration (MANO)}{173}{subsection.12.0.4}%
+\contentsline {section}{\numberline {12.1}Network Slicing}{175}{section.12.1}%
+\contentsline {subsubsection}{5G Use case}{176}{section*.376}%
+\contentsline {subsection}{\numberline {12.1.1}Network Slicing Example}{177}{subsection.12.1.1}%
+\contentsline {chapter}{\numberline {13}Theory of signals}{180}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Classification of signals}{180}{section.13.1}%
+\contentsline {paragraph}{Digital signals example}{181}{section*.384}%
+\contentsline {subparagraph}{Question}{181}{section*.385}%
+\contentsline {subsection}{\numberline {13.1.1}Periodic continous signals}{182}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.1.2}Transmission}{182}{subsection.13.1.2}%
+\contentsline {paragraph}{Sampling and quantization}{183}{section*.390}%
+\contentsline {section}{\numberline {13.2}Fourier series}{183}{section.13.2}%
+\contentsline {subsubsection}{Example}{185}{section*.396}%
+\contentsline {subsubsection}{Continuous signal energy}{187}{section*.399}%
+\contentsline {subsubsection}{Power of a signal}{187}{section*.400}%
+\contentsline {paragraph}{Example}{188}{section*.402}%
+\contentsline {subparagraph}{Question}{188}{section*.403}%
+\contentsline {section}{\numberline {13.3}Fourier Transform}{188}{section.13.3}%
+\contentsline {subparagraph}{Euler's exponential}{188}{section*.404}%
+\contentsline {subparagraph}{Signals with limited support}{189}{section*.406}%
+\contentsline {subsection}{\numberline {13.3.1}Fourier Transform}{190}{subsection.13.3.1}%
+\contentsline {subparagraph}{Example}{190}{section*.408}%
+\contentsline {paragraph}{Spectrum of a signal}{191}{section*.410}%
+\contentsline {subsection}{\numberline {13.3.2}Fourier Transform for non-periodic signals}{191}{subsection.13.3.2}%
+\contentsline {subparagraph}{Band of signal}{192}{section*.412}%
+\contentsline {subparagraph}{Question}{192}{section*.413}%
+\contentsline {subsection}{\numberline {13.3.3}From FT to DFT}{192}{subsection.13.3.3}%
+\contentsline {section}{\numberline {13.4}Analog to digital conversion}{193}{section.13.4}%
+\contentsline {subsubsection}{Example}{194}{section*.417}%
+\contentsline {subsection}{\numberline {13.4.1}Sampling theorem}{195}{subsection.13.4.1}%
+\contentsline {subparagraph}{Theorem definition}{195}{section*.421}%
+\contentsline {paragraph}{Drawbacks}{196}{section*.423}%
+\contentsline {subsection}{\numberline {13.4.2}Aliasing}{196}{subsection.13.4.2}%
+\contentsline {subsubsection}{Nyquist implication}{197}{section*.429}%
+\contentsline {subparagraph}{Mistake 1}{198}{section*.430}%
+\contentsline {subparagraph}{Mistake 2}{198}{section*.431}%
+\contentsline {section}{\numberline {13.5}Quantization}{198}{section.13.5}%
+\contentsline {paragraph}{Example}{199}{section*.435}%
+\contentsline {chapter}{\numberline {A}Exercises}{200}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Exercise}{200}{subsection.A.0.1}%
+\contentsline {subsubsection}{Answer}{200}{section*.437}%
+\contentsline {subsubsection}{Exercise 2}{201}{section*.438}%
+\contentsline {subsubsection}{Solution 2}{201}{section*.440}%
+\contentsline {subsection}{\numberline {A.0.2}Exercise 3}{202}{subsection.A.0.2}%
+\contentsline {subsubsection}{Solution 3}{202}{section*.442}%
+\contentsline {subsection}{\numberline {A.0.3}Exercise 4}{203}{subsection.A.0.3}%
+\contentsline {paragraph}{Solution 4}{203}{section*.444}%
+\contentsline {subsection}{\numberline {A.0.4}Exercise 5}{204}{subsection.A.0.4}%
+\contentsline {subsection}{\numberline {A.0.5}Exercise 6}{204}{subsection.A.0.5}%
+\contentsline {subsection}{\numberline {A.0.6}Exercise 7}{204}{subsection.A.0.6}%
+\contentsline {paragraph}{Solution}{204}{section*.445}%
+\contentsline {subsection}{\numberline {A.0.7}Exercise 8}{205}{subsection.A.0.7}%
+\contentsline {subsection}{\numberline {A.0.8}Exercise 9}{205}{subsection.A.0.8}%
+\contentsline {subsection}{\numberline {A.0.9}Questions 1}{206}{subsection.A.0.9}%
+\contentsline {subsection}{\numberline {A.0.10}Questions 2}{206}{subsection.A.0.10}%
+\contentsline {subsection}{\numberline {A.0.11}Question 3}{206}{subsection.A.0.11}%
+\contentsline {subsection}{\numberline {A.0.12}Question 4}{207}{subsection.A.0.12}%
+\contentsline {subsection}{\numberline {A.0.13}Question 5}{207}{subsection.A.0.13}%
+\contentsline {subsection}{\numberline {A.0.14}Question 6}{207}{subsection.A.0.14}%
+\contentsline {subsection}{\numberline {A.0.15}Question 7}{207}{subsection.A.0.15}%
