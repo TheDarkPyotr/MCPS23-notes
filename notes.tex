@@ -650,8 +650,8 @@ MQTT define three levels of QoS:
 	\textbf{Exactly once (\texttt{level 2})}: guarantees that each message is received only once by the intended recipients
 	
 \end{itemize}
-So QoS is used both between publisher and broker and between broker and subscriber.
-It's called \textit{best effort} delivery because messages are not acknoledge by the receiver. When used between publisher and broker messages are not stored by the broker and immediately forwarded.
+So QoS is used both between publisher and broker and between broker and subscriber.\\
+The \textbf{QoS level 0} is called \textit{best effort} delivery because messages are not acknoledge by the receiver. When used between publisher and broker messages are not stored by the broker and immediately forwarded.
 It provides the same guarantees as the TCP Protocol by guaranteeing the delivery as long as the connection remains. If one of the two peers disconnect there's not guarantee anymore.\\
 Messages are numbered and stored by the broker until they are delivered to all subscribers with \textbf{QoS level 1}. Each message is delivered at least once to the subscribers with QoS 1. A message may be delivered more than once so it's suitable when the subscribers can handle the management of duplicated messages.
 Subscribers send acknowledgements by sending \texttt{PUBACK} packets.\\\\
@@ -701,8 +701,10 @@ In a persistent session the data stored are:
 	All QoS \texttt{1,2} messages that are not confirmed yet
 	\item 
 	All QoS \texttt{1,2} messages that arrived when the client was offline
-	A persistent session is requested at \texttt{CONNECT} time (\textit{\texttt{cleanSession} flag setted to FALSE}): the \texttt{CONNACK} message confirms whether the session is persistent.
-	Also clients have to \textbf{store state} in persistent session:
+\end{itemize}
+A persistent session is requested at \texttt{CONNECT} time (\textit{\texttt{cleanSession} flag setted to FALSE}): the \texttt{CONNACK} message confirms whether the session is persistent.\\
+Also clients have to \textbf{store state} in persistent session:
+\begin{itemize}
 	\item 
 	Store all messages in QoS \texttt{1,2} flow, not ACKED By the broker
 	\item 
@@ -718,7 +720,7 @@ When a \textit{client} subscribes the topic of the retained message, the broker 
 The mechanism of \textbf{retained messages} and \textbf{persistent sessions} are completely decoupled: the second are messages kept by the server even if they had already been delivered. To delete a retained message is sufficient to publish a retained \textbf{empty} message of the same topic. This mechanism is usefull for \textit{unfrequent updates} of a topic: for \textit{example}, consider a device that update its status (\texttt{ON/OFF}) on topic \texttt{home/devices/device1/status} so if it publish ON, this status will remain for long time and if the message if retained, all subscribers will easily know the device is on.
 \subsection{Last will and testament}\label{sec:last-will-and-testament}
 Last will and testament feature is used to \textbf{notify other clients about the ungraceful disconnection of a client}. At \texttt{CONNECT} tune, a client can request the broker a specific behavior about its last will: it's a normal message with \texttt{topic, retainFlag, QoS} and \texttt{payload} stored by the broker as a last will.
-When the broker detects the client is \textbf{abruptly disconnected}, it ends the last will message to all subscribers of the topic specific in the last will message. If the client send \texttt{DISCONNECT}, the stored last will message is discarded because the underlying assumption is that before correctly disconnect the clients has been already notified other clients.
+When the broker detects the client is \textbf{abruptly disconnected}, it send the last will message to all subscribers of the topic specific in the last will message. If the client send \texttt{DISCONNECT}, the stored last will message is discarded because the underlying assumption is that before correctly disconnect the clients has been already notified other clients.
 So, the broker sends a last will message if:
 \begin{itemize}
 	\item 
@@ -755,7 +757,7 @@ The KeepAlive mechanism assure that a client and its connection with the broker 
 \subsection{Packet format}\label{sec:packet-format}
 The structure of an MQTT \textbf{control packet} is the following:
 \begin{figure}[h!]
-	\centering\includegraphics[scale=0.50]{images/Pasted image 20230304101920.png}
+	\centering\includegraphics[scale=0.40]{images/Pasted image 20230304101920.png}
 	\caption{Control packet structure}
 \end{figure}
 
@@ -805,12 +807,13 @@ In the table \ref{mqtt-req-data} is listed when the payload is required.
 Include only a subset of MQTT specific, excluding:
 \begin{itemize}
 	\item 
-	No SSL/TLS
+	SSL/TLS
 	\item 
-	QS levlw 2
+	QS level 2
 	\item 
 	Payload limited to \texttt{128} bytes
 \end{itemize}
+\iffalse
 \paragraph{Constructors}\label{sec:constructors}\begin{itemize}
 	\item 
 	\texttt{PubSubClient()}
@@ -829,6 +832,7 @@ Include only a subset of MQTT specific, excluding:
 		Stream: an instance of \texttt{Stream}, used to store received messages (\textit{e.g. \texttt{mqtt\_stream}})
 	\end{itemize}
 \end{itemize}
+
 \paragraph{Functions}\label{sec:functions}\begin{itemize}
 	\item 
 	\texttt{boolean connect(clientId, username, password, willTopic, willQoS, willRetain, willMessage)}: connect the client, specifyng the \textbf{will message}, username and password (\textit{as basic authentication mechanism})
@@ -859,6 +863,7 @@ Include only a subset of MQTT specific, excluding:
 \end{itemize}
 
 	See more bootstrap example at \href{https://pubsubclient.knolleary.net/api}{https://pubsubclient.knolleary.net/api}.
+\fi
 \subsection{MQTT Competitors}\label{sec:mqtt-competitors}
 HTTP is a valid alternative to MQTT, despite it's not speficially designed to operate for IoT devices at appliaiton level. A comparison is sketched in \ref{mqtt-vs-http}.
 \begin{figure}[h!]
@@ -874,7 +879,7 @@ HTTP used in IoT device can be used in two different ways:
 	In real world application both solution are deployed (\textit{e.g. TeamSpeak, AWS IoT}) because nowadays devices are not entirely constrained on power/computation capacity.
 \end{enumerate}
 
-There are several \textbf{limitations} on MQTT: the need for a centralized broker can be limiting in scenario wher we have several point-to-point communication because the overhead of a broker may easily become not compatible with end devices capabilities as the network scales up. Also, the broker is a \textbf{single point of failure} and the underlying TCP protocol does not come for free: it's not cheap for low end devices. Exists also an MQTT based on UDP, not standardized nowadays.
+There are several \textbf{limitations} on MQTT: the need for a centralized broker can be limiting in scenario where we have several point-to-point communication because the overhead of a broker may easily become not compatible with end devices capabilities as the network scales up. Also, the broker is a \textbf{single point of failure} and the underlying TCP protocol does not come for free: it's not cheap for low end devices. Exists also an MQTT based on UDP, not standardized nowadays.
 \subsection{Brief CoAP (Constrained Application Protocol)}\label{sec:brief-coap-constrained-application-protocol}
 Standardized in \texttt{RFC-7252}, it's specialized for \textbf{web transfer} and it's suitable for machine-to-machine for use with constrained nodes and constrained networks. It used under the hood the UDP Protocol. The general key idea is pictured in \ref{mqtt-vs-coap}
 \begin{figure}[h]
@@ -885,7 +890,7 @@ Standardized in \texttt{RFC-7252}, it's specialized for \textbf{web transfer} an
 CoAP also support a direct connections between devices, without relying on an intermediate bridges to translate/support the communication.
 
 CoAP is designed to work with nodes with \textit{8 microcontrollers} with small amounts of ROM and RAM.  Constrained networks such as IPv6 over 6LoWPANs: it concerns the size of the header, compressing addresses and header used in IPv6.\\
-The main strenghts are that is \textit{native UDP, support multicast, security mechanism are embedded in the RFC itself, suppport asyncrhonous communication by design}. There are also weakes as \textit{standard maturity} and \textit{message reliability noy quite sophisticated, similar to MQTT QoS}.
+The main strenghts are that is \textit{native UDP, support multicast, security mechanism are embedded in the RFC itself, suppport asyncrhonous communication by design}. There are also weakes as \textit{standard maturity} and \textit{message reliability not quite sophisticated, similar to MQTT QoS}.
 
 
 
@@ -965,7 +970,7 @@ In figure \ref{zigbee-com-example} an example of \textit{service primitives} tha
 \label{zigbee-com-example}
 \end{figure}
 
-\paragraph{Data trasnfer}\label{sec:data-trasnfer}
+\paragraph{Data transfer}\label{sec:data-trasnfer}
 The data transfer between node assume an uniform name called \textbf{Data Unit}, encapsulated at different level with different packet layers, here specified in \ref{data-unit-layer}.
 
 \begin{figure}[h]
@@ -990,9 +995,10 @@ At network level we identify 3 types of devices:
 	\item 
 	\textbf{Network coordinator}: Despite been a infrastructurless protocol, a coordinator have the function of create the network by taking decisions/interfacing with the rest of the network. Allows to bootstrap the network.
 	\item 
-	\textbf{Router}: provide routing features in a large network and can also have services capability. From the point of view of routing capabilities, they have the same capabilities or coordinator.
+	\textbf{Router}: provide routing features in a large network and can also have services capability. From the point of view of routing capabilities, they have the same capabilities of a coordinator.
 	\item 
-	\textbf{End device}: they are not able to communicate alone with the rest of the network and use coordinators/routers to communicate. They must be attach to the coordinator to be able to communcate over the network. They do not need to implement the entire standard, differently from router/coordinators that must have the capabilities to implement the standard fully. Generally they correspond to a RFD or FFD with simple features (\textit{\textbf{RFD}}: \textit{Reduced Functional Interface}, \textit{\textbf{FFD}}: \textit{Full Functional Device})
+	\textbf{End device}: they are not able to communicate alone with the rest of the network and use coordinators/routers to communicate. They must be attach to the coordinator to be able to communcate over the network. They do not need to implement the entire standard, differently from router/coordinators that must have the capabilities to implement the standard fully. Generally they correspond to a RFD \textit{Reduced Functional Interface} while routers/coordinator are FFD \textit{Full Functional Device}.
+	
 \end{enumerate}
 We can have different \textbf{network topologies} as shown in \ref{net-topologies}.
 In a \textbf{star shaped topology}, the router have the same roles as end device: they uses the \textit{superframe}. In the \textbf{tree topology}, the \textit{multi-hop network} (\textit{not fully addressed in those notes}) functionalities are supported and the nodes can communicate only via the intermediary routers: they can or cannot use \textit{superframes}. In \textbf{mesh networks}, the communication is possible even between nodes witout relying on the \textit{superframe infrastructure} (\textit{superframe is the topic of the lecture on CSMA/CA, see later chapters}).
@@ -1214,7 +1220,7 @@ In the previous table, the \textit{Basic Cluster} with ID \texttt{0x0000} allows
 The \textit{APS \textbf{Device IDs}} range from \texttt{0x0000} to \texttt{0xFFFF}, this value has two main purposes:
 \begin{enumerate}
 	\item 
-	To alows human readable displays (\textit{e.g. an icon is realted to a device})
+	To allows human readable displays (\textit{e.g. an icon is realted to a device})
 	\item 
 	Allows ZigBee tools to be effective also for humans: a device may implement the on/off cluster but you don't know whether it's a bulb or a oven so you only kwno you can turn it on or off. The DeviceID tells you what it is, but it does not tell you how you can communciate with it: this is given by the IDs of the cluster it implements.\\
 	ZigBee discovers services in a network based on profile IDs and cluster IDs, but not on device IDs alone because each device is specified by the combination of Application profile ID and cluster ID.
@@ -1243,10 +1249,10 @@ The \textit{\textbf{APS Group Management}} provides service to build and mantain
 The binding operation allows an endpoint on a node to be connected (\textit{bound}) to one or more endpoints on another nodes: the binding is \textbf{unidirectional} and can be configued only by te ZDO of the coordinator or of a router. \\
 So the binding provide a way to specify the destination address of the messages. This method is called \textbf{Indirect Addressing}: when a Message is routed to the destination APO based on its pairs \texttt{<destination endpoint, destination network address>} the method is usually called \textbf{Direct Addressing}. Direct addressing might be unsuitable for extremely simple devices while \textit{Indirect addressing} exploit the \textit{\textbf{Binding table}}.
 
-Two main primitives are used for binding, respectively \texttt{BIND} and \texttt{UNBIND}:
+Two main primitives are used for binding in \textbf{Indirect addressing}, respectively \texttt{BIND} and \texttt{UNBIND}:
 \begin{enumerate}
 	\item 
-	\texttt{BIND.request} creates a new entry in the local binding table. It takes in input the tuble 
+	\texttt{BIND.request} creates a new entry in the local binding table. It takes in input the tuple 
 	\begin{center}
 		\texttt{<source address, source endpoint, cluster identifier, destination address, destinatione endpoint>}
 	\end{center}
@@ -1259,7 +1265,7 @@ In the \textbf{Indirect addressing}, the binding table matches the \textit{sourc
 
 In the scenario of light bulb and a switch, can be complex from the switch side to know to which light bulb connect but, this information is known by the installer. Despite operating directly on the device, the installer can set and entry in the \textbf{coordinator's binding table} so that the messages arriving to the switch will be forwarded to the light bulb.
 
-Here an example of \textbf{binding table} with a request \texttt{APS-DATA.req} of cluster 6 from EP 5 on node \texttt{0x3232} that in \textbf{indirect routing} will generate 4 data requests:
+Here an example of \textbf{binding table} with a request \texttt{APS-DATA.req} of cluster 6 from endpoint 5 on node \texttt{0x3232} that in \textbf{indirect routing} will generate 4 data requests:
 \begin{itemize}
 	\item 
 	Node \texttt{0x1234}, endpoint \texttt{12}
@@ -1673,7 +1679,7 @@ Consider two different models: the first model have a 100\% DC so it's always fu
 \end{figure}
 
 \begin{figure}[h]
-	\centering\includegraphics[scale=0.40]{images/Pasted image 20230324171858.png}
+	\centering\includegraphics[scale=0.50]{images/Pasted image 20230324171858.png}
 	\caption{Two different duty cycle usage percentage}
 	\label{dc-ex-2}
 \end{figure}
@@ -1681,7 +1687,10 @@ Consider two different models: the first model have a 100\% DC so it's always fu
 The sum of two different activity period form a duty cycle: in the figure \ref{dc-ex-2-bis} there is only indicated a single period.
 \subsection{Measuring energy}\label{sec:measuring-energy}
 Energy and power are mesured in Joule $J$ and Watt $W$, respectively $1J = 1W *sec$. In electromagnetism, $1W$ is the work performed when a current of $1A$ (Ampere) flows through an electrical potential difference of $1V$ volt, so:
+\begin{center}
 $1W = 1V * 1A$
+\end{center}
+
 Since we use direct current and the electrical potential difference is almost constant, the power and the energy only depend on the current (\textit{Ampere}).
 Hence we can express both the energy stored in a battery and the energy consumed in $mAh$ (\textit{milli-Ampere per hour}).
 \subsubsection{Example on computing consumption per duty cycle}\label{sec:example-on-computing-consumption-per-duty-cycle}
@@ -2236,7 +2245,7 @@ The \textbf{strengths} of the B-MAC Protocol are:
 	In some cases it may result more expensive than using other form of synchronization
 \end{enumerate}
 \subsection{X-MAC}\label{sec:x-mac}
-\textit{X-MAX} is an evolution of B-MAC aimed at \textbf{reducing the impact of long preambles}.
+\textit{X-MAC} is an evolution of B-MAC aimed at \textbf{reducing the impact of long preambles}.
 It allows a \textit{receiver} to stop the preamble transmission: the preamble this time contain also information of the \textbf{ID of target node} so a receiver can check if it's the recipient of the frame and interrupts the preamble transmission to request the data frame.
 In figure \ref{xmac-schema} comparison schema between \textit{LPL (B-MAC)} and \textit{X-MAC}.
 \begin{figure}[h!]
@@ -3513,7 +3522,7 @@ Indirectly, the model express a relation between \textit{energy} and \textit{dut
 	\caption{Linearity between energy, duty cycle and utility measure}
 	\label{energy-consumption-dc}
 \end{figure}
-This last diagram highlight that the 
+
 
 \subsection{Duty cycle modulation}\label{sec:duty-cycle-modulation}
 This model of utility and duty cycle allows for \textbf{modulation of the load on the energy harvesting device} despite changing overtime the DC involves make \textit{practical considerations}: the sampling sensor involves using the transducer that produce data points. The sampling work well (\textit{for a theoretical result known as Sampling Theorem}) if the sampling if equally spaced, at regular time.
@@ -3533,7 +3542,7 @@ As previously seen in this chapter, the \textit{power harvested, stored} and \te
 	$p_{c}(i)$: \textbf{power load} in slot $i$
 \end{itemize}
 
-The following two diagrams ahowed in \ref{storage-battery-table} consider the energy consumption/production parameters: on the left, if the consumption is more than the production and the device is in \textit{active} state then there is no storage because the harvested energy is used to perform the active duty cycle operations. Differently, if the device is in \textit{idle} state, the harvested energy is stored, following the energy buffer model already seen.
+The following two diagrams showed in \ref{storage-energy-diagram} consider the energy consumption/production parameters: on the left, if the consumption is more than the production and the device is in \textit{active} state then there is no storage because the harvested energy is used to perform the active duty cycle operations. Differently, if the device is in \textit{idle} state, the harvested energy is stored, following the energy buffer model already seen.
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.40]{images/Pasted image 20230509165631.png}
 	\label{storage-energy-diagram}
@@ -3580,7 +3589,7 @@ The model based on \textit{EWMA - Exponentially Weighted Moving Average} catch w
 \end{itemize}
 The estimated power production in the same slot $i$ in the next day $j+1$ is given by:
 \begin{equation}
-	\tilde{p}_{s}^{j+1}(i) = \alpha \tilde{p}_{s}^{j}(i) + (1-\alpha)\tilde{p}_{s}^{j}(i)
+	\tilde{p}_{s}^{j+1}(i) = \alpha \tilde{p}_{s}^{j}(i) + (1-\alpha)p_{s}^{j}(i)
 \end{equation}
 
 where $\alpha < 1$  is a parameter that can be costant or dynamically adjusted based on the estimation errors comparison with actual production.
@@ -3671,12 +3680,12 @@ The underlying assumption is that the power consumption during the same slot is 
 \subsubsection{Optimization problem formalization}\label{sec:optimization-problem-formalization}
 The following relation compute the \textbf{expected power produced} and \textbf{not consumed} in slot $i$:
 \begin{equation}
-	p_{s}^{+}(i) = [p_{c}(i) - p_{s}(i)]^{+}
+	p_{s}^{+}(i) = [p_{s}(i) - p_{c}(i)]^{+}
 \end{equation}
 
 This quantity correspond to the \textit{recharges of the battery}, while the following one express the \textbf{expected power consumed} from the battery in slot $i$:
 \begin{equation}
-	p_{s}^{-}(i) = [p_{c}(i) - p_{s}(i)]^{+}
+	p_{c}^{-}(i) = [p_{c}(i) - p_{s}(i)]^{+}
 \end{equation}
 
 It's noticeable to remember that that $p_{c}(i)$ express the power consumption in the slot $i$, while $p_{s}(i)$ express the power stored in the same slot.
@@ -3779,7 +3788,7 @@ The data on the right \ref{rpi-quality-avg-battery} shows the \textit{average re
 A \textbf{wireless sensor network (WSN)} is a collection of small, autonomous devices called sensors that are wirelessly interconnected to monitor physical or environmental conditions. These sensors are equipped with various types of sensors such as temperature, humidity, light, motion, and sound sensors, among others, to gather data from their surroundings.\\
 The sensors in a WSN communicate with each other using wireless communication protocols such as Wi-Fi, Bluetooth, or Zigbee. They form a network where \textit{data can be transmitted from one sensor to another} and eventually reach a central base station or \textbf{sink node}. This base station acts as a gateway to the external world and is responsible for processing and analyzing the collected data.
 
-The sink nodes act as a output gateway to the outside networks: based on specific sensora purposes, the nodes sample the environmental parameters, producing a \textbf{stream of data} that can be pre-processed locally and then forwarded to the \textit{sink} node.
+The sink nodes act as a output gateway to the outside networks: based on specific sensor purposes, the nodes sample the environmental parameters, producing a \textbf{stream of data} that can be pre-processed locally and then forwarded to the \textit{sink} node.
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.13]{images/Pasted image 20230522162020.png}
 	\caption{Overall structure of WSN}
@@ -3839,9 +3848,8 @@ The implosion problem can be solved by applying some form of internal or network
 The overlap problem regards the \textit{range of action of a sensor}: despite been placed in a fixed point, it also sense noise and accessory part, commonly shared by two different sensors.
 This poses the problem of differentiate between two different event that activate a sensor or a single event that is in the overlap area of two different sensor.
 \section{Directed Diffusion}\label{sec:directed-diffusion}
-\textbf{Direct Diffusion} is a \textit{datacentric} protocol for WSN: basically it specify how organize the network addresses that simplify the routing operations. The data genered by sensors are named by \textit{attribute-value pairs} so nodes requests data by sending interests for named data.
-
-Allows to instruct the device on the fly by send a specific parametric request to the sink node, allowing to specialize or generalize a given \textit{query}.
+\textbf{Direct Diffusion} is a \textit{datacentric} protocol for WSN: basically it specify how organize the network, simplifying the routing operations. The data genered by sensors are named by \textbf{attribute-value pairs} so nodes requests data by sending interests for named data.\\
+Allows to instruct the device on the fly by send a specific parametric request to the sink node, allowing to specialize or generalize a given \textbf{query}.
 The specific query can be posed as human-like questions: the sink broadcast (\textit{or disseminate}) a packet to the entire network, specifying the parameters for all the device.
 The protocol can be identified in 4 steps:
 \begin{enumerate}
@@ -3871,14 +3879,14 @@ Each interest in cache has a \textbf{gradient} which expresses:
 	a \textbf{direction}: thhe node from which the interesrt was received, used to route back to the sink node
 	\item 
 	a \textbf{data rate}
-	The same interest may be received from different nodes hence relevant data may be sent along several gradients, following multiple paths.
-	\begin{figure}[h]
-		\centering\includegraphics[scale=0.50]{images/Pasted image 20230522171354.png}
-		\caption{Gradient updates process}
-	\end{figure}
+
 	
 \end{itemize}
-
+	The same interest may be received from different nodes hence relevant data may be sent along several gradients, following multiple paths.
+\begin{figure}[h]
+	\centering\includegraphics[scale=0.50]{images/Pasted image 20230522171354.png}
+	\caption{Interest propagation process}
+\end{figure}
 Here an example of a simple animal tracking task (\textit{or interest query}):
 % python null
 \begin{verbatim}
@@ -3938,7 +3946,7 @@ It's suitable for application tha sense data but not require complex data aggreg
 The data processing to identify that a given event happened can also be done outside the network, by transmitting the data and process it or it can be done in network by increase the \textbf{point-to-point exchange} of data between the internal nodes.
 Remember that transmit 1 bit correspond to process 1k of data: the ideal would be to push the computing power more locally to the devices, as the \textit{fog and edge computing} mechanism try to deliver for cloud and data center solutions.
 \subsubsection{Directed Acyclic Graph Scalability}\label{sec:directed-acyclic-graph-scalability}
-We mentioned varioust ime that a \textit{tree-based network organization} allows to enhance scalability performances.
+We mentioned before that a \textit{tree-based network organization} allows to enhance scalability performances.
 Differently, for this scenario consider to have a network composed as a grid of nodes with two different sink, respectively located as \textit{top-right} and \textit{bottom-left} nodes, as pictured in \ref{grid-network}.
 
 
@@ -4060,13 +4068,11 @@ Imagine starting from $y$, using \textit{RHR} arrive to node $x$ and apply again
 \end{figure}
 
 This methods allows to explores the edge of the polygon enclosing the void region.\\
-The algorithm works only if the underlying graph of the network topology is \textbf{planar}: the WSN's graph are mostly not planar so edges may \textit{cross} and the \textit{RHR} may take a \textit{degenerate tour} that does not trace the boundary of a \textit{closed polygon}.
-
-In the example, from $x$ to $v$ the \textit{RHR} produce the path:
+The algorithm works only if the underlying graph of the network topology is \textbf{planar}: the WSN's graph are mostly not planar so edges may \textit{cross} and the \textit{RHR} may take a \textit{degenerate tour} that does not trace the boundary of a \textit{closed polygon}.\\
+In figure \ref{not-planar-degeneration-tour}, from $x$ to $v$ the \textit{RHR} produce the path:
 \begin{center}
 	$x-v-w-u-x$
 \end{center}
-as sketched in \ref{not-planar-degeneration-tour}
 
 
 \begin{figure}[h]
@@ -4142,10 +4148,11 @@ A \textbf{planar graph} has two types of faces:
 	\centering
 	\includegraphics[scale=0.50]{images/Pasted image 20230523155042.png}	
 	\caption{Planar graph with three faces}
+	\label{planar-graph-faces}
 	
 \end{figure}
 
-The line $x$ to $D$ allows to identify the faces $F_{1}, F_{2}, F_{3}$ of the graph, alongside the x's two neighbors along $F_{1}$ border.
+In figure \ref{planar-graph-faces}, the line $x$ to $D$ allows to identify the faces $F_{1}, F_{2}, F_{3}$ of the graph, alongside the x's two neighbors along $F_{1}$ border.
 In the \textbf{perimeter mode} the packet will reach the second red node, at the intersection with $x-D$ line and $L_{f}$: from this node onward we switch the graph face from $F_{1}$ to $F_{2}$ thus the packet is sent to all nodes alongisde $F_{2}$ border until it reaches a node that is closer to $D$ respect to $x$, switching back to greedy mode.\\
 
 So more formally:
@@ -4722,7 +4729,7 @@ They can be combined in one by \textit{dividing the spectrum in frequency channe
 	\label{fdma-slots}
 \end{figure}
 
-Another methods is \textit{CMDA - Code Division Multiple Access}: is a digital cellular technology that allows multiple users to share the same frequency band simultaneously. It works by \textbf{assigning a unique code to each user, which is used to modulate the user's signal.}\\
+Another methods is \textit{CDMA - Code Division Multiple Access}: is a digital cellular technology that allows multiple users to share the same frequency band simultaneously. It works by \textbf{assigning a unique code to each user, which is used to modulate the user's signal.}\\
 CDMA uses spread spectrum technology, which spreads the user's signal across a wide bandwidth. This makes it possible for multiple users to transmit their signals at the same time and on the same frequency band without interfering with each other.\\
 The \textbf{unique code assigned to each user acts as a key to unlock the signal at the receiving end}. The receiver is able to identify and separate the different users' signals based on their unique codes, allowing each user to receive their own signal without interference from other users, as pictured in \ref{coded-signals}
 \begin{figure}[h!]
@@ -4825,7 +4832,7 @@ The general model adopted by 4G/5G Network is pictured in \ref{4g-45-general-arc
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.60]{images/Pasted image 20230309160614.png}
-	\caption{4G Packet Core (EPC) interconnection}
+	\caption{4G Packet Core (EPC - Evolved Packet Core) interconnection}
 	\label{}
 \end{figure}
 
@@ -4944,7 +4951,7 @@ The 5G user plane is sketched in \ref{5g-user-plane}
 \end{figure}
 
 
-The \textbf{UPF - User Plane Function} allows to forward traffic between RAN and internet, corresponding to the S-GW/P-GW combination into the \textbf{EPC}. It's also responsible for: \textit{packet inspection and application detection, QoS management, Traffic usage reporting}.\\
+The \textbf{UPF - User Plane Function} allows to forward traffic between RAN and internet, corresponding to the S-GW/P-GW combination into the \textbf{EPC - Evolved Packet Core}. It's also responsible for: \textit{packet inspection and application detection, QoS management, Traffic usage reporting}.\\
 Those components allows flexibility to deliver user plane functionality at the edge as well as the network core because UPF can be co-located with edge and central data centers at both locations, implementing laso \textbf{MEC - Multi Access Edge Computing}.
 
 \subsubsection{5G Control Plane}\label{sec:5g-control-plane}
@@ -5007,7 +5014,7 @@ From the network perspective, the spectrum of mobility have a wide area of scena
 \end{figure}
 
 
-The \textbf{home networks} allows to have a service plan with a cellular provider (\textit{Verizon, Orange}) where the \textbf{home network HSS} stores identity and service informations of the device. The \textbf{visited network} is any network other than your home network and by service agreement with other networks allows to provide access to \textit{visiting mobile}, implementing mobility. The described scenario is pictured in \ref{mobility-network}.
+The \textbf{home network} allows to have a service plan with a cellular provider (\textit{Verizon, Orange}) where the \textbf{Home Subscriber Service (HSS)} stores identity and service informations of the device. The \textbf{visited network} is any network other than your home network and by service agreement with other networks allows to provide access to \textit{visiting mobile}, implementing mobility. The described scenario is pictured in \ref{mobility-network}.
 
 \begin{figure}[h]
 	\centering
@@ -5028,7 +5035,7 @@ To implement mobility and have a correspondence between the mobile device and th
 	\textbf{End-system handle it}: the funcionality is provided at the \textit{edge}. There are two types of routing:
 	\begin{enumerate}
 		\item 
-		\textit{\textbf{Indirect routing}}: communication from correspondent to mobile goes through home network and then forwrded to remote mobile (\textit{connected to a thid-party visited network}). The correspondant, known the home network gateway send the request and thanks to the \textbf{HSS - Home Subscriber Server} that contains the updated address of the device, is able to forward the request to the Serving Gateway of the \textit{visited network}. Refer the schema in \ref{indirect-routing-schema}.
+		\textit{\textbf{Indirect routing}}: communication from correspondent to mobile goes through home network and then forwarded to remote mobile (\textit{connected to a thid-party visited network}). The correspondant, knowning the home network gateway, send the request and thanks to the \textbf{HSS - Home Subscriber Server} that contains the updated address of the device, is able to forward the request to the Serving Gateway of the \textit{visited network}. Refer the schema in \ref{indirect-routing-schema}.
 
 		\item 
 		\textit{\textbf{Direct routing}}: correspondents get foreign address of mobile, sending directly to mobile device. The \textit{IMSI - International Mobile Subscriber Identity} is used as a sort of \textit{MAC address} of the device. Refer the schema in \ref{direct-routing-schema}.
@@ -5056,17 +5063,17 @@ To implement mobility and have a correspondence between the mobile device and th
 
 
 
-In the \textit{\textbf{indirect routing}} a \textbf{\textit{mobile-device-to-visited network association protocol}} is needed: the mobile device will need to be associated with the visited network and will similarly need to be disassociated when leaving the visited network. There is also the need of a \textit{\textbf{visited-network-to-home-network-HSS registration}} to allows visited network to register mobile device's location with the HSS In the home network.\\\\
+In the \textit{\textbf{indirect routing}} a \textbf{\textit{mobile-device-to-visited network association protocol}} is needed: the mobile device will need to be associated with the visited network and will similarly need to be disassociated when leaving the visited network. There is also the need of a \textit{\textbf{visited-network-to-home-network-HSS registration}} to allows visited network to register mobile device's location with the HSS in the home network.\\\\
 A \textbf{datagram tunneling protocol} between the home network gateway and the visited network gateway router is needed to allows home gateway performs encapsulation and forwarding of the correspondents original datagram and, on the receiving side, the gateway router performs decapsulation, NAT translation and forwarding of the original datagram to the mobile device.\\\\
 In the \textit{\textbf{direct routing}} the process is less transparent to the correspondent because it must get care of the address from home agent. In case the mobile changes visited network the request sending can be handled but with additional complexity by allowing the HSS to be queried by the correspondent only at the beginning of the session.\\
-This last approach require a \textbf{registration} procedure to be sure that the home network known there the device is, as pictured in \ref{registration-proc}.
+This last approach require a \textbf{registration} procedure to be sure that the home network know where the device is, as pictured in \ref{registration-proc}.
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230322114404.png}
 	\caption{Direct routing registration process}
 	\label{registration-proc}
 \end{figure}
 
-The mobile device needs an IP address in the visited network:
+In \textbf{Direct routing} the mobile device needs an IP address in the \textit{visited network}:
 \begin{enumerate}
 	\item 
 	permanent address associated with the mobile device's home network
@@ -5074,9 +5081,9 @@ The mobile device needs an IP address in the visited network:
 	New address in the address range of the visited network
 	\item 
 	IP address via NAT
-	The end result is that the visited mobility manager known about the mobile and the home HSS knowns the location of mobile.
+	
 \end{enumerate}
-
+The end result is that the visited mobility manager known about the mobile and the home HSS knowns the location of mobile.\\\\
 In case on \textbf{indirect routing}, the different scenario is pictured in \ref{indirect-registration-process}:
 
 
@@ -5091,13 +5098,13 @@ In case on \textbf{indirect routing}, the different scenario is pictured in \ref
 	The visited gateway router forwards reply to correspondent via home network \textbf{(a)} or directly \textbf{(b)}.
 \end{enumerate}
 
-As mentioned, the main requiremenets for mobility in \textit{\textbf{indirect routing}} are.
+As mentioned, the main requiremenets for mobility in \textit{\textbf{indirect routing}} are:
 \begin{enumerate}
 
 	\item 
 	\textit{Mobile-device-to-visited-network association protocol}: the mobile device will need to associate with the visited network and will similarly need to dissociate when leaving the visited network.
 	\item 
-	\textit{Visited-network-to-home-network HSS registration}: The visited network will need to registrer the mobile device's locatio with the HSS in the home network
+	\textit{Visited-network-to-home-network HSS registration}: The visited network will need to registrer the mobile device's locatio with the HSS in the \textit{mobile device home network}
 	\item 
 	\textit{A datagram tunneling protocol between home network gateway and visisted network gateway router}: the home gateway perform encapslation and forwarding of the correspondent's original datagram. On the receiving side, the gateway router performs \textit{\textbf{decapsulation, NAT translation and forwarding}} of the original datagram to the mobile device.
 	Some considerations about \textit{\textbf{indirect routing}} evaluate the problem of \textbf{triangle routing} that results in an inefficient model when correspondent and mobile are in the same network (\textit{due to the problem of forwarding the messages to the home network and re-routing them to the correspondent's original network which correspond to the visisted network of the destination device}).
