@@ -655,23 +655,6 @@ It provides the same guarantees as the TCP Protocol by guaranteeing the delivery
 Messages are numbered and stored by the broker until they are delivered to all subscribers with \textbf{QoS level 1}. Each message is delivered at least once to the subscribers with QoS 1. A message may be delivered more than once so it's suitable when the subscribers can handle the management of duplicated messages.
 Subscribers send acknowledgements by sending \texttt{PUBACK} packets.\\\\
 The \textbf{QoS level 2} is the slowest mechanism to guarantee QoS because check that each message is received exactly once by the recipient.\\ 
-The broker:
-\begin{itemize}
-	\item receives the \texttt{PUBLISH} with a message
-	\item Process the \texttt{PUBLISH}
-	\item Sends back a \texttt{PUBREC}
-	\item Keeps a reference to the message until it receives \texttt{PUBREL}
-\end{itemize}
-The client:
-\begin{itemize}
-	\item Sends \texttt{PUBLISH} with a message
-	\item Waits for \texttt{PUBREC} and then store \texttt{PUBREC} and discardsthe message
-	\item Sends back a \texttt{PUBREL} to inform the broker 
-	\item Waits for \texttt{PUBCOMP} and then discards the \texttt{PUBREC}
-\end{itemize}
-
-
-
 It uses a \textbf{double two-way handshake} by sending \texttt{PUBLISH} and the relative ACK by the \texttt{PUBREC} Packet. Respectively, the client send \texttt{PUBREL} to acknoledge the reception of the message: the broker now can drop the message from its storage and declare the transmission complete by sending a \texttt{PUBCOMP} packet.\\
 So for each message of QoS level 2 there is need four times the exchange of packets required by the level 0.
 To summarize QoS level 2, the figure \ref{mqtt-qos-2}, describe the entire exchange.
@@ -706,7 +689,7 @@ Waits for PUBCOMP and then discards the PUBREC
 
 
 
-The \textit{double two-way handshake} is necessary because the first handshake allows to send the message, the second is to agree to discard the state. The \texttt{PUBREC} message alone is not sufficient because if it's lost, the client will send again the message so the broker needs to keep a reference to the message to identify duplicates. With \texttt{PUBCOMP} the broker known that it can discard the state associated to the message.
+The \textit{double two-way handshake} is necessary because the first handshake allows to send the message, the second is to agree to discard the state. The \texttt{PUBREC} message alone is not sufficient because if it's lost, the client will send again the message so the broker needs to keep a reference to the message to identify duplicates. With \texttt{PUBCOMP} the client know that it can discard the state associated to the message.
 This level of QoS is suitable when the clients \textit{cannot manage duplicates} so the complexity to guarantee avoiding duplicates is managed by the broker that keep tracks of ACK and stores messages, with high overhead.
 \subsection{Persistent sessions}\label{sec:persistent-sessions}
 Persistent sessions keep the state between the client and the broker: if a subscriber disconnect, when it connects again, it does not need to subscribe again the topics. The session is associated with the \texttt{clientId} defined with the \texttt{CONNECT} message.
