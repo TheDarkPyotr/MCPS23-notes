@@ -557,8 +557,7 @@ The \texttt{PUBLISH} message contains the following data (\textit{summarized in 
 	\item 
 	\texttt{packetId}: an integer, is 0 if the QoS level is 0
 	\item 
-	\texttt{topicName}Unknown Node :: textDirective
-	string possibly structured in a hierarchy wih slash \textbf{/} delimeters
+	\texttt{topicName}: string possibly structured in a hierarchy wih slash \textbf{/} delimeters
 	\item 
 	\texttt{qos}: 0,1 or 2 (\textit{see later})
 	\item 
@@ -655,7 +654,25 @@ The \textbf{QoS level 0} is called \textit{best effort} delivery because message
 It provides the same guarantees as the TCP Protocol by guaranteeing the delivery as long as the connection remains. If one of the two peers disconnect there's not guarantee anymore.\\
 Messages are numbered and stored by the broker until they are delivered to all subscribers with \textbf{QoS level 1}. Each message is delivered at least once to the subscribers with QoS 1. A message may be delivered more than once so it's suitable when the subscribers can handle the management of duplicated messages.
 Subscribers send acknowledgements by sending \texttt{PUBACK} packets.\\\\
-The \textbf{QoS level 2} is the slowest mechanism to guarantee QoS because check that each message is received exactly once by the recipient. It uses a \textbf{double two-way handshake} by sending \texttt{PUBLISH} and the relative ACK by the \texttt{PUBREC} Packet. Respectively, the client send \texttt{PUBREL} to acknoledge the reception of the message: the broker now can drop the message from its storage and declare the transmission complete by sending a \texttt{PUBCOMP} packet.\\
+The \textbf{QoS level 2} is the slowest mechanism to guarantee QoS because check that each message is received exactly once by the recipient.\\ 
+The broker:
+\begin{itemize}
+	\item receives the \texttt{PUBLISH} with a message
+	\item Process the \texttt{PUBLISH}
+	\item Sends back a \texttt{PUBREC}
+	\item Keeps a reference to the message until it receives \texttt{PUBREL}
+\end{itemize}
+The client:
+\begin{itemize}
+	\item Sends \texttt{PUBLISH} with a message
+	\item Waits for \texttt{PUBREC} and then store \texttt{PUBREC} and discardsthe message
+	\item Sends back a \texttt{PUBREL} to inform the broker 
+	\item Waits for \texttt{PUBCOMP} and then discards the \texttt{PUBREC}
+\end{itemize}
+
+
+
+It uses a \textbf{double two-way handshake} by sending \texttt{PUBLISH} and the relative ACK by the \texttt{PUBREC} Packet. Respectively, the client send \texttt{PUBREL} to acknoledge the reception of the message: the broker now can drop the message from its storage and declare the transmission complete by sending a \texttt{PUBCOMP} packet.\\
 So for each message of QoS level 2 there is need four times the exchange of packets required by the level 0.
 To summarize QoS level 2, the figure \ref{mqtt-qos-2}, describe the entire exchange.
 \begin{figure}[h]
@@ -719,7 +736,7 @@ A retained message is a normal message with the flag \texttt{retainFlag} setted 
 When a \textit{client} subscribes the topic of the retained message, the broker immediately sends the retained message for that topic: this can also works combined with \textbf{wildcards}.\\
 The mechanism of \textbf{retained messages} and \textbf{persistent sessions} are completely decoupled: the second are messages kept by the server even if they had already been delivered. To delete a retained message is sufficient to publish a retained \textbf{empty} message of the same topic. This mechanism is usefull for \textit{unfrequent updates} of a topic: for \textit{example}, consider a device that update its status (\texttt{ON/OFF}) on topic \texttt{home/devices/device1/status} so if it publish ON, this status will remain for long time and if the message if retained, all subscribers will easily know the device is on.
 \subsection{Last will and testament}\label{sec:last-will-and-testament}
-Last will and testament feature is used to \textbf{notify other clients about the ungraceful disconnection of a client}. At \texttt{CONNECT} tune, a client can request the broker a specific behavior about its last will: it's a normal message with \texttt{topic, retainFlag, QoS} and \texttt{payload} stored by the broker as a last will.
+Last will and testament feature is used to \textbf{notify other clients about the ungraceful disconnection of a client}. At \texttt{CONNECT} time, a client can request the broker a specific behavior about its last will: it's a normal message with \texttt{topic, retainFlag, QoS} and \texttt{payload} stored by the broker as a last will.
 When the broker detects the client is \textbf{abruptly disconnected}, it send the last will message to all subscribers of the topic specific in the last will message. If the client send \texttt{DISCONNECT}, the stored last will message is discarded because the underlying assumption is that before correctly disconnect the clients has been already notified other clients.
 So, the broker sends a last will message if:
 \begin{itemize}
@@ -873,7 +890,7 @@ HTTP is a valid alternative to MQTT, despite it's not speficially designed to op
 HTTP used in IoT device can be used in two different ways:
 \begin{enumerate}
 	\item 
-	Clients are server and accept connection from services
+	Clients are server accept connection from services
 	\item 
 	Service is the server and accept incoming connection from clients (devices). 	This paradigm poses problems on scalability, also considering the size of messages and the focus of communication (\textit{because HTTP is not suitable for constraned devices}).
 	In real world application both solution are deployed (\textit{e.g. TeamSpeak, AWS IoT}) because nowadays devices are not entirely constrained on power/computation capacity.
@@ -941,7 +958,7 @@ The Application layer of ZigBee is defined by 3 sub-layer:
 	\item 
 	\textbf{Application Support sublayer (APS)}: provides data and management services to the APOs and ZDO.
 \end{enumerate}
-The workflow of those three sublayers will be addresses in detail in \ref{sec:application-layer}.
+The workflow of those three sublayers will be addressed in detail in \ref{sec:application-layer}.
 \subsection{Service primitives}\label{sec:service-primitives}
 Each layer provides its data and magement service to the upper layer so \textbf{each service} is specified by a set of primitives of four generic types.
 Between all the services and all the layer, only \textbf{4 primitives} are used/consumed between each layer as sketched in \ref{4-primitives-layer}:
@@ -1114,7 +1131,7 @@ The device that wish to join a PAN:
 	\begin{itemize}
 		\item the \textbf{maximum number of routers} \texttt{Rm} that each router may have as a children
 		\item the \textbf{maimum number of end-devices} \texttt{Dm} that each router may have as a children
-		\item the \textbf{maximum depth of the three} \texttt{Lm}
+		\item the \textbf{maximum depth of the tree} \texttt{Lm}
 	\end{itemize}
 
 	Each router is assigned with a range of addresses to be recursively assigned to its children: devices join as high to the three as possible to \textit{minimize the number of hops}. Despite the addresss are assigned according to a tree structure, the actual network topology can be a \textit{mesh}.
@@ -1184,7 +1201,7 @@ The application layer comprends various components (\textit{as shown in \ref{zig
 The application framework can contains up to 240 different \textit{Appication Object (APO)}, each one uniquely identified inside the netowrk.
 Simplest APO can be queried with \textit{Key Value Pair data service (KVP)} by using primitives like \texttt{Set/Get/Event} transactions on the APOs attributes: native KVP disappeared in the second version of ZigBee but it’s now present in the cluster library.
 Complex APO can have conpelx states and communicate with the \textit{Message data Service}. \\\\
- In figure \ref{APO-ex1} an example of complex APO: we have two devices, the first with two endpoint, the second with three endpoint: the logic of this device can be easily implemented using two \texttt{ON-OFF} attribute and two endpoint in the device A.
+ In figure \ref{APO-ex1} an example of complex APO: we have two devices, the first with two endpoint, the second with three endpoint. The logic of this device can be easily implemented using two \texttt{ON-OFF} attribute and two endpoint in the device A.
 \textbf{APOs 5B, 6B, and 8B} have a single attribute containing the status of the bulbs (on/off) that is configured as servers at the application layer while \textbf{APO 10} and \textbf{APO 25} are switches, and they are configured as clients at the application layer. The attributes of \textbf{APOs 5B, 6B}, and \textbf{8B} can be set remotely from the \textbf{APOs 10A} and  \textbf{APO 25A}.
 
 \begin{figure}[h]
@@ -1208,7 +1225,7 @@ The \textbf{cluster} is a protocol that can be used to implement the functionali
 
 A profile consists of one or more \textbf{clusters}, which are groups of related functionality that can be supported by a device. Each cluster is identified by a unique \textbf{cluster ID}, which is a 16-bit integer value, as shown in \ref{cluster-table}.
 
-A cluster defines a specific set of messages and commands that devices can use to communicate with each other. \textit{For example}, the ZigBee Home Automation profile includes clusters for controlling lights, thermostats, and door locks. Each cluster specifies the data format and message types that devices should use to exchange information related to that functionality.
+A cluster defines a specific set of messages and commands that devices can use to communicate with each other. \textit{For example}, the ZigBee Home Automation profile includes clusters for controlling lights, thermostats, and door locks. Each cluster specifies the \textbf{data format and message types} that devices should use to exchange information related to that functionality.
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.50]{images/Pasted image 20230311124737.png}
@@ -1445,7 +1462,7 @@ Further assumptions are:
 	secret keys do not become available outside the device in an unsecured way. The only exception to this is when a device joins the network.
 \end{itemize}
 
-Due to the \textit{low-cost nature of ZigBee devices} we \textbf{cannot generally assume the availability of tamper resistant hardware}: it's possiible to some extent but it's not provided by the ZigBee standard (\textit{can be possible by anti tamper hardware to a given point}).  The level of protecntion is both at network level of physical level.  Hence, physical access to a device may yield access to secret keying material and other privileged information, as well as access to the security software and hardware. Also, \textbf{different APO in the same device are not logically separated and lower layers are entirely accessible to the application layer}. Hence different APO in the same device must trust each other.
+Due to the \textit{low-cost nature of ZigBee devices} we \textbf{cannot generally assume the availability of tamper resistant hardware}: it's possiible to some extent but it's not provided by the ZigBee standard (\textit{can be possible by anti tamper hardware up to a given point}).  The level of protecntion is both at network level of physical level.  Hence, physical access to a device may yield access to secret keying material and other privileged information, as well as access to the security software and hardware. Also, \textbf{different APO in the same device are not logically separated and lower layers are entirely accessible to the application layer}. Hence different APO in the same device must trust each other.
 \subparagraph{Security Design Choices}\label{sec:security-design-choices}
 The security is granted by the \textbf{Trust Center} that it's a module in the \textit{Application Layer}, tipycally allocated in the \textit{ZDO} that distribute the security keys to the devices inside the same network.
 Two main keys are provided, at different level:
@@ -1573,7 +1590,7 @@ In a wireless sensor, the energy usage follows a different pattern than in lapto
 
 The percentage areas can vary based on the specific sensors. There is a trade-off between sensing and transmission: \textit{"a general rule state that transmit 1 byte is equal to compute 1k byte"}.
 Usually the sensing activation frequency it's mandatory based on a given context: reducing it have a direct impact on the quality of sensing data. The opmitizable component is surely the \textbf{processor area} but, differently, the sensing area cannot be opmitized muchly because it both transmit and receive: the optimizable part is the one that concern the communication timeframe and behavior.
-A radio for \textbf{WiFi Network Interface} can be in three modes, each with different energy consumption:
+A radio for \textbf{WiFi Network Interface} can be in 4 modes, each with different energy consumption:
 \begin{enumerate}
 	\item 
 	\textbf{Sleep Mode}: consume very less and can get the radio operative in short time. The energy consumption is around $10mA$.
@@ -1613,7 +1630,7 @@ Switching on and off a component require energy: the decision to switch the stat
 The IoT device we're considering are not general purposes devices so it's not needed to be active all the time providing the service: the key idea is to save energy by \textbf{reducing the period of activity of a sensor}. This is called \textbf{duty cycle} and define the \textit{repetitivity of the activities of a sensors}:
 \begin{enumerate}
 	\item 
-	\textit{Sense}: it's more efficient if it's repeated periodically and it's in a constant timeframe
+	\textit{Sense}: it's more efficient if it's repeated periodically and it's \textbf{constant} in a given timeframe
 	\item 
 	\textit{Process and store}: process sampled data to transmit or for local purposes, storing locally if requested by the device features itself.
 	\item 
@@ -1762,7 +1779,7 @@ where $B_{n}$ is the battery charge at cycle $n$. By solving the recurrence equa
 \end{equation}
 
 The device lifetime is given by $n$, when $B_{n} = 0$.\\
-Regarding the two models already cited, we can plot both the battery life (\textit{expressed in months}) and the battery capacity (\textit{expressed in milli-Ampere per hour}) as pictured in \ref{battery-vs-capacity}.
+Regarding the two models already cited, we can plot both the battery life (\textit{expressed in months on x axis}) and the battery capacity (\textit{expressed in milli-Ampere per hour on y axis}) as pictured in \ref{battery-vs-capacity}.
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.30]{images/Pasted image 20230327151650.png}
 	\caption{Comparison between the two models}
@@ -2043,7 +2060,7 @@ In this scenario, MAC protocols change their objectives, taking the role of impl
 	\item 
 	\textbf{Preamble sampling} (\textit{as B-MAC}): another way to obtain synchronization despite it's not a fully standardized mechanism.
 	\item 
-	\textbf{Polling} (\textit{IEEE 802.15.4}): there is an asymmetry between the roles of the nodes in synchronizing process, with an ubalanced workload between the sender node and the receiver node.
+	\textbf{Polling} (\textit{IEEE 802.15.4}): there is an asymmetry between the roles of the nodes in synchronizing process, with an unbalanced workload between the sender node and the receiver node.
 \end{enumerate}
 
 Those approaches are implemented as \textbf{distributed coordination protocol}: the syncrhonization of the nodes is performed by agreeing \textbf{on when can turn on/off the radio}.\\
@@ -2132,7 +2149,7 @@ As mentioned, the preamble sampling it's based on \textbf{Low-Power Listening (L
 
 The radio keeps an internal clock to be synchronized to the bit flowing on the radio channel: this require an initial setup by the clock (\texttt{init radio}). The diagram also indicates that the \textit{init} phase must be avoided over time to reduce the current consumption. Another result is that the transmission represent the activity with the most current expenditure, alongside the ADC (Analog-Digital Converter) activity period.
 
-This simple model allows us to define a \textbf{model}, both for transmitter and receiver sketched in \ref{bmac-model}.
+This simple process allows to define a \textbf{model to compute the $lifetime$}, both for transmitter and receiver sketched in \ref{bmac-model}.
 \begin{figure}
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230405104440.png}
 	\caption{Transmitter and receiver lifetime model}
@@ -2264,11 +2281,11 @@ The comparison pictured in \ref{xmac-bmac} is made by simulation on \textbf{tota
 \label{xmac-bmac}
 \end{figure}
 
-\subparagraph{BoX-MAX}
-Another following development of X-MAC is known as \textit{\textbf{BoX-MAX}}: it still try to reduce the impact of long preamble by attaching inside the preamble message also the data itself, so the receiver send an ACK after having received the packets containing both the preamble and the data frame. This is suitable for \textbf{small data packets}. The general schema of BoX-MAX is pictured in \ref{box-max}
+\subparagraph{BoX-MAC}
+Another following development of X-MAC is known as \textit{\textbf{BoX-MAC}}: it still try to reduce the impact of long preamble by attaching inside the preamble message also the data itself, so the receiver send an ACK after having received the packets containing both the preamble and the data frame. This is suitable for \textbf{small data packets}. The general schema of BoX-MAC is pictured in \ref{box-max}
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230409091352.png}
-	\caption{BoX-MAX single hop transmission}
+	\caption{BoX-MAC single hop transmission}
 \label{box-max}
 \end{figure}
 
@@ -2277,7 +2294,7 @@ For a \textbf{multi-hop routing} in BoX-MAC, we refer the schema in \ref{boxmax-
 
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.40]{images/Pasted image 20230409091501.png}
-	\caption{BoX-MAX multihop transmission}
+	\caption{BoX-MAC multihop transmission}
 	\label{boxmax-multihop}
 \end{figure}
 
@@ -2588,7 +2605,7 @@ In case of insufficient memory, this devices usually adopts mainly two different
 	\textbf{Event based programming and task}: manage directly interrupts, implementing \textbf{event handlers} for the actions to be carreid out in response to those events. This model is present in TinyOS but also supported by Arduino.
 \end{enumerate}
 \section{Arduino model}\label{sec:arduino-model}
-The flow process of Arduino is defined in a \textit{single loop function} that may also invoke other functions: the loop is executed by a \textbf{single thread}, without suspension thus the I/O makes the thread in waiting until the IO is complete, but without contemplate any thread scheduling. If you want to \textit{delay} the execution explicitly it's necessary to use delays function in the code itself: this mainly happen to impose a strict time in sampling. The waiting periods does not save energy, as already seen.
+The flow process of Arduino is defined in a \textit{single loop function} that may also invoke other functions: the loop is executed by a \textbf{single thread}, without suspension thus the I/O makes the thread in waiting until the IO is complete, but without contemplate any thread scheduling. If you want to \textit{delay} the execution explicitly it's necessary to use delays function in the code itself: this mainly happen to impose a strict time in sampling.
 
 In figure \ref{arduino-event-loop} is sketched the event loop model adopted in Arduino.
 
@@ -2610,7 +2627,7 @@ The ordered steps are:
 
 The Arduino simple model fits well with simple sensing and controlling activities, including natively also libraries for actuators. Despite it's not born for long,stable and asyncrhonous communications, recent version includes libraries and HW to support \textbf{asyncrhonous event management} (\textit{requiring to manage communications through serial line}) that is as the foundation of communication between devices. Mainly, sensing activities are syncrhonous, while communication and specific sensing are usually asyncrhonous.
 \section{Case Study: TinyOS}\label{sec:case-study-tinyos}
-TinyOS hasn't the concept of event loop but was designed to support \textbf{synchronous management of event} by the means of:
+TinyOS hasn't the concept of event loop but was designed to support \textbf{asynchronous management of event} by the means of:
 \begin{itemize}
 	\item 
 	\textbf{Commands}: offers functions to program and activate the hardware
@@ -2891,7 +2908,7 @@ The alternative is give by \textbf{energy harvesting} which consists in converti
 The energy harvesting implies also a complex design of the device, allowing to parametize more features of the device.
 
 \section{Harvesting architectures}\label{sec:harvesting-architectures}
-The \textbf{energy source} is the source to be harvested while the \textbf{harvestng source} is the technology used to extact energy from the environment. In most of the cases this sources have a not controllable behavior so the device's harvesting source must take the behavior into account.
+The \textbf{energy source} is the source to be harvested while the \textbf{harvesting source} is the technology used to extract energy from the environment. In most of the cases this sources have a not controllable behavior so the device's harvesting source must take the behavior into account.
 The \textbf{load} is the consumption of energy in a device due to its activities: it varies over time based on the specific activities the device is executing at a time.
 Overall, an \textbf{Harvesting system} is a system that supports a variable load from a variable energy harvesting source. It allows to power the device even in a period when the energy source does not provide energy by storing it.
 To match energy supply and load, two main approaches are used:
@@ -2913,9 +2930,8 @@ In a simplified scenario, we have two components, the \textit{energy harvester} 
 
 There are some problems to be addressed: the device can be \textbf{abruptly turned off} and the state management of internal state of the device must be addressed, exploiting the energy to mantain consistency and resume operation later. Another issue is that the energy supply can be the bare minimum, \textbf{oscillating around the threshold to work properly}.
 \subsection{Direct harvesting model}\label{sec:direct-harvesting-model}
-In the sinplest scenario \textbf{no energy buffer is provided} to store energy thus the excess supply is \textit{wasted}: the power produced immediately is consumed so, referring the diagram \ref{base-diagram-energy}, the device can operate anytime at time $t$ when:
-$P_{s}(t) \geq P_{c}(t)$
-where:
+In the simplest scenario, called \textbf{\textit{Harvest-Use}}, \textbf{no energy buffer is provided} to store energy thus the excess supply is \textit{wasted}: the power produced immediately is consumed so, referring the diagram \ref{base-diagram-energy}, the device can operate anytime at time $t$ when
+$P_{s}(t) \geq P_{c}(t)$, where:
 \begin{itemize}
 	\item 
 	$P_{s}(t)$ is the \textbf{power harvested} at time $t$
@@ -2937,7 +2953,7 @@ The \textit{waste of energy} is given by the following conditions:
 \end{figure}
 
 \subsection{Energy buffer model}\label{sec:energy-buffer-model}
-Another model is \textbf{with energy buffer} \ref{energy-buffer}: with this model, in principle, the device can work anytime but the reality is different.
+Another model is \textbf{\textit{Harvest-Store-Use}} in which is introduced an \textbf{energy buffer} \ref{energy-buffer}: with this model, in principle, the device can work anytime but the reality is different, as explained following.
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.40]{images/Pasted image 20230424163729.png}
 	\caption{Energy buffer model}
@@ -3413,7 +3429,7 @@ for some $\rho_{c}, \delta$ real numbers.
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.30]{images/Pasted image 20230510084605.png}
 	\caption{Condition on the load}
-	\label{kansal-theorem}
+	\label{kansal-cond2}
 \end{figure}
 
 \paragraph{Kansal theorem}
@@ -3423,6 +3439,7 @@ The theorem states that a \textit{\textbf{sufficient condition}} for energy neut
 	\centering
 	\includegraphics[scale=0.40]{images/Pasted image 20230509153439.png}
 	\caption{\textbf{Kansal theorem}: energy neutrality conditions formalization}
+	\label{kansal-theorem}
 \end{figure}
 
 The first branch of the definition states that the \textit{energy production} grows more than the \textit{consumption and leakage}. This condition regards the \textbf{runtime load} and not the overall system during \textit{shutdown} and at \textit{start} operations.
@@ -4263,7 +4280,7 @@ In figure \ref{intra-intercell-comm} are pictured the two scenario in which the 
 		\centering
 		\includegraphics[width=.9\linewidth]{images/Pasted image 20230531102921.png}
 	\end{subfigure}
-	\caption{A figure with two subfigures}
+	\caption{Base station role in intracell and intercell communications}
 	\label{intra-intercell-comm}
 \end{figure}
 
@@ -4343,7 +4360,7 @@ Let's describe the \textbf{MAC layer} for \textbf{\textit{wired network}}. We st
 	if frames are sent simultaneously on the channel the resulting signal is \textit{garbled} and a \textbf{collision} is generated, generally all stations can detect collisions.
 	Different protocol are at this level, like: \textit{ALOHA, slotted ALOHA, CSMA, etc}.
 \end{enumerate}
-\subsection{CMSA/CD - Carrier Sense Multiple Accesses with Collision Detection}\label{sec:cmsacd---carrier-sense-multiple-accesses-with-collision-detection}
+\subsection{CSMA/CD - Carrier Sense Multiple Accesses with Collision Detection}\label{sec:cmsacd---carrier-sense-multiple-accesses-with-collision-detection}
 The basic idea is that when a station has a frame to send, it first listens to the channel to see if anyone else is transmitting: if the channel is \textbf{busy}, the station waits until it becomes \textbf{idle}. When a channel is \textit{idle}, the station transmits the frame: if a \textit{collision} occurs the station waits a random amount of time and repeat the procedure.
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230224171228.png}
@@ -4388,7 +4405,7 @@ So we can consider a \textbf{slotted system} \ref{slotted-system} with \textit{m
 	
 	
 \paragraph{Binary Exponential Backoff}\label{sec:binary-exponential-backoff}
-The algorithm used by CMSA/CD to retry retransmission is called \textbf{Binary Exponential Backoff} and defines how much time the station must wait before trying transmitting again.
+The algorithm used by CSMA/CD to retry retransmission is called \textbf{Binary Exponential Backoff} and defines how much time the station must wait before trying transmitting again.
 
 The time after a collision is divided in \textbf{contention slots}: the lenght of a slot is equal to the \textit{worst case round propagation time} (\textit{so if $T$ is the time to reach the most distant station, the length will be $2T$}).
 After the first collision each station waits 0 or 1 slot before trying again: so after collision $i$ the nodes chooses $x$ at random in the interval $[0, 2^{i}-1]$ so that it skips $x$ slots of time before retrying the trasmission.
@@ -4413,7 +4430,7 @@ The algorithm described is suitable in \textbf{wired networks} but not in \textb
 The problem's scenario is sketched in \ref{hidden-terminal}.
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230225100029.png}
-	\caption{Node B as hidden terminal}
+	\caption{Node $C$ as hidden terminal respect $A \rightarrow B$}
 	\label{hidden-terminal}
 \end{figure}
 The node A can receive and transmit to B because B it's in his radio range. The same happen to C: can transmit and receive to/from B and D because they are in C's radio range.
@@ -4427,7 +4444,7 @@ The problem arise when A is sending to B and C senses the medium: \textit{it wil
 The \textbf{Exposed terminal problem} scenario is sketched in figure \ref{exposed-terminal}.
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230225100636.png}
-	\caption{Node C as exposed terminal}
+	\caption{Node $C$ as exposed terminal respect to $B \rightarrow A$}
 	\label{exposed-terminal}
 \end{figure}
 
@@ -4440,7 +4457,7 @@ The node B is transmitting to A: the node C wants to transmit to D so C senses t
 
 The solution on wireless network for this two types of problem is represented by \textbf{MACA Protocol}.
 \subsection{MACA - Multiple Access with Collision Avoidance}\label{sec:maca---multiple-access-with-collision-avoidance}
-The basic udea is to stimulate the receiver by transmitting a \textbf{short frame} first and then transmit a long data frame. So stations hearing the short frame \textbf{refrain from transmitting} during the trasmission of the subsequent data frame.
+The basic idea is to stimulate the receiver by transmitting a \textbf{short frame} first and then transmit a long data frame. So stations hearing the short frame \textbf{refrain from transmitting} during the trasmission of the subsequent data frame.
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230225101254.png}
 	\caption{Initial configuration scenario}
@@ -4492,7 +4509,7 @@ The protocol flows:
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[scale=0.50]{images/Pasted image 20230225102530.png}
-		\caption{\textbf{Step 4}: upon reception of the \textbf{CTS} frame by B, A (\textit{whose the only interested in receiving}) start to transmit the data frame}
+		\caption{\textbf{Step 4}: upon reception of the \textbf{CTS} frame by B, A (\textit{whose the only interested in transmit data}) start to transmit the data frame}
 	\end{figure}
 	
 \end{itemize}
@@ -4516,13 +4533,9 @@ Two main problems can arise from this process:
 	
 \end{enumerate}
 \paragraph{MACA collisions}\label{sec:maca-collisions}
-Given the previous scenario, \textit{what happen if anoter node out of the range of A and B wish to trasmit a message to node E?}
-\begin{itemize}
-	\item 
-	C and B sends \textit{RTS} simultaneosly to A: \textbf{the two RTS messages collide so no CTS message is generated}.
-	\item 
-	C and B use \textit{Binary Exponential Backofff} to retry send the RTS.
-\end{itemize}
+Given the previous scenario, \textit{what happen if anoter node out of the range of A and B wish to trasmit a message to node E?}.\\
+The two problem are pictured in \ref{c-exposed} and \ref{d-hidden}.\\ Anoter problem is presented by the scenario in which C and B sends \textit{RTS} simultaneosly to A. \textbf{The two RTS messages collide so no CTS message is generated}. The adopted solution is that C and B use \textit{Binary Exponential Backofff} to retry send the RTS.
+
 \subsection{MACAW: MACA for Wireless Network}\label{sec:macaw-maca-for-wireless-network}
 Fine tunes MACA to improve performance:
 \begin{itemize}
@@ -5084,7 +5097,7 @@ In \textbf{Direct routing} the mobile device needs an IP address in the \textit{
 	
 \end{enumerate}
 The end result is that the visited mobility manager known about the mobile and the home HSS knowns the location of mobile.\\\\
-In case on \textbf{indirect routing}, the different scenario is pictured in \ref{indirect-registration-process}:
+In case on \textbf{indirect routing}, the different scenario is pictured in \ref{indirect-routing-schema}:
 
 
 \begin{enumerate}
@@ -5110,10 +5123,6 @@ As mentioned, the main requiremenets for mobility in \textit{\textbf{indirect ro
 	Some considerations about \textit{\textbf{indirect routing}} evaluate the problem of \textbf{triangle routing} that results in an inefficient model when correspondent and mobile are in the same network (\textit{due to the problem of forwarding the messages to the home network and re-routing them to the correspondent's original network which correspond to the visisted network of the destination device}).
 	The mobile device can see an interrupted flow of datagrams as it moves between network, losing some datagrams but the on-going TCP connection between correspondet and mobile can be mantained. The following schema describe the steps. So if the mobile changes visited network it's necessary to update the HSS in the home netowkr, changing the tunnel endpoint to terminate at the gateway router of the new visited network.
 \end{enumerate}
-\begin{figure}[h]
-	\centering\includegraphics[scale=0.50]{images/Pasted image 20230322114625.png}	\caption{Indirect routing mobility management process}
-	\label{indirect-registration-process}
-\end{figure}
 
 
 Regarding the mobility with \textit{\textbf{direct routing}}, it overcomes triangle routing ineffiencies at cost of be \textit{non-trasparent to correspondent} because he need to get care of the address from home agent. For this type of routing, if the mobile changes visited network, the HSS is queried by the correspondent only at the beginning of the session, requiring additional complexity.
@@ -5699,14 +5708,16 @@ The figure shows an overview of the \textbf{TE architecture}. The TE Server oper
 \end{itemize}
 TE Server outputs the Tunnel Groups and, by reference, Tunnels and Flow Groups to the SDN Gateway. Thee Gateway forwards these Tunnels and Flow Groups to OFCs that in turn install them in switches using OpenFlow.\\
 Another main component is the \textbf{Bandwidth Enforcer}:  to capture relative priority, we associate a \textit{bandwidth function} with every application, effectively a contract between an application and B4. This function specifies the bandwidth allocation to an application given the flow’s \textit{relative priority} on an arbitrary, dimensionless scale, which we call its \textbf{fair share}.
-We derive these functions from administrator-specified \textit{static weights} (the slope of the function) specifying relative application priority. In the example pictured in \ref{traffic-enforcer-functions}, $App1$, $App2$, and $App3$ have weights $10, 1$, and $0.5$, respectively. Bandwidth functions are configured, measured and provided to TE via Bandwidth Enforcer.
+We derive these functions from administrator-specified \textit{static weights} (the slope of the function) specifying relative application priority. In the example pictured in \ref{fig:traffic-enforcer-functions}, $App1$, $App2$, and $App3$ have weights $10, 1$, and $0.5$, respectively. Bandwidth functions are configured, measured and provided to TE via Bandwidth Enforcer.
 \begin{figure}[h!]
-	\centering\includegraphics[scale=0.50]{images/Pasted image 20230330105706.png}
-\label{traffic-enforcer-functions}
+	\centering
+	\includegraphics[scale=0.50]{images/Pasted image 20230330105706.png}
+	\caption{Bandwidth Enforcer functions}
+	\label{fig:traffic-enforcer-functions}
 \end{figure}
 
 \paragraph{Improvements results}\label{sec:improvements-results}
-OpenFlow has helped Google improving B4 backbone (\textit{as shown in \ref{b4-performance}}) (\footnote{\textit{Sushant Jain et al. “B4: experience with a globally-deployed software defined wan”. In Proc. of the ACM SIGCOMM 2013 ACM, New York, NY, USA, 3-14}}):
+OpenFlow has helped Google improving B4 backbone (\textit{as shown in \ref{fig:b4-performance}}) (\footnote{\textit{Sushant Jain et al. “B4: experience with a globally-deployed software defined wan”. In Proc. of the ACM SIGCOMM 2013 ACM, New York, NY, USA, 3-14}}):
 \begin{itemize}
 	\item 
 	Utilization near 100\% for elastic loads
@@ -5724,14 +5735,15 @@ OpenFlow has helped Google improving B4 backbone (\textit{as shown in \ref{b4-pe
 	hierarchical topology
 	\item 
 	decentralized TE algorithms
-	\begin{figure}[h!]
-		\centering\includegraphics[scale=0.50]{images/Pasted image 20230330105902.png}
 
-	\label{b4-performance}	
-\end{figure}
-	
 
 \end{itemize}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.50]{images/Pasted image 20230330105902.png}
+	\caption{}
+	\label{fig:b4-performance}	
+\end{figure}
 
 \chapter{Network Function Virtualization} \label{sec:network-function-virtualization}
 Within SDN, \textbf{Network Function Virtualization (NFV)} allows \textit{programmable networking}: it's mainly used in 5G and datacenter, allowing managing traffic with different requirements by performing load balancing, security, etc.
@@ -5788,10 +5800,12 @@ The main \textbf{use cases} for NFV are the one where data plane packet processi
 	\textbf{Security functions}: Firewalls, virus scanners, intrusion detection systems, spam protection
 \end{itemize}
 \subsubsection{Use case: vEPS}\label{sec:use-case-veps}
-Both the \textbf{core (\textit{EPC})} and the \textbf{RAN (Radio Access Network)} can be virtualized, this allows to improve the network usage efficiency and guarantee higher service resiliency thanks to the flexibility allocation of different NFs on the hardware pool and by providing dynamic network configuration.
+A \textit{virtual Evolved Packet System} is a third-generation (3G) broadband, \textbf{virtual} packet-based transmission of text, digitized voice, video, and multimedia at data rates up to 2 megabits per second (Mbps) which offers a consistent set of services to mobile computer and phone users, no matter where they are located in the world. It allows computers and phones to be constantly attached to the Internet wherever they travel (roam) with access through a combination of terrestrial wireless and satellite transmissions.\\\\
+In \ref{veps-schema}, both the \textbf{core (\textit{EPC - Evolved Packet Core})} and the \textbf{RAN (Radio Access Network)} can be virtualized, this allows to improve the network usage efficiency and guarantee higher service resiliency thanks to the flexibility allocation of different NFs on the hardware pool and by providing dynamic network configuration.
 \begin{figure}
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230405165048.png}
 	\caption{Coordination to access virtualized functions across sites}
+	\label{veps-schema}
 \end{figure}
 The following scheme shows how the shift from the hardware-based functions is performed by virtualize and splitting the function across different locations that can be connected by IP network, even if they're located in different datacenters, allowing a \textbf{virtualized RAN}.\\
 In traditional networks, all devices are deployed on proprietary/closed platforms. All network elements are enclosed boxes, and hardware cannot be shared: each device requires additional hardware for increased capacity, but this hardware is idle when the system is running below capacity.\\\\
@@ -6036,7 +6050,7 @@ self.slice_to_port = {
 }
 \end{lstlisting}
 
-The private function \texttt{\_packet\_in\_handler} exploit the \texttt{Ryu} library tor egister itself as listener for specific evetns using \texttt{ryu.controller.handler\_set\_ev\_cls} decorator. The listened event is \texttt{"in\_port"} and define the matching parameter and the actions to perform in case of matching/dismatching. Here is also called the \texttt{\_add\_flow} function, alter explained.
+The private function \texttt{\_packet\_in\_handler} exploit the \texttt{Ryu} library to register itself as listener for specific events using \texttt{ryu.controller.handler\_set\_ev\_cls} decorator. The listened event is \texttt{"in\_port"} and define the matching parameter and the actions to perform in case of matching/dismatching. Here is also called the \texttt{\_add\_flow} function, later explained.
 
 \begin{lstlisting}
 	@set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
@@ -6194,7 +6208,7 @@ where $T = b-a$, obtaining the following pictured extension:
 
 \subsection{Transmission}\label{sec:transmission}
 Signals may have different nature, depending on the type of transmission channel: they can be \textit{electromagnetic, sound, optical, waves, etc}.
-At the source, a \textbf{transducer} converts a message into a signal, while at the destination another transducer converts a signal into a message (\textit{an antenna is a tansduer for electromagnetic signals}).
+At the source, a \textbf{transducer} converts a message into a signal, while at the destination another transducer converts a signal into a message (\textit{e.g. an antenna is a tansducer for electromagnetic signals}).
 During the transmission from source to destination, the signal can be \textbf{distorted} or turbated by the \textbf{noises} that charaterize the specific \textit{trasmissive medium}. The \textit{distortion} of a signal is common when dealing with a signal composed by \textit{different waves} that are attenuated during the transmission, obtaining at destination a different signal respect to the source one.
 A common metric for signal is \textbf{SNR - Signal to Noise ratio} express the index quality of a chanel, allowing to measure the intrinsic property of the transmissive medium, not of a message itself.
 
@@ -6218,7 +6232,7 @@ The previous schema made use of the \textit{analog channel} transmission compone
 
 The error probability is computed based on probability of \textit{noise/distortion} happened during the analog transmission phase, combined with error in the \textit{demodulation phase}. An optimal solution is to provide a stable or predictable limit to this probabiltiy, allowing \textbf{channel encoding} to use also \textit{redundancy mechanism} to correct errors in \textit{transmission and demodulation phase}.
 \paragraph{Sampling and quantization}\label{sec:sampling-and-quantization}
-Respect to the \textbf{digital transmission}, there are preliminar operations to be carried out both by the transmitter and receiver before starting transmitting the signal.
+Referring to the \textbf{digital transmission}, there are preliminar operations to be carried out both by the transmitter and receiver before starting transmitting the signal.
 The \textbf{transmitter} first sample the \textit{analog signal} at \textit{discrete intervals} (\textit{\textbf{quantization operation}}) by means of an \textbf{Analog to Digital Converter (ADC)}, allowing the analog signal to be represented into a sequence of computable digital symbols.
 At the \textbf{receiver} side, the received symbols must be converted again into an \textit{analog signal} by means of a \textbf{Digital to Analog Converter (DAC)}.
 \begin{figure}[h]
@@ -6493,7 +6507,7 @@ Classify the following signals as \textit{Energy} and \textit{Power} signals and
 	\end{equation}
 \end{itemize}
 \section{Fourier Transform}
-In this section the \textbf{compelx number} and different form of its representation are used to present a different expression of the Fourier series. This notaton allows to express the Series compactly and explain the Discrete Fourier Transform with the same mathematical tools.
+In this section the \textbf{complex numbers} and different form of its representation are used to present a different expression of the Fourier series. This notaton allows to express the Series compactly and explain the Discrete Fourier Transform with the same mathematical tools.
 
 \subparagraph{Euler's exponential}
 The exponential $e^{j\phi}$ is a complex number (\textit{not in the canonical form $\tilde{x} = a+jb$}) defined by Euler as:
@@ -6613,7 +6627,7 @@ The coefficients of the Fourier series are:
 \end{equation}
 Hence, the Fourier series can be express in terms of:
 \begin{equation}
-	s(t) = \frac{1}{2} + \sum_{k = - \infty, k \neq 0}^{k = \infty} (-frac{(-1)^{k}}{(2k-1)\pi}) \times (cos(2\pi (2k-1)Ft)) + j \times sin(2\pi(2k-1)Ft)
+	s(t) = \frac{1}{2} + \sum_{k = - \infty, k \neq 0}^{k = \infty} (-\frac{(-1)^{k}}{(2k-1)\pi}) \times (cos(2\pi (2k-1)Ft)) + j \times sin(2\pi(2k-1)Ft)
 \end{equation}
 and by recalling that $sin(a) = -sin(-a)$ we have:
 \begin{equation}
@@ -6622,7 +6636,7 @@ and by recalling that $sin(a) = -sin(-a)$ we have:
 Remeber that in this example the \textit{complex terms} are null.\\
 hence, we can simplify $s(t)$ as:
 \begin{equation}
-	s(t) = \frac{1}{2} + \sum_{k = - \infty}^{k = \infty} (-frac{(-1)^{k}}{(2k-1)\pi}) \times (cos(2\pi (2k-1)Ft))
+	s(t) = \frac{1}{2} + \sum_{k = - \infty}^{k = \infty} (-\frac{(-1)^{k}}{(2k-1)\pi}) \times (cos(2\pi (2k-1)Ft))
 \end{equation}
 and by letting $T = 4$ (\textit{the same of having $F = 1/4$}) we have \ref{fourier-example2}:
 \begin{figure}[h]
@@ -6840,9 +6854,12 @@ The signal $s(t)$ is \textbf{completely represented} by its samples taken:
 	at regular intervals $t_{n} = nT_{c}, n \in \mathbb{Z}$
 	\item 
 	with a sampling period $T_{c} \leq \frac{1}{2f_{m}}$
-	thus from the samples it's possible to reconstruct $s(t)$ for any $t$ by:
-	$f_{C_{min}} = \frac{1}{T_{C_{max}}} = 2f_{m}$
+
 \end{itemize}
+	thus from the samples it's possible to reconstruct $s(t)$ for any $t$ by:
+	\begin{equation}
+		f_{C_{min}} = \frac{1}{T_{C_{max}}} = 2f_{m}
+	\end{equation}
 
 This $f_{c_{min}}$ is called \textbf{Nyquist frequency}: it's the minimum frequency for which it's possible to sample the signal $s(t)$ limited in band. This implies that we can sample the signal only at higher frequency. Under this conditions we can reconstruct the signal using interpolation, for example (\textit{based on cardinal sin}):
 \begin{equation}
