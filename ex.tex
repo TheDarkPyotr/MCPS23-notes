@@ -29,6 +29,7 @@ Consider the following program and the table \ref{chex1-table-dc} of energy cons
 	}
 \end{lstlisting}
 
+
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.45]{images/Pasted image 20230508152346.png}
 	\caption{Exercise 1 parameters}
@@ -40,19 +41,29 @@ Consider the following program and the table \ref{chex1-table-dc} of energy cons
 \subsubsection{Answer}\label{sec:answer}
 Consider the energy consumption per hour:
 \begin{enumerate}
-	\item The processor has a duty cycle of:
-	
-	\item The radio has a duty cycle of:
-	\item The sensor has a duty cycle of:
+	\item The processor has a duty cycle of: always active so $20ms/20ms$
+	\item The radio has a duty cycle of: $15ms / 20ms$
+	\item The sensor has a duty cycle of: $4ms / 20ms$
+\end{enumerate}
+
+\begin{enumerate}
+	\item Sensor power consumption:
+	$E_{\eta} = 5 mAh * 0.2+ 5 \mu Ah *0,98$
+	\item Processor power consumption:
+	$E_{\rho}=1*8 mAh + 0*15 \mu Ah $
+	\item Radio power compsution:
+	$E_{\lambda}=0,75*1 mA + 0,25*20 \mu A$
 	\item The energy consumption in one hour is:
-	\item The lifetime of the device is: 
+	$E = E_{\eta} + E_{\rho} + E_{\lambda}$
+	\item Battery specification (\textit{in table}) $B_{0} = 2000mAh$\\
+	Power consumption: $2000 mAh / E$     \\
 \end{enumerate}
 
 
 
 \subsubsection{Exercise 2}\label{sec:exercise-2}
 Consider the sensor specification in the table pictured in \ref{chenergy-ex2}
-\begin{figure}
+\begin{figure}[h]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230328161140.png}
 	\caption{Exercise 2 - Parameters specification}
 	\label{chenergy-ex2}
@@ -78,16 +89,20 @@ The device measures the hearth-rate (HR) of a person:
 		The average time required to transit is 2 ms
 		\item 
 		Requires both processor and radio active
-		Compute the energy consumption and the lifetime of the device if it sends all the samples to a server:
+		
 	\end{itemize}
+\end{itemize}
+Compute the energy consumption and the lifetime of the device if it sends all the samples to a server:
+\begin{itemize}
 	\item 
 	Stores 5 consecutive samples from the photodiode
 	\item 
 	Transmits the stored 5 samples to the server
 	\item 
 	The server computes HR (hence the device does not compute HR)
-	Disregard battery leaks.
+
 \end{itemize}
+\textbf{	Disregard battery leaks.}
 \subsubsection{Solution 2}\label{sec:solution-2}
 \textbf{Duty cycle of sampling}: DC of processor + sensors: 0.5 milliseconds (sampling time) / 0.05 seconds  = (sampling period)= 0.01\\
 
@@ -104,8 +119,8 @@ The device measures the hearth-rate (HR) of a person:
 \begin{center}
 	$E = E_{\eta} + E_{\rho} + E_{\lambda}$\\
 	Battery specification (\textit{in table}) $B_{0} = 2000mAh$\\
-	Power consumption: $2000 mAh / 0,3935 mAh$     $(\frac{B_{0}}{E})$\\
-	obtaining \textbf{Lifetime}:  $5082 h$
+	Power consumption: $2000 mAh / 0,3935 mAh$    $(\frac{B_{0}}{E})$ \\
+	obtaining \textbf{Lifetime}:  $5082 h$   
 \end{center}
 
 
@@ -206,8 +221,9 @@ Assume that the device performs a sensing task with the following parameters:
 	After each sampling the processor performs a computation that takes 2 milliseconds.
 	\item 
 	Then the processor activates the radio and transmits the data. The transmission takes 1 millisecond and, during it, the processor is active. At the end the radio and the processor are both set in sleep mode.
-	Compute the duty cycle of each component (\textit{sensor board, radio and processor}), and the lifetime of the device (\textit{assuming that the sensor stops working when its battery charge becomes 0}).
+	
 \end{itemize}
+Compute the duty cycle of each component (\textit{sensor board, radio and processor}), and the lifetime of the device (\textit{assuming that the sensor stops working when its battery charge becomes 0}).
 \paragraph{Solution 4}\label{sec:solution-4}\begin{itemize}
 	\item 
 	Sampling takes $0.5 ms$ with a rate of $0,1 Hz$
@@ -348,7 +364,7 @@ consumption to each slot, according to the Kansal’s algorithm.
 
 \subsection{Exercise 9}
 In the Zigbee network in the figure \ref{e8-network}, built using
-parameters $Rm=2, Dm=2 and Lm=3$, where purple
+parameters $Rm=2, Dm=2, Lm=3$, where purple
 shaded nodes are routers and white nodes are end
 devices, what range of addresses are assigned to
 new router that joins the network in the following
@@ -463,7 +479,7 @@ Consider the binding table and the address maps shown below \ref{q5-schema} that
 \end{itemize}
 
 \subsection{Question 6}
-The radio of a device using BMAC takes 4.0 E-04 seconds to check for the preamble. Assuming that the frequency of the preamble sampling is 5/sec (that is, preamble sampling is performed 5 times in a second). What is the duty cycle of the preamble sampling activity?
+The radio of a device using B-MAC takes $4.0^{-04}$ seconds to check for the preamble. Assuming that the frequency of the preamble sampling is $5/sec$ (\textit{that is, preamble sampling is performed $5$ times in a second}). What is the duty cycle of the preamble sampling activity?
 
 \subsection{Question 7}
 Referring the chapter on Direct Diffusion \ref{sec:directed-diffusion}, answer the following questions:
