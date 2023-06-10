@@ -5302,9 +5302,16 @@ Some of the key functions of the SDN data plane include:
 
 \begin{figure}
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230322112942.png}
-	\caption{SDN Data Plane layers interactions}
+	\caption{SDN layers interactions}
 	\label{data-plane}
 \end{figure}
+
+Referring \ref{data-plane}, the \textbf{data plane} consists of physical switches and virtual switches. In both cases, the switches are responsible for forwarding packets. The internal implementation of buffers, priority parameters, and other data structures related to forwarding can be vendor dependent. However, each switch must implement a model, or abstraction, of packet forwarding that is uniform and open to the SDN controllers.\\ 
+This model is defined in terms of an open application programming interface (API) between the control plane and the data plane (\textbf{southbound API}). The most prominent example of such an open API is OpenFlow. As explained later, the OpenFlow specification defines both a protocol between the control and data planes and an API by which the control plane can invoke the OpenFlow protocol.\\
+
+\textbf{Controllers} use information about capacity and demand obtained from the networking equipment through which the traffic flows. SDN controllers also expose \textbf{northbound APIs}, which allow developers and network managers to deploy a wide range of off-the-shelf and custom-built network applications, many of which were not feasible before the advent of SDN. As yet there is no standardized northbound API nor a consensus on an open northbound API. A number of vendors offer a REpresentational State Transfer (REST)-based API to provide a programmable interface to their SDN controller.\\
+
+At the \textbf{application plane} are a variety of applications that interact with SDN controllers. SDN applications are programs that may use an abstract view of the network for their decision-making goals. These applications convey their network requirements and desired network behavior to the SDN controller via a northbound API. Examples of applications are energy-efficient networking, security monitoring, access control, and network management.\\
 The \textbf{generalized forwarding} operated by the data plane consists in providing each router a \textbf{forwarding table (\textit{flow table})} that use the \textit{"match plus abstraction" (see \ref{sec:openflow-abstraction} for OpenFlow actual process of the rule)}: match bits in arriving packets and take the corresponding action. Two main forwarding techniques are used:
 \begin{enumerate}
 	\item 
@@ -6014,71 +6021,91 @@ In the following example, pictured in \ref{comnetsemu-topology}, two slices are 
 	\label{comnetsemu-topology}
 \end{figure}
 
-The following code is contained in \texttt{topologyslicing.py}. For the \texttt{init} function, the instruction allows to configure \textbf{switch \texttt{s1}}:
-\begin{itemize}
-	\item port 1 is connected to port 3 (and viceversa)
+The following code is contained in \texttt{topology\_slicing.py}.
+The code is a part of a traffic slicing application using the \textbf{Ryu framework} for \textit{software-defined networking (SDN)}. Let's go through the code and understand its functionality.
+\begin{enumerate}
+	\item 
+	The code begins with importing necessary modules and classes from the Ryu framework.
+\end{enumerate}
+% python null
+\begin{lstlisting}
+	from ryu.base import app_manager
+	from ryu.controller import ofp_event
+	from ryu.controller.handler import CONFIG_DISPATCHER, MAIN_DISPATCHER
+	from ryu.controller.handler import set_ev_cls
+	from ryu.ofproto import ofproto_v1_3
+\end{lstlisting}
+\begin{enumerate}
+	\item 
+The code defines a Ryu application class called \texttt{TrafficSlicing}, which extends \texttt{RyuApp}. This class will handle events and implement the traffic slicing functionality.
+\end{enumerate}
+% python null
+\begin{lstlisting}
+	class TrafficSlicing(app_manager.RyuApp):
+	OFP_VERSIONS = [ofproto_v1_3.OFP_VERSION]
+\end{lstlisting}
+\begin{enumerate}
+	\item 
+	Inside the class, there's an \texttt{\_\_init\_\_} method that initializes the \texttt{TrafficSlicing} object. It also defines a dictionary called \texttt{slice\_to\_port}, which maps the input port of a switch to the corresponding output port for traffic slicing. The dictionary represents the \textbf{traffic slicing rules}.
+\end{enumerate}
+% python null
+\begin{lstlisting}
+	def __init__(self, *args, **kwargs):
+	super(TrafficSlicing, self).__init__(*args, **kwargs)
 	
-	\item  port 2 is connected to port 4 (and viceversa)
-\end{itemize}
-
-\begin{lstlisting}
-def __init__(self, *args, **kwargs):
-super(TrafficSlicing, self).__init__(*args, **kwargs)
-# out_port = slice_to_port[dpid][in_port]
-self.slice_to_port = {
-	1: {1: 3, 3: 1, 2: 4, 4: 2},
-	4: {1: 3, 3: 1, 2: 4, 4: 2},
-	2: {1: 2, 2: 1},
-	3: {1: 2, 2: 1},
-}
+	self.slice_to_port = {
+		1: {1: 3, 3: 1, 2: 4, 4: 2},
+		4: {1: 3, 3: 1, 2: 4, 4: 2},
+		2: {1: 2, 2: 1},
+		3: {1: 2, 2: 1},
+	}
 \end{lstlisting}
-
-The private function \texttt{\_packet\_in\_handler} exploit the \texttt{Ryu} library to register itself as listener for specific events using \texttt{ryu.controller.handler\_set\_ev\_cls} decorator. The listened event is \texttt{"in\_port"} and define the matching parameter and the actions to perform in case of matching/dismatching. Here is also called the \texttt{\_add\_flow} function, later explained.
-
-\begin{lstlisting}
-	@set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
-	def _packet_in_handler(self, ev):
-	msg = ev.msg
-	datapath = msg.datapath
-	in_port = msg.match["in_port"]
-	dpid = datapath.id
-	out_port = self.slice_to_port[dpid][in_port]
-	actions = [datapath.ofproto_parser.OFPActionOutput(out_port)]
-	match = datapath.ofproto_parser.OFPMatch(in_port=in_port)
-	# add_flow(self, datapath, priority, match, actions)
-	self.add_flow(datapath, 1, match, actions)
-	self._send_package(msg, datapath, in_port, actions)
-\end{lstlisting}
-
-
-The following snippet describe the \texttt{switch\_features\_handler} function that is registered to respond to a \textit{feature request}. The switch responds with a features reply message to a features request. 
-
+\begin{enumerate}
+	\item 
+	The \texttt{switch\_features\_handler} method is a decorator function that handles the \texttt{EventOFPSwitchFeatures} event in the \texttt{CONFIG\_DISPATCHER} state. This method is triggered when a switch connects to the controller. Inside this method, a flow entry is installed on the switch to send \textbf{all unmatched packets to the controller} for further processing.
+\end{enumerate}
+% python null
 \begin{lstlisting}
 	@set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
 	def switch_features_handler(self, ev):
 	datapath = ev.msg.datapath
 	ofproto = datapath.ofproto
 	parser = datapath.ofproto_parser
-	# install the table-miss flow entry.
+	
 	match = parser.OFPMatch()
 	actions = [
-	parser.OFPActionOutput(ofproto.OFPP_CONTROLLER,
-	ofproto.OFPCML_NO_BUFFER)]
-	self.add_flow(datapath, 0, match, actions) 
+	parser.OFPActionOutput(ofproto.OFPP_CONTROLLER, ofproto.OFPCML_NO_BUFFER)
+	]
+	self.add_flow(datapath, 0, match, actions)
 \end{lstlisting}
-Lastly, the \texttt{add\_flow} function define how modify the flow entry and allows the controller to send this message to modify the flow table of the switches.
+\begin{enumerate}
+	\item 
+	The \texttt{add\_flow} method is used to \textbf{add flow entries to the switch}. It constructs an \texttt{OFPFlowMod} message and sends it to the switch to install a flow entry.
+\end{enumerate}
+% python null
 \begin{lstlisting}
 	def add_flow(self, datapath, priority, match, actions):
 	ofproto = datapath.ofproto
 	parser = datapath.ofproto_parser
-	# construct flow_mod message and send it.
+	
 	inst = [parser.OFPInstructionActions(ofproto.OFPIT_APPLY_ACTIONS, actions)]
-	#Modify flow entry message
-	mod = parser.OFPFlowMod(datapath=datapath, priority=priority,
-	match=match, instructions=inst)
-	#Modify the flow table
+	mod = parser.OFPFlowMod(
+	datapath=datapath, priority=priority, match=match, instructions=inst
+	)
 	datapath.send_msg(mod)
 \end{lstlisting}
+\begin{enumerate}
+	\item 
+	The \texttt{\_send\_package} method is a helper function used to send a packet out through a specific output port of a switch. It creates an \texttt{OFPPacketOut} message and sends it to the switch.
+\end{enumerate}
+% python null
+\begin{lstlisting}
+	def _send_package(self, msg, datapath, in_port, actions):
+	data = None
+	ofproto = datapath.ofproto
+	if msg.buffer_id == ofproto.OFP
+\end{lstlisting}
+
 
 \chapter{Theory of signals}\label{sec:theory-of-signals}
 Theory of signals allows \textit{sensors} to sample real signals or physical quantities in a finite set of time (\textit{like temperatures}) and transform them into \textit{discrete, digital signals} (\textit{in a computable format of finite set values}), processing them and transmitting the obtained \textit{discrete result}.
