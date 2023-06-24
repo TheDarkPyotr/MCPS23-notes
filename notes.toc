@@ -20,14 +20,14 @@
 \contentsline {paragraph}{UNSUBSCRIBE}{20}{section*.36}%
 \contentsline {subsection}{\numberline {2.1.2}Topics}{20}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Quality of Service}{20}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Persistent sessions}{22}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.4}Persistent sessions}{21}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}Retained messages}{22}{subsection.2.1.5}%
 \contentsline {subsection}{\numberline {2.1.6}Last will and testament}{22}{subsection.2.1.6}%
 \contentsline {subsection}{\numberline {2.1.7}KeepAlive}{23}{subsection.2.1.7}%
 \contentsline {subsection}{\numberline {2.1.8}Packet format}{23}{subsection.2.1.8}%
 \contentsline {section}{\numberline {2.2}MQTT on Arduino}{24}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}MQTT Competitors}{25}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Brief CoAP (Constrained Application Protocol)}{26}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Brief CoAP (Constrained Application Protocol)}{25}{subsection.2.2.2}%
 \contentsline {chapter}{\numberline {3}ZigBee}{27}{chapter.3}%
 \contentsline {paragraph}{IEEE 801.15.4 Standard}{27}{section*.45}%
 \contentsline {section}{\numberline {3.1}ZigBee Standard}{27}{section.3.1}%
@@ -139,14 +139,14 @@
 \contentsline {subsection}{\numberline {9.1.1}Scalability, pros and cons}{114}{subsection.9.1.1}%
 \contentsline {subsubsection}{Directed Acyclic Graph Scalability}{114}{section*.224}%
 \contentsline {paragraph}{Drawbacks}{115}{section*.227}%
-\contentsline {section}{\numberline {9.2}Greedy Perimeter Stateless Routing (GPSR)}{115}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Greedy Perimeter Stateless Routing (GPSR)}{116}{section.9.2}%
 \contentsline {subsection}{\numberline {9.2.1}Protocol overview}{116}{subsection.9.2.1}%
 \contentsline {subsubsection}{Perimeter mode}{117}{section*.231}%
 \contentsline {subsubsection}{Graph Planarization}{118}{section*.234}%
-\contentsline {paragraph}{Relative Neighborhood Graph (RNG)}{118}{section*.235}%
+\contentsline {paragraph}{Relative Neighborhood Graph (RNG)}{119}{section*.235}%
 \contentsline {paragraph}{Gabriel Graph (GG)}{119}{section*.237}%
-\contentsline {paragraph}{GPSR with graph planarization}{119}{section*.240}%
-\contentsline {subparagraph}{Delivery failure}{120}{figure.caption.244}%
+\contentsline {paragraph}{GPSR with graph planarization}{120}{section*.240}%
+\contentsline {subparagraph}{Delivery failure}{121}{figure.caption.244}%
 \contentsline {subsubsection}{Simulations}{121}{section*.245}%
 \contentsline {subsection}{\numberline {9.2.2}Drawback}{121}{subsection.9.2.2}%
 \contentsline {chapter}{\numberline {10}Wireless Networks}{123}{chapter.10}%
@@ -197,84 +197,80 @@
 \contentsline {subsubsection}{Software-Defined Networking control plane}{151}{section*.322}%
 \contentsline {subsection}{\numberline {11.0.1}SDN Architecture}{153}{subsection.11.0.1}%
 \contentsline {section}{\numberline {11.1}Data Plane}{154}{section.11.1}%
-\contentsline {subsubsection}{OpenFlow flow table entries}{155}{section*.331}%
+\contentsline {subsubsection}{OpenFlow flow table entries}{156}{section*.331}%
 \contentsline {paragraph}{OpenFlow abstraction}{156}{section*.333}%
-\contentsline {subparagraph}{Example}{156}{section*.334}%
-\contentsline {subsubsection}{OpenFlow Switch}{156}{section*.336}%
+\contentsline {subparagraph}{Example}{157}{section*.334}%
+\contentsline {subsubsection}{OpenFlow Switch}{157}{section*.336}%
 \contentsline {section}{\numberline {11.2}Control Plane}{158}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}OpenFlow}{158}{subsection.11.2.1}%
-\contentsline {subsubsection}{Control/data plane interaction example}{159}{section*.342}%
+\contentsline {subsection}{\numberline {11.2.1}OpenFlow}{159}{subsection.11.2.1}%
+\contentsline {subsubsection}{Control/data plane interaction example}{160}{section*.342}%
 \contentsline {section}{\numberline {11.3}Topology discovery and forwarding}{160}{section.11.3}%
-\contentsline {subsection}{\numberline {11.3.1}LLDP - Link Layer Discovery Protocol}{160}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.1}LLDP - Link Layer Discovery Protocol}{161}{subsection.11.3.1}%
 \contentsline {subsubsection}{Switch initialization}{161}{section*.345}%
-\contentsline {subparagraph}{Exercise}{162}{section*.349}%
-\contentsline {section}{\numberline {11.4}Application of SDN}{162}{section.11.4}%
-\contentsline {subsubsection}{Google WAN}{163}{section*.350}%
-\contentsline {subsubsection}{B4 Architecture Overview}{164}{section*.351}%
-\contentsline {paragraph}{Improvements results}{165}{section*.355}%
-\contentsline {chapter}{\numberline {12}Network Function Virtualization}{167}{chapter.12}%
-\contentsline {subsection}{\numberline {12.0.1}Overview}{168}{subsection.12.0.1}%
-\contentsline {subsubsection}{Use case: vEPS}{168}{section*.359}%
-\contentsline {subsection}{\numberline {12.0.2}Network service}{169}{subsection.12.0.2}%
-\contentsline {subsection}{\numberline {12.0.3}NFV Architectural Framework}{170}{subsection.12.0.3}%
-\contentsline {paragraph}{NFV Infrastructure}{171}{section*.365}%
-\contentsline {subsection}{\numberline {12.0.4}Management and Orchestration (MANO)}{173}{subsection.12.0.4}%
-\contentsline {section}{\numberline {12.1}Network Slicing}{174}{section.12.1}%
-\contentsline {subsubsection}{5G Use case}{175}{section*.373}%
-\contentsline {subsection}{\numberline {12.1.1}Network Slicing Example}{176}{subsection.12.1.1}%
-\contentsline {chapter}{\numberline {13}Theory of signals}{179}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Classification of signals}{179}{section.13.1}%
-\contentsline {paragraph}{Digital signals example}{180}{section*.381}%
-\contentsline {subparagraph}{Question}{180}{section*.382}%
-\contentsline {subsection}{\numberline {13.1.1}Periodic continous signals}{181}{subsection.13.1.1}%
-\contentsline {subsection}{\numberline {13.1.2}Transmission}{181}{subsection.13.1.2}%
-\contentsline {paragraph}{Sampling and quantization}{182}{section*.387}%
-\contentsline {section}{\numberline {13.2}Fourier series}{182}{section.13.2}%
-\contentsline {subsubsection}{Example}{184}{section*.393}%
-\contentsline {subsubsection}{Continuous signal energy}{186}{section*.396}%
-\contentsline {subsubsection}{Power of a signal}{186}{section*.397}%
-\contentsline {paragraph}{Example}{187}{section*.399}%
-\contentsline {subparagraph}{Question}{187}{section*.400}%
-\contentsline {section}{\numberline {13.3}Fourier Transform}{187}{section.13.3}%
-\contentsline {subparagraph}{Euler's exponential}{187}{section*.401}%
-\contentsline {subparagraph}{Signals with limited support}{188}{section*.403}%
-\contentsline {subsection}{\numberline {13.3.1}Fourier Transform}{189}{subsection.13.3.1}%
-\contentsline {subparagraph}{Example}{189}{section*.405}%
-\contentsline {paragraph}{Spectrum of a signal}{190}{section*.407}%
-\contentsline {subsection}{\numberline {13.3.2}Fourier Transform for non-periodic signals}{190}{subsection.13.3.2}%
-\contentsline {subparagraph}{Band of signal}{191}{section*.409}%
-\contentsline {subparagraph}{Question}{191}{section*.410}%
-\contentsline {subsection}{\numberline {13.3.3}From FT to DFT}{191}{subsection.13.3.3}%
-\contentsline {section}{\numberline {13.4}Analog to digital conversion}{192}{section.13.4}%
-\contentsline {subsubsection}{Example}{193}{section*.414}%
-\contentsline {subsection}{\numberline {13.4.1}Sampling theorem}{194}{subsection.13.4.1}%
-\contentsline {subparagraph}{Theorem definition}{194}{section*.418}%
-\contentsline {paragraph}{Drawbacks}{195}{section*.420}%
-\contentsline {subsection}{\numberline {13.4.2}Aliasing}{195}{subsection.13.4.2}%
-\contentsline {subsubsection}{Nyquist implication}{196}{section*.426}%
-\contentsline {subparagraph}{Mistake 1}{197}{section*.427}%
-\contentsline {subparagraph}{Mistake 2}{197}{section*.428}%
-\contentsline {section}{\numberline {13.5}Quantization}{197}{section.13.5}%
-\contentsline {paragraph}{Example}{198}{section*.432}%
-\contentsline {chapter}{\numberline {A}Exercises}{199}{appendix.A}%
-\contentsline {subsection}{\numberline {A.0.1}Exercise}{199}{subsection.A.0.1}%
-\contentsline {subsubsection}{Answer}{199}{section*.434}%
-\contentsline {subsubsection}{Exercise 2}{200}{section*.435}%
-\contentsline {subsubsection}{Solution 2}{200}{section*.437}%
-\contentsline {subsection}{\numberline {A.0.2}Exercise 3}{201}{subsection.A.0.2}%
-\contentsline {subsubsection}{Solution 3}{201}{section*.439}%
-\contentsline {subsection}{\numberline {A.0.3}Exercise 4}{202}{subsection.A.0.3}%
-\contentsline {paragraph}{Solution 4}{202}{section*.441}%
-\contentsline {subsection}{\numberline {A.0.4}Exercise 5}{203}{subsection.A.0.4}%
-\contentsline {subsection}{\numberline {A.0.5}Exercise 6}{203}{subsection.A.0.5}%
-\contentsline {subsection}{\numberline {A.0.6}Exercise 7}{203}{subsection.A.0.6}%
-\contentsline {paragraph}{Solution}{203}{section*.442}%
-\contentsline {subsection}{\numberline {A.0.7}Exercise 8}{204}{subsection.A.0.7}%
-\contentsline {subsection}{\numberline {A.0.8}Exercise 9}{204}{subsection.A.0.8}%
-\contentsline {subsection}{\numberline {A.0.9}Questions 1}{205}{subsection.A.0.9}%
-\contentsline {subsection}{\numberline {A.0.10}Questions 2}{205}{subsection.A.0.10}%
-\contentsline {subsection}{\numberline {A.0.11}Question 3}{205}{subsection.A.0.11}%
-\contentsline {subsection}{\numberline {A.0.12}Question 4}{206}{subsection.A.0.12}%
-\contentsline {subsection}{\numberline {A.0.13}Question 5}{206}{subsection.A.0.13}%
-\contentsline {subsection}{\numberline {A.0.14}Question 6}{206}{subsection.A.0.14}%
-\contentsline {subsection}{\numberline {A.0.15}Question 7}{206}{subsection.A.0.15}%
+\contentsline {subparagraph}{Exercise}{163}{section*.349}%
+\contentsline {chapter}{\numberline {12}Network Function Virtualization}{164}{chapter.12}%
+\contentsline {subsection}{\numberline {12.0.1}Overview}{165}{subsection.12.0.1}%
+\contentsline {subsubsection}{Use case: vEPS}{165}{section*.352}%
+\contentsline {subsection}{\numberline {12.0.2}Network service}{166}{subsection.12.0.2}%
+\contentsline {subsection}{\numberline {12.0.3}NFV Architectural Framework}{167}{subsection.12.0.3}%
+\contentsline {paragraph}{NFV Infrastructure}{168}{section*.358}%
+\contentsline {subsection}{\numberline {12.0.4}Management and Orchestration (MANO)}{170}{subsection.12.0.4}%
+\contentsline {section}{\numberline {12.1}Network Slicing}{171}{section.12.1}%
+\contentsline {subsubsection}{5G Use case}{172}{section*.366}%
+\contentsline {subsection}{\numberline {12.1.1}Network Slicing Example}{173}{subsection.12.1.1}%
+\contentsline {chapter}{\numberline {13}Theory of signals}{176}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Classification of signals}{176}{section.13.1}%
+\contentsline {paragraph}{Digital signals example}{177}{section*.374}%
+\contentsline {subparagraph}{Question}{177}{section*.375}%
+\contentsline {subsection}{\numberline {13.1.1}Periodic continous signals}{178}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.1.2}Transmission}{178}{subsection.13.1.2}%
+\contentsline {paragraph}{Sampling and quantization}{179}{section*.380}%
+\contentsline {section}{\numberline {13.2}Fourier series}{179}{section.13.2}%
+\contentsline {subsubsection}{Example}{181}{section*.386}%
+\contentsline {subsubsection}{Continuous signal energy}{183}{section*.389}%
+\contentsline {subsubsection}{Power of a signal}{183}{section*.390}%
+\contentsline {paragraph}{Example}{184}{section*.392}%
+\contentsline {subparagraph}{Question}{184}{section*.393}%
+\contentsline {section}{\numberline {13.3}Fourier Transform}{184}{section.13.3}%
+\contentsline {subparagraph}{Euler's exponential}{184}{section*.394}%
+\contentsline {subparagraph}{Signals with limited support}{185}{section*.396}%
+\contentsline {subsection}{\numberline {13.3.1}Fourier Transform}{186}{subsection.13.3.1}%
+\contentsline {subparagraph}{Example}{186}{section*.398}%
+\contentsline {paragraph}{Spectrum of a signal}{187}{section*.400}%
+\contentsline {subsection}{\numberline {13.3.2}Fourier Transform for non-periodic signals}{187}{subsection.13.3.2}%
+\contentsline {subparagraph}{Band of signal}{188}{section*.402}%
+\contentsline {subparagraph}{Question}{188}{section*.403}%
+\contentsline {subsection}{\numberline {13.3.3}From FT to DFT}{188}{subsection.13.3.3}%
+\contentsline {section}{\numberline {13.4}Analog to digital conversion}{189}{section.13.4}%
+\contentsline {subsubsection}{Example}{190}{section*.407}%
+\contentsline {subsection}{\numberline {13.4.1}Sampling theorem}{191}{subsection.13.4.1}%
+\contentsline {subparagraph}{Theorem definition}{191}{section*.411}%
+\contentsline {paragraph}{Drawbacks}{192}{section*.413}%
+\contentsline {subsection}{\numberline {13.4.2}Aliasing}{192}{subsection.13.4.2}%
+\contentsline {subsubsection}{Nyquist implication}{193}{section*.419}%
+\contentsline {subparagraph}{Mistake 1}{194}{section*.420}%
+\contentsline {subparagraph}{Mistake 2}{194}{section*.421}%
+\contentsline {section}{\numberline {13.5}Quantization}{194}{section.13.5}%
+\contentsline {paragraph}{Example}{195}{section*.425}%
+\contentsline {chapter}{\numberline {A}Exercises}{196}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Exercise}{196}{subsection.A.0.1}%
+\contentsline {subsubsection}{Answer}{196}{section*.427}%
+\contentsline {subsubsection}{Exercise 2}{197}{section*.428}%
+\contentsline {subsubsection}{Solution 2}{198}{section*.430}%
+\contentsline {subsection}{\numberline {A.0.2}Exercise 3}{198}{subsection.A.0.2}%
+\contentsline {subsubsection}{Solution 3}{199}{section*.432}%
+\contentsline {subsection}{\numberline {A.0.3}Exercise 4}{199}{subsection.A.0.3}%
+\contentsline {paragraph}{Solution 4}{200}{section*.434}%
+\contentsline {subsection}{\numberline {A.0.4}Exercise 5}{200}{subsection.A.0.4}%
+\contentsline {subsection}{\numberline {A.0.5}Exercise 6}{200}{subsection.A.0.5}%
+\contentsline {subsection}{\numberline {A.0.6}Exercise 7}{201}{subsection.A.0.6}%
+\contentsline {paragraph}{Solution}{201}{section*.435}%
+\contentsline {subsection}{\numberline {A.0.7}Exercise 8}{201}{subsection.A.0.7}%
+\contentsline {subsection}{\numberline {A.0.8}Exercise 9}{201}{subsection.A.0.8}%
+\contentsline {subsection}{\numberline {A.0.9}Questions 1}{202}{subsection.A.0.9}%
+\contentsline {subsection}{\numberline {A.0.10}Questions 2}{202}{subsection.A.0.10}%
+\contentsline {subsection}{\numberline {A.0.11}Question 3}{202}{subsection.A.0.11}%
+\contentsline {subsection}{\numberline {A.0.12}Question 4}{203}{subsection.A.0.12}%
+\contentsline {subsection}{\numberline {A.0.13}Question 5}{203}{subsection.A.0.13}%
+\contentsline {subsection}{\numberline {A.0.14}Question 6}{203}{subsection.A.0.14}%
+\contentsline {subsection}{\numberline {A.0.15}Question 7}{204}{subsection.A.0.15}%

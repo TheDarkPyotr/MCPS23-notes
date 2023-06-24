@@ -1204,11 +1204,11 @@ The APS define the \textbf{endpoint, cluster, profile IDs and device IDs}. It's 
 \end{itemize}
 
 The \textbf{endpoints} are identified by a number between 1 and 240: an endpoint can be seen as the equivalent of a Unix socket, connecting virtual wires to applications.
-The \textbf{cluster} is a protocol that can be used to implement the functionality of a given application: cluster defines the attribute that contains the information about the APO. A cluster is defined by an identifier of \textit{\textbf{16 bit}}, local inside the \textbf{profile}. In ZigBee a \textbf{profile} defines a set of application layer protocols that enable interoperability between devices that perform specific functions or serve specific purposes. A profile specifies the standard ways in which devices should communicate and exchange information, making it easier for devices from different manufacturers to work together.
+The \textbf{cluster} is a protocol that can be used to implement the functionality of a given application: cluster defines the attribute that contains the information about the APO. A cluster is defined by a \textbf{clusterID} of \textit{\textbf{16 bit}} (\textit{as shown in \ref{cluster-table}}), local inside the \textbf{profile}. In ZigBee a \textbf{profile} defines a set of application layer protocols that enable interoperability between devices that perform specific functions or serve specific purposes. A profile specifies the standard ways in which devices should communicate and exchange information, making it easier for devices from different manufacturers to work together.
 
-A profile consists of one or more \textbf{clusters}, which are groups of related functionality that can be supported by a device. Each cluster is identified by a unique \textbf{cluster ID}, which is a 16-bit integer value, as shown in \ref{cluster-table}.
+A profile consists of one or more \textbf{clusters}, which are groups of related functionality that can be supported by a device.
 
-A cluster defines a specific set of messages and commands that devices can use to communicate with each other. \textit{For example}, the ZigBee Home Automation profile includes clusters for controlling lights, thermostats, and door locks. Each cluster specifies the \textbf{data format and message types} that devices should use to exchange information related to that functionality.
+A cluster defines a specific set of \textbf{messages and commands} that devices can use to communicate with each other. \textit{For example}, the ZigBee Home Automation profile includes clusters for controlling lights, thermostats, and door locks. Each cluster specifies the \textbf{data format and message types} that devices should use to exchange information related to that functionality.
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.50]{images/Pasted image 20230311124737.png}
@@ -1243,7 +1243,7 @@ The reliability of a data service is ensured by using the \textbf{ACKNOWLEDGE me
 \end{figure}
 
 
-The \textit{\textbf{APS Group Management}} provides service to build and mantains groups of APOs: a group is identified by a $16-bit$ address and each APO in the group is identified by the pair network \textit{address/endpoint}. The \texttt{ADD-GROUP} primitive allows to add an APO to a group and \texttt{REMOVE-GROUP} primitive to remove an APO from a group: takes group number and endpoint number; if the group does not exists it's created. The nformation about groups are stored in a \textit{group table} in APSs.
+The \textit{\textbf{APS Group Management}} provides service to build and mantains groups of APOs: a group is identified by a $16-bit$ address and each APO in the group is identified by the pair network \textit{address/endpoint}. The \texttt{ADD-GROUP} primitive allows to add an APO to a group and \texttt{REMOVE-GROUP} primitive to remove an APO from a group: takes group number and endpoint number; if the group does not exists it's created. The information about groups are stored in a \textit{group table} in APSs.
 
 \subparagraph{APS Binding}\label{sec:aps-binding}
 The binding operation allows an endpoint on a node to be connected (\textit{bound}) to one or more endpoints on another nodes: the binding is \textbf{unidirectional} and can be configued only by te ZDO of the coordinator or of a router. \\
@@ -1299,11 +1299,11 @@ So the main ZDO services are \textit{device and service discovery, binding manag
 \subsubsection{Device and service discovery}\label{sec:device-and-service-discovery}
 The \textbf{ZigBee Device Profile} specifies the device and the \textit{service discovery mechanisms} to obtain any information about devices and services in the network. The \textbf{Device Discovery} allows a device to obtain the (\textit{network or MAC}) address of other devices in the network: starting from an unknown address it allows to identify the relative device inside the network. It follow an \textbf{hierarchical implementation} in which a router return to its parent its address and the address of all the end-devices is associated to itself. Then the coordinator returns the address of its associated devices.\\
 A newly joined device does not know anything about the network: to provide a service it must also known, require and use the services offered  by other devices. This actions are performed thanks to \textbf{ZigBee Device Profile} that allows the service discovery of other devices.\\
-The service discovery send queries that are based on \textit{cluster ID} or \textit{service descriptors}: the coordinator responds to service discovery query by returning lists of endpoint addresses matching with the query. The hierarchical implementation is effective because \textit{each router collect information from its associated devices and forwards it to its parents}.\\\\
+The service discovery send queries that are based on \textit{cluster ID, profile ID} and optionally on \textit{service descriptors}: the coordinator responds to service discovery query by returning lists of endpoint addresses matching with the query. The hierarchical implementation is effective because \textit{each router collect information from its associated devices and forwards it to its parent}.\\\\
 The other mechanism to understand what service a device is providing is called \textbf{Service Discovery}: the network is created according to a parent-child relation (with a coordinator), building as a tree (\textit{as the addresses tree previously mentioned}). To known which service a device offer, a joined device ask to its coordinator that may not have fully all the information and may ask to it's parent node, recursively. Each node is responsible for the subtree under its domain: in case of missing information, intermediate routers prepare information report to answer the queries.\\
 The \textbf{Service Discovery} provides a report that tells for a single device what are the cluster to which it responds: for example, a device can responds telling that implement a ON/OFF cluster. The service discovery can be direct to the coordinator and is it's responsability to collect information and answer for the whole network.
 The requests can be directed also to end-device but due to low-power devices, they may not be ready to answer the queries regarding the services they offer.
-The service discovery does not tell where the device is physically located, only the service offered and their relative identifier (Cluster ID, Device ID, etc): to obtain the location is necessary that a device implements the \textbf{Identify Cluster} that force a device to identify itself by blinking a led.
+The service discovery does not tell where the device is physically located, only the service offered and their relative identifier (Cluster ID, Device ID, etc): to obtain the location is necessary that a device implements the \textbf{Identity Cluster} that force a device to identify itself by blinking a led.
 \subparagraph{Binding management}\label{sec:binding-management}
 The ZDO processes the binding requests received from local or remote EP: both to add entries and delete entries from the APS binding table (\textit{by invoking primitives}). This process require having an IEEE address.
 \subparagraph{Managing network and nodes}\label{sec:managing-network-and-nodes}
@@ -2578,7 +2578,7 @@ Sampling sensors needs regular intervals to work properly (\textit{as we'll see 
 All these steps are executed in a \textbf{control loop} that is a function invoked by the \texttt{main} after device initialization: the user only provide the function to be repeated, the \textit{loop} itself it's embedded in the device control behavior.\\
 Due to it's simplicity, the interaction with hardware at low level happen by the code interacting with the components by means of \textbf{commands} and \textbf{interrupts}: a \textit{command} activates the hardware component (\textit{e.g. read from a transducer}) while an \textit{interrupt} signals that the command has been executed. \\
 In parallel with a classical OS, the command are available in terms of \textit{system calls} invoked by the user's code: if there is a waiting time, the invoking thread is suspensed. The interrupts are managed by the OS kernel and re-activates the suspended threads, allowing \textit{async event management} due to the thread/process abstraction and the interfaces exposed by the kernel.
-So in conventional OS, the programmer's code just see a library stub function that execute the commands and returns a value: the suspension mechanism of a thread is transparent to the user but require also a \textit{stack} (\textit{e.g. TCB}) for each thread to store its context. This approach guarantee asyncronicity, abstracting the passing time between the requested execution and the final result.
+So in conventional OS, the programmer's code just see a library stub function that execute the commands and returns a value: the suspension mechanism of a thread is transparent to the user but require also a \textit{stack} (\textit{e.g. TCB}) for each thread to store its context. This approach guarantee asyncronicity, abstracting the passing time between the requested execution and the final result.\\
 For the type of \textbf{constrained devices} considered, usually the RAM memory is very small  (\textit{e.g. Arduino 1 had $4kB$ RAM}) that serves for communication buffers, variables and all the basic setup functions of the devices.
 In case of insufficient memory, this devices usually adopts mainly two different strategies:
 \begin{enumerate}
@@ -2886,7 +2886,7 @@ Another point of view is to extends device lifetime but reducing the computation
 Those two are the main pathways to prolong the battery life: both can be applied.
 The decisions regarding the battery are done at the begginign while the duty cycle structure can be \textit{modified}, by making it \textit{with a dynamic behavior}: adapting the DC can prolong the lifetime, by respecting the device functional requirements.
 
-The alternative is give by \textbf{energy harvesting} which consists in converting energy from one from to another.  The source of energy can have different properties (\textit{periodic, non-predictable, etc}): after identifying the source, the tradeoff between how acquiring it physically and the effective utilization in the device must be designed.
+The alternative is give by \textbf{energy harvesting} which consists in converting energy from one \textit{form} to another.  The source of energy can have different properties (\textit{periodic, non-predictable, etc}): after identifying the source, the tradeoff between how acquiring it physically and the effective utilization in the device must be designed.
 
 The energy harvesting implies also a complex design of the device, allowing to parametize more features of the device.
 
@@ -3911,7 +3911,7 @@ The \texttt{interval} field specify the sampling rate and the rate at which the 
 \subsubsection{State machine}\label{sec:state-machine}
 When a sensor detects an \textit{event} amtching with an interest in cache, it start sampling the event at the large \textit{sampling rate} of the corresponding \textit{gradients}. Then it sends sampled events through the gradients associated to the given interest in cache: these gradients correspond to the \textit{neighbors interest in the event}, so dat through a gradient flow with the \textit{rate} of that gradient.
 
-Sampling does not stop \textbf{routing functionality}: this is possible because the state machine is implemented on \textit{interrupt} thus to have a device act as a router and sensor by means of of \textbf{abastracting thread} (\textit{as used in TinyOS}).
+Sampling does not stop \textbf{routing functionality}: this is possible because the state machine is implemented on \textit{interrupt} thus to have a device act as a router and sensor by giving the possibility to manage interrupts\footnote{This lead to more complex problem on a long chain of transmission that can result, among others, in the problem of managing the delay in a context where the duty cycle of the devices are not synchronized} (\textit{as in TinyOS}).
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230522174514.png}
 	\caption{Direct Diffusion simplified state machine: the \textit{forward interest} is directed to node's neighbors}
@@ -3925,7 +3925,7 @@ The data propagation mechanism implicitly ensures reliability by duplicating the
 \end{figure}
 
 \subsubsection{Reinforcement}\label{sec:reinforcement}
-The reinforcement process allows to enhance the quality of received data. Sppose to have a sink hat receives data that match a certain interest query from a given sensor $n$. The sink can \textit{reinforce} $n$ by incrementing the sampling rate along a given path, making the data propagation along a specific path thus making sure that only that specific route can survive among others directed to the node $n$.
+The reinforcement process allows to enhance the quality of received data. Suppose to have a sink hat receives data that match a certain interest query from a given sensor $n$. The sink can \textit{reinforce} $n$ by incrementing the sampling rate along a given path, making the data propagation along a specific path thus making sure that only that specific route can survive among others directed to the node $n$. This is possible because on one hand, we preserve a single path, refining it's data rate, and on other hand we let other devices that previously received the \textit{interest query} to discard the query as indicated by the query's \textit{TTL} (\textit{or timeout}). \\
 The reinforcement behavior is usually subsequent to the first \textit{exploratory request}, correlated to \textit{refresh requests}.
 Here are pictured an example of \textit{reinfrocement process} result:
 \begin{figure}[h]
@@ -4095,7 +4095,8 @@ We can build a planar network topology exploiting local information by using:
 They both create a \textit{subgraph of a given graph}, without adding link but only removing.
 They mantains some properties: if $G$ is connected then the produced planarized graph $P$ is connected and it's obtained by removing edges from $G$.\\
 Secondly, they execute a \textbf{localized, distributed knowledge discover} to identify the edge of the \textit{planarized graph}, this is possbile because every node have executed the planarization of the graph in advanced so minimizing the memory and computation overhead.\\
-Starting from the obtained graph $P$, \textit{GPSR} uses the \textit{greedy mode} on all links but limit the \textit{perimeter mode} only on the links \textit{preserved in the planarized graph $P$}.
+Starting from the obtained graph $P$, \textit{GPSR} uses the \textit{greedy mode} on \textit{all links} of the \textbf{original graph $G$} but limit the \textit{perimeter mode} only on the links \textit{preserved in the \textbf{planarized graph $P$}}.
+
 \paragraph{Relative Neighborhood Graph (RNG)}
 \label{sec:relative-neighborhood-graph}
 The edge $(u,v) \in P \iff  (u,v) \in G$
@@ -4175,7 +4176,7 @@ So more formally:
 
 The rule of finding the intersection and then moving on to the next face is not used too often, this is because there is an \textbf{aggressive policy} for switching from perimeter mode to greedy mode and then we switch to greedy mode when the node we reach is closer to the destination with respect to $x$.
 
-The node forward the packet alongside the faces of the graph, switching back to greedy mode only when the distance of the node that started the perimeter node is longer than the actual node distance.
+The node forward the packet alongside the faces of the graph, switching back to greedy mode only \textbf{when the distance of the node that started the perimeter node is longer than the actual node distance.}
 \subparagraph{Delivery failure}\label{sec:delivery-failure}
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230523163539.png}
@@ -4187,12 +4188,12 @@ Considering the graph faces, there are two cases in which the destination node $
 	\item 
 	$D$ lies inside an interior face $F_{i}$: referring \ref{delivery-failure}, the packet tour aroud face $F_{3}$ and when crosses the \textit{red node} picture it's dropped.
 	\item 
-	$D$ lies inside the \textit{exterior fce} $F_{e}$: the packet will reach the face by making a tour around the entire border of the graph, until it passes again through the node that started the \textit{perimeter node} so at that point the packet is dropped and the delivery fail.
+	$D$ lies inside the \textit{exterior face} $F_{e}$: the packet will reach the face by making a tour around the entire border of the graph, until it passes again through the node that started the \textit{perimeter node} so at that point the packet is dropped and the delivery fail.
 \end{itemize}
 \subsubsection{Simulations}\label{sec:simulations}
 The dynamic of the network (\textit{node mobility, joining nodes, etc}) leads to \textit{performance degradation}: performing planarization at each topology variation implies an high overhead of recomputing the graph $P$.
 An approach to avoid performance degradation consists in nodes that periodically communicate their position to neighbors (\textit{\textbf{beaconing}}) to allows adjacent neighbors to mantain a \textit{neighbor's list}.\\
-The paper shows that when the performance degrade over a certain threshold the planazation must be re-executed, despite the \textit{beaconing mechanism}: data shows that decreasing the beaconing interval improves the \textit{deliery rate}, and that sparse network can represent a problem due to a shortage of allowed paths.
+The paper shows that when the performance degrade over a certain threshold the planazation must be re-executed, despite the \textit{beaconing mechanism}: data shows that decreasing the beaconing interval improves the \textit{delivery rate}, and that sparse network can represent a problem due to a shortage of allowed paths.
 
 
 \subsection{Drawback}\label{sec:drawback}
@@ -4218,7 +4219,7 @@ For the obstacle scenario, the node $u$ is aware of node $w$ so will not conside
 
 
 An incorrent graph planarization can lead GPSR to fail by triggering a loop in which the algorithm is applied to unidiretional link, as pictured in \ref{planarization-error}.\\
-Here the problem is the link between the node $u$ and $x$ because $x$ will not see $v$ in its neighbors list, while $u$ will see $v$ as neighboard and will not consider the link to $x$ (\textit{no outgoing edges, only incoming because it's unidirectional}). The packet from the source, following \textit{RHR} will flow through $u-v-w-x-u$, forming a loop because $u$ is closer to $D$ respect to $x$, under $x$ local view.
+The graph pictured in \ref{planarization-error} is the result of an incorrect planarization: the problem is the link between the node $u$ and $x$ because $x$ will not see $v$ in its neighbors list, while $u$ will see $v$ as neighboard and will not consider the link to $x$ (\textit{no outgoing edges, only incoming because it's unidirectional, while in the original graph is bidirectional}). The packet from the source, following \textit{RHR} will flow through $u-v-w-x-u$, forming a loop because $u$ is closer to $D$ respect to $x$, under $x$ local view.
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230523165604.png}
 	\caption{GPSR loop due to wrong graph planarization}
@@ -5275,7 +5276,7 @@ There are some difficult regarding the \textbf{traffic engineering} with a tradi
 The main three components are \ref{sdn-three-layer-architecture}:
 \begin{enumerate}
 	\item 
-	\textbf{Data plane switches}: they implement genralized data-plane forwarding in hardware. The forwarding table is already computed, installed under the supervision of the controller. They provide also API for table-based switch control (\textit{like OpenFlow}) and provide a protocol for communicating with the controller. They are \textit{dummy} devices, without added complex and routing mechanisms to be computed.
+	\textbf{Data plane switches}: they implement generalized data-plane forwarding in hardware. The forwarding table is already computed, installed under the supervision of the controller. They provide also API for table-based switch control (\textit{like OpenFlow}) and provide a protocol for communicating with the controller. They are \textit{dummy} devices, without added complex and routing mechanisms to be computed.
 	\item 
 	\textbf{SDN Controller}: mantain the network state infromation and interact with the network control application above via the \textit{northbound} API and the network switches via the \textit{southbound API}. It's implemeted as distributed system to guarantee scalability, performance and fault-tolerance. It separates the control and the data plane (\textit{as opposed to classical routing}), representing the \textit{Network Operating System} because perform routing decision based on different customizable criteria.
 	\item 
@@ -5479,7 +5480,7 @@ The interaction between the SDN control plane and data plane consists of 6 steps
 	\item 
 	Link state routing app interacts with flow-table-computation component in the SDN controller, which computes new flow tables needed
 	\item 
-	Controller uses Openflow to install new tables in switches that need updating
+	Controller uses Openflow to install new tables in switches that need updating by issuing a \texttt{flow-mod} message to switch
 \end{enumerate}
 
 
@@ -5598,6 +5599,8 @@ Describe the source, destination and semantics of the following OF messages:
 	\item 
 	FlowMod:
 \end{itemize}
+
+\iffalse
 \section{Application of SDN}\label{sec:application-of-sdn}
 The SDNs's early adopters were companies that manages datacenter, for several use cases:
 \begin{itemize}
@@ -5735,6 +5738,9 @@ OpenFlow has helped Google improving B4 backbone (\textit{as shown in \ref{fig:b
 	\label{fig:b4-performance}	
 \end{figure}
 
+\fi
+
+
 \chapter{Network Function Virtualization} \label{sec:network-function-virtualization}
 Within SDN, \textbf{Network Function Virtualization (NFV)} allows \textit{programmable networking}: it's mainly used in 5G and datacenter, allowing managing traffic with different requirements by performing load balancing, security, etc.
 The global traffic trend have increased within the user requirements: more data and rapidly changing services involves also an increase in \textit{CapEx}.
@@ -5824,7 +5830,7 @@ A network service can be viewed architecturally as a \textit{forwarding graph} o
 
 In the previous picture (\ref{VNF-eg1}) there is a chain of network functions: the interconnections among the \textit{NFs} and endpoints are depicted by \textit{dashed lines}, representing logical links. These logical links are supported by physical paths through infrastructure networks (\textit{wired or wireless}). Endpoints can be a network enterprise (\texttt{A}) or a datacenter (\texttt{B}), depending on the specific scenario.
 
-In figure \ref{topological-view-eg1} a topological view of the previous picture:
+In figure \ref{topological-view-eg1} a topological view of the previous picture.
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230405171343.png}
 	\caption{Forwarding graph of \ref{VNF-eg1}}
