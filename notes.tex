@@ -4237,7 +4237,7 @@ The solution to this problem is known as \textit{Mutual Witness} that represent 
 
 \subsection{Wireless networks}\label{sec:wireless-networks}
 Wireless allows to replace cables in communications in cyber-physical systems that can embed computers in physical objects.
-Wireless networks are networks of \textbf{hosts} connected by \textbf{wireless  links}: we refer to \textbf{host} as end-system devices that run applicaiton (battery-powered, small or mobile).
+Wireless networks are networks of \textbf{hosts} connected by \textbf{wireless  links}: we refer to \textbf{host} as end-system devices that run application (battery-powered, small or mobile).
 There are two modes of operations for such networks:
 \begin{itemize}
 	\item 
@@ -4391,7 +4391,7 @@ So we can consider a \textbf{slotted system} \ref{slotted-system} with \textit{m
 \paragraph{Binary Exponential Backoff}\label{sec:binary-exponential-backoff}
 The algorithm used by CSMA/CD to retry retransmission is called \textbf{Binary Exponential Backoff} and defines how much time the station must wait before trying transmitting again.
 
-The time after a collision is divided in \textbf{contention slots}: the lenght of a slot is equal to the \textit{worst case round propagation time} (\textit{so if $T$ is the time to reach the most distant station, the length will be $2T$}).
+The time after a collision is divided in \textbf{contention slots}: the length of a slot is equal to the \textit{worst case round propagation time} (\textit{so if $T$ is the time to reach the most distant station, the length will be $2T$}).
 After the first collision each station waits 0 or 1 slot before trying again: so after collision $i$ the nodes chooses $x$ at random in the interval $[0, 2^{i}-1]$ so that it skips $x$ slots of time before retrying the trasmission.
 Number at hands, after:
 \begin{itemize}
@@ -4652,7 +4652,7 @@ The MAC sublayer can operate in two different modes:
 	\textbf{Distributed Coordination Function (DCF)}: operates in \textit{contention-based manner}, where stations contend for access to the wireless medium (\textit{mediated by the CSMA/CA protocol}).
 \end{itemize}
 
-\textbf{DCF} must be implemnted by all stations: it's completely decentralized and use a best affort asyncronous traffic. Both DCF and PCF can be active at the same time in the same cell.\\
+\textbf{DCF} must be implemented by all stations: it's completely decentralized and use a best affort asyncronous traffic. Both DCF and PCF can be active at the same time in the same cell.\\
 \textit{Carrier sensing} for \textbf{DCF} is performed at two levels:
 \begin{itemize}
 	\item 
@@ -4819,7 +4819,7 @@ The general model adopted by 4G/5G Network is pictured in \ref{4g-45-general-arc
 
 \begin{itemize}
 	\item 
-	\textbf{Mobile Core}: provides IP (\textit{internet}) connectivity for both data and voice servics. Also ensure QoS requirements and allows to tracks user mobility to ensure uninterrupted service, providing \textit{billing} and \textit{charging}.
+	\textbf{Mobile Core}: provides IP (\textit{internet}) connectivity for both data and voice services. Also ensure QoS requirements and allows to tracks user mobility to ensure uninterrupted service, providing \textit{billing} and \textit{charging}.
 	\item 
 	\textbf{Blackhaul Network}: allows to connect base station to mobile core (\textit{interconnecting the RAN}) by using optics or wireless solution (\textit{IAB - Integrated Access Blackhaul}).
 	\item 
@@ -4833,7 +4833,7 @@ The general model adopted by 4G/5G Network is pictured in \ref{4g-45-general-arc
 	\label{}
 \end{figure}
 
-In the \textbf{radio access network} the mobile device can be a large series of devices like \textit{laptop, ioT} devices with 4G LTE radio: they are identified by 64 bit \textit{International Mobile Subscriber Identity (IMSI)} stored on the \textbf{SIM - Subscriber Identity Module}.\\\\
+In the \textbf{Radio Access Network (\textit{RAN})} the mobile device can be a large series of devices like \textit{laptop, ioT} devices with 4G LTE radio: they are identified by 64 bit \textit{International Mobile Subscriber Identity (IMSI)} stored on the \textbf{SIM - Subscriber Identity Module}.\\\\
 The \textbf{core network} is composed by \textit{\textbf{Home Subscriber Service - HSS}} that is a \textbf{database} containing information about subscribers with their identifiers and allows to manage the authentication phase. It mantains the information about the device's "\textit{home network}".To be able to authenticate, it works with \textit{\textbf{Mobile Management Entity}}.\\\\
 The \textbf{Mobile Management Entity (MME)} perform the device authentication, coordinated with mobile home network (\textit{HSS}). The \textit{MME} is also involved when changing the base station and allows to track the device and page the device location (\textit{ask the base station for the presence of this device}).
 For data packets transfer we need to establish a \textit{data path} from the mobile device to the \textit{\textbf{Serving Gateway (S-GW)}} (the \textit{tunneling} and the data path is explained later).\\
@@ -4938,7 +4938,7 @@ The \textbf{sleep modes} of LTE allows to put radio to \textit{sleep} to conserv
 \label{sec:5g-architecture}
 The main goal of 5G is to increase in peak bit rate, $10x$ decrease in latency and $100x$ increase in traffic capacity over 4G. The \textbf{5G New Radio Frequencies} have two frequency bands, respectively at $450MHz - 6 GHz$ and  $24GHz - 52 GHz$.\\
 The 5G is not backwards-compatible with 4G: the \textit{millimiter wave frequencies} have much higher data rates but over shorter distances because uses \textbf{pico-cells} that have a diameter of $10$ to $100m$. This implies a dense deployment of \textit{new base station}.\\\\
-The underlying idea is to realize the functions of authentication, tracing and so on by means of \textbf{microservices} implemented throught \textit{\textbf{Network Function Virtualization}, chapter \ref{sec:network-function-virtualization}}: this allows the deploy of those functions both close to the core network and base stations so the path between the mobile device and the functions/services is really close, reducing the latency and load balancing the traffic. This also avoid traffic directly flow into the core network and manage the traffic at the edge.
+The underlying idea is to realize the functions of authentication, tracing and so on by means of \textbf{microservices} implemented throught \textit{\textbf{Network Function Virtualization} (refer to Chapter \ref{sec:network-function-virtualization})}: this allows the deploy of those functions both close to the core network and base stations so the path between the mobile device and the functions/services is really close, reducing the latency and load balancing the traffic. This also avoid traffic directly flow into the core network and manage the traffic at the edge.
 \subsubsection{5G User Plane}\label{sec:5g-user-plane}
 The 5G user plane is sketched in \ref{5g-user-plane}
 \begin{figure}[h]
@@ -4949,7 +4949,7 @@ The 5G user plane is sketched in \ref{5g-user-plane}
 
 
 The \textbf{UPF - User Plane Function} allows to forward traffic between RAN and internet, corresponding to the S-GW/P-GW combination into the \textbf{EPC - Evolved Packet Core}. It's also responsible for: \textit{packet inspection and application detection, QoS management, Traffic usage reporting}.\\
-Those components allows flexibility to deliver user plane functionality at the edge as well as the network core because UPF can be co-located with edge and central data centers at both locations, implementing laso \textbf{MEC - Multi Access Edge Computing}.
+Those components allows flexibility to deliver user plane functionality at the edge as well as the network core because UPF can be co-located with edge and central data centers at both locations, implementing also \textbf{MEC - Multi Access Edge Computing}.
 
 \subsubsection{5G Control Plane}\label{sec:5g-control-plane}
 The basic 5G architecture schema is sketched in \ref{5g-control-plane}. The main components that provide the enhanced services are:
@@ -4990,9 +4990,9 @@ Three main deployment options are considered, the two most used are pictured in 
 \begin{enumerate}
 	\item  \textbf{Standalone (SA) 4G / SA 5G}: SA 4G operates independently using the LTE standard, while SA 5G uses the 5G NR standard and the 5G core network architecture. Deployment involves network planning, RAN and core network deployment, testing, and commercial launch. SA 4G and SA 5G provide significant benefits but require significant investment and infrastructure upgrades.
 	\item 
-	\textbf{Non standalone (4G+5G) over 4G's EPC}: upper part of \ref{deployment-options} in which 5G base stations are deployed alongside existing 4G base stations ina given geography to proide a data-rate and capacity boost. In NSA, the control plane traffic between user equipment and the 4G Mobile Core utilizess 4G base stations and the 5G base stations are usd only to carry user traffic.
+	\textbf{Non standalone (NSA 4G+5G BSs) over 4G's EPC}: upper part of \ref{deployment-options} in which 5G base stations are deployed alongside existing 4G base stations ina given geography to proide a data-rate and capacity boost. In NSA, the control plane traffic between user equipment and the 4G Mobile Core utilizess 4G base stations and the 5G base stations are usd only to carry user traffic.
 	\item 
-	\textbf{Non standalone (NSA) 4G+5G over 5G's NG-Core}: combines 4G and 5G network technologies over a 5G New Radio (NR) infrastructure connected to the 5G Next-Generation Core (NG-Core) network. The NSA deployment model involves network planning, RAN and core network deployment, testing, and commercial launch. 5G NR is used for the data plane, while the control plane is handled by the 4G Evolved Packet Core (EPC). The NSA model provides a transitional approach for network operators to upgrade their infrastructure gradually and take advantage of the benefits of 5G technology while still supporting legacy 4G networks.
+	\textbf{Non standalone (NSA 4G+5G BSs) over 5G's NG-Core}: combines 4G and 5G network technologies over a 5G New Radio (NR) infrastructure connected to the 5G Next-Generation Core (NG-Core) network. The NSA deployment model involves network planning, RAN and core network deployment, testing, and commercial launch. 5G NR is used for the data plane, while the control plane is handled by the 4G Evolved Packet Core (EPC). The NSA model provides a transitional approach for network operators to upgrade their infrastructure gradually and take advantage of the benefits of 5G technology while still supporting legacy 4G networks.
 	\begin{figure}[h]
 		\centering\includegraphics[scale=0.50]{images/Pasted image 20230308172804.png}
 		\caption{Non standalone (4G+5G) over 5G's EPC vs over 5Gs NG-Core}
@@ -5077,7 +5077,7 @@ In \textbf{Direct routing} the mobile device needs an IP address in the \textit{
 	\item 
 	New address in the address range of the visited network
 	\item 
-	IP address via NAT
+	IP address is managed via NAT
 	
 \end{enumerate}
 The end result is that the visited mobility manager known about the mobile and the home HSS knowns the location of mobile.\\\\
@@ -5104,8 +5104,8 @@ As mentioned, the main requiremenets for mobility in \textit{\textbf{indirect ro
 	\textit{Visited-network-to-home-network HSS registration}: The visited network will need to registrer the mobile device's locatio with the HSS in the \textit{mobile device home network}
 	\item 
 	\textit{A datagram tunneling protocol between home network gateway and visisted network gateway router}: the home gateway perform encapslation and forwarding of the correspondent's original datagram. On the receiving side, the gateway router performs \textit{\textbf{decapsulation, NAT translation and forwarding}} of the original datagram to the mobile device.
-	Some considerations about \textit{\textbf{indirect routing}} evaluate the problem of \textbf{triangle routing} that results in an inefficient model when correspondent and mobile are in the same network (\textit{due to the problem of forwarding the messages to the home network and re-routing them to the correspondent's original network which correspond to the visisted network of the destination device}).
-	The mobile device can see an interrupted flow of datagrams as it moves between network, losing some datagrams but the on-going TCP connection between correspondet and mobile can be mantained. The following schema describe the steps. So if the mobile changes visited network it's necessary to update the HSS in the home netowkr, changing the tunnel endpoint to terminate at the gateway router of the new visited network.
+	Some considerations about \textit{\textbf{indirect routing}} evaluate the problem of \textbf{triangle routing} that results in an inefficient model when correspondent and mobile are in the same network: the forwarding of a messages to the home network and re-routing them to the correspondent's original network which correspond to the visisted network of the destination device result in high inefficies and avoidable transmission overhead.\\
+	The mobile device can see an interrupted flow of datagrams as it moves between network, losing some datagrams but the on-going TCP connection between correspondet and mobile can be mantained. The following section \ref{sec:mobility-in-4g} describe the steps involves to allows an interrupted stream of datagrams. So if the mobile changes visited network it's necessary to update the HSS in the home network, changing the tunnel endpoint to terminate at the gateway router of the new visited network.
 \end{enumerate}
 
 
@@ -5140,7 +5140,7 @@ Two different tunnels are established \ref{double-tunneling}:
 \end{enumerate}
  
 \begin{figure}[h]
-	\centering\includegraphics[scale=0.50]{images/Pasted image 20230322120711.png}
+	\centering\includegraphics[scale=0.70]{images/Pasted image 20230322120711.png}
 	\caption{S-GW to P-GW tunnel across networks and S-GW to BS internally}
 	\label{double-tunneling}
 \end{figure}
@@ -5307,13 +5307,13 @@ Some of the key functions of the SDN data plane include:
 	\label{data-plane}
 \end{figure}
 
-Referring \ref{data-plane}, the \textbf{data plane} consists of physical switches and virtual switches. In both cases, the switches are responsible for forwarding packets. The internal implementation of buffers, priority parameters, and other data structures related to forwarding can be vendor dependent. However, each switch must implement a model, or abstraction, of packet forwarding that is uniform and open to the SDN controllers.\\ 
+Referring \ref{data-plane}, the \textbf{data plane} consists of physical switches and virtual switches. In both cases, the switches are responsible for forwarding packets. The internal implementation of buffers, priority parameters, and other data structures related to forwarding can be vendor dependent. However, each switch must implement a model, or \textbf{abstraction}, of packet forwarding that is uniform and open to the SDN controllers.\\ 
 This model is defined in terms of an open application programming interface (API) between the control plane and the data plane (\textbf{southbound API}). The most prominent example of such an open API is OpenFlow. As explained later, the OpenFlow specification defines both a protocol between the control and data planes and an API by which the control plane can invoke the OpenFlow protocol.\\
 
-\textbf{Controllers} use information about capacity and demand obtained from the networking equipment through which the traffic flows. SDN controllers also expose \textbf{northbound APIs}, which allow developers and network managers to deploy a wide range of off-the-shelf and custom-built network applications, many of which were not feasible before the advent of SDN. As yet there is no standardized northbound API nor a consensus on an open northbound API. A number of vendors offer a REpresentational State Transfer (REST)-based API to provide a programmable interface to their SDN controller.\\
+\textbf{Controllers} use information about \textit{capacity} and \textit{demand} obtained from the networking equipment through which the traffic flows. SDN controllers also expose \textbf{northbound APIs}, which allow developers and network managers to deploy a wide range of off-the-shelf and custom-built network applications, many of which were not feasible before the advent of SDN. As yet there is no standardized northbound API nor a consensus on an open northbound API. A number of vendors offer a \textit{REpresentational State Transfer (REST)-based API} to provide a programmable interface to their SDN controller.\\
 
-At the \textbf{application plane} are a variety of applications that interact with SDN controllers. SDN applications are programs that may use an abstract view of the network for their decision-making goals. These applications convey their network requirements and desired network behavior to the SDN controller via a northbound API. Examples of applications are energy-efficient networking, security monitoring, access control, and network management.\\
-The \textbf{generalized forwarding} operated by the data plane consists in providing each router a \textbf{forwarding table (\textit{flow table})} that use the \textit{"match plus abstraction" (see \ref{sec:openflow-abstraction} for OpenFlow actual process of the rule)}: match bits in arriving packets and take the corresponding action. Two main forwarding techniques are used:
+At the \textbf{application plane} are a variety of applications that interact with SDN controllers. SDN applications are programs that may use an \textit{abstract view} of the network for their decision-making goals. These applications convey their network requirements and desired network behavior to the SDN controller via a northbound API. Examples of applications are energy-efficient networking, security monitoring, access control, and network management.\\
+The \textbf{generalized forwarding} operated by the data plane consists in providing each router a \textbf{forwarding table (\textit{flow table})} that use the \textit{"match plus abstraction" (see \ref{sec:openflow-abstraction} for OpenFlow specific implementation of this abstracted model)}: match bits in arriving packets and take the corresponding action. Two main forwarding techniques are used:
 \begin{enumerate}
 	\item 
 	\textbf{Destination-based forwarding}: forward based mostly on destination IP address
@@ -5326,7 +5326,7 @@ The \textbf{flow} is defined by the header fields values (\textit{respectively i
 	\item 
 	\texttt{match}: pattern values in packet header fields
 	\item 
-	\texttt{actions}: for matched packet can \texttt{drop, forward, modify} or send matched packets to controller to decide the action to be performed.
+	\texttt{actions}: for matched packet can \texttt{drop, forward, modify} or \texttt{send} matched packets to controller to decide the action to be performed.
 	\item 
 	\texttt{priority}: disambiguate overlapping patterns (\textit{flows can match more than one entry so needs disambigution})
 	\item 
@@ -5373,8 +5373,8 @@ In the example picture in \ref{example-2-diagram}, the datagram from host \textt
 
 
 \subsubsection{OpenFlow Switch}\label{sec:openflow-switch}
-In a OpenFlow switch there is more than a one flow table, usually the tables are multiple and organized in \textbf{pipeline} as showed in \ref{openflow-switch}. Every switch can be seen as composed by different componed, sketched in \ref{openflow-switch}. The \textbf{group table} in the \textit{datapath} specify a more complex behavior that refer to a group of flows, specifing rules for group of flows based on their attribute. Both those two type of table specify the data plane behavior.
-The \textit{control channel} allows to communcate to the control plane: typically can have a connection with multiple controllers as they are implemented in a distributed way. The simplest configuration is the \textbf{master-slave} with only one controller while the complex one can include \textbf{active-passive controller} for redundancy.
+In a OpenFlow switch there is more than a one flow table, usually the tables are multiple and organized in \textbf{pipeline} as showed in \ref{openflow-switch}. Every switch can be seen as composed by different components. The \textbf{group table} in the \textit{datapath} specify a more complex behavior that refer to a group of flows, specifing rules for group of flows based on their attribute. Referring the \textit{flow table} and \textit{group table}, both allows to specify the data plane behavior.
+The \textit{control channel} allows to communcate to the control plane: typically can have a connection with multiple controllers as they are implemented in a distributed way. The simplest configuration is the \textbf{master-slave} with only one controller while the complex one can include \textbf{active-passive controller} for redundancy.\footnote{More complex assignation of \textit{switch-controller} can be configured, as described in \href{http://personales.upv.es/thinkmind/dl/conferences/afin/afin_2013/afin_2013_2_50_50056.pdf}{Scalable OpenFlow Controller Redundancy Tackling Local and Global Recoveries}}.
 
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230322170913.png}
@@ -5393,8 +5393,8 @@ The passage through different table accumulate the \textbf{actions} associated w
 	\caption{Packet forwarding through flow table pipeline, end-to-end process}
 	\label{sent-out-pipeline}
 \end{figure}
-If there is a match on one or more entry in the table, the match is defined to be with the highest priorioty matching entry. 
-If there is a match only on a table-miss entry, the table entry may contain instructions as with any other entry. In practice, thee table-miss entry specifies one of three actions:
+If there is a match on one or more entry in the table, the match is defined to be with the highest priority matching entry. 
+If there is a match only on a table-miss entry, the table entry may contain instructions as with any other entry. In practice, thee \textbf{table-miss entry} specifies one of three actions:
 \begin{enumerate}
 	\item 
 	\textbf{Send packet to controller}: this will enable the controller to define a new flow for this  and similar packet or decide to drop the packet
@@ -5417,7 +5417,7 @@ We may distinguish three layers:
 	\item 
 	\textbf{Communciation layer}: in the bottom one there is the OpenFlow implementation and the SNMP protocol.
 	\item 
-	\textbf{Network-wide state management}: the central part is the core of the controller. It collect and manage the information about the underlying infrastructure (\textit{host information, how many switches, how many active ports are active, etc}) and according to those information build the general network overview and extract statistics and manage dynamically flow tables.
+	\textbf{Network-wide state management}: the central part is the core of the controller. It collect and manage the information about the underlying infrastructure (\textit{host information, how many switches, how many ports are active, etc}) and according to those information build the general network overview and extract statistics and manage dynamically flow tables.
 	\item 
 	\textbf{Interface layer to network control apps}: In the upper layer there are components that handle the interaction with application like \textit{network graph, RESTful API} to expose the network topology to the application or \textit{intent} that, for example, state at high level \textit{"drop the malicious traffic pattern"}  without specifying how: the SDN controller elaborates this intent and traduce this intent in a set of rules to be installed based on the current network topology.
 \end{enumerate}
@@ -5459,7 +5459,7 @@ The main \textit{\textbf{switch-to-controller}} messages can be:
 	\texttt{port-status}:  inform the controller of a change on a port
 \end{itemize}
 
-Usually network oeprators don't \textit{program} switches by creating/sending OpenFlow message directly but use higher-level abstraction at the controller.
+Usually network operators don't \textit{program} switches by creating/sending OpenFlow message directly but use higher-level abstraction at the controller.
 \subsubsection{Control/data plane interaction example}\label{sec:sdn-controldata-plane-interaction-example}
 The interaction between the SDN control plane and data plane consists of 6 steps, as pictured in \ref{sdn-control-plane-interaction}. 
 \begin{figure}[h!]
@@ -5537,9 +5537,9 @@ When the switch is initialized:
 	\item 
 	Establish a connection with the controller
 	\item 
-	The controller send a message \textit{FEATURE REQUEST MESSAGE} to the switch
+	The controller send a message \textit{FEATURE\_REQUEST\_ MESSAGE} to the switch
 	\item 
-	The switch responds with a message \textit{FEATURE REPLY MESSAGE}
+	The switch responds with a message \textit{FEATURE\_REPLY\_MESSAGE}
 	\item 
 	It informs the controller of relevant parameter for the discovery of the links like the \texttt{Switch ID} and a list of \texttt{active ports} with their respective MAC associate, among other.
 	At the end of the initial handshake, the controller knows the exact
@@ -5758,7 +5758,7 @@ Virtualize this function represent an advantage because they're usually in high 
 
 The complexity of internet arises, shifting from end to end device to a multiple type of device as an intermediary between two end nodes.
 So we can state the problem as \textit{increasing demand} from users and short-lived service with high data rates: this implies the need to purchase and operate physical equipment, obtaining a dense deployment of network equipment.
-The telco operator so shifted from hardware pure based solution to software-based solution: they grouped in ETSI -  European Telco Standards Institute.
+The telco operator progressively shifted from hardware pure based solution to software-based solution.
 \subsection{Overview}\label{sec:key-idea}
 %todo%
 %toreview%
@@ -5828,35 +5828,29 @@ A network service can be viewed architecturally as a \textit{forwarding graph} o
 \label{VNF-eg1}
 \end{figure}
 
-In the previous picture (\ref{VNF-eg1}) there is a chain of network functions: the interconnections among the \textit{NFs} and endpoints are depicted by \textit{dashed lines}, representing logical links. These logical links are supported by physical paths through infrastructure networks (\textit{wired or wireless}). Endpoints can be a network enterprise (\texttt{A}) or a datacenter (\texttt{B}), depending on the specific scenario.
-
-In figure \ref{topological-view-eg1} a topological view of the previous picture.
+In the previous picture (\ref{VNF-eg1}) there is a chain of network functions: the interconnections among the \textit{NFs} and endpoints are depicted by \textit{dashed lines}, representing logical links. These logical links are supported by \textbf{physical paths} through infrastructure networks (\textit{wired or wireless}). Endpoints can be a network enterprise (\texttt{e.g site A}) or a datacenter (\texttt{e.g. site B}), depending on the specific scenarios.\\\\
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230405171343.png}
 	\caption{Forwarding graph of \ref{VNF-eg1}}
 \label{topological-view-eg1}
 \end{figure}
-
-VNF can also be decomposed in different functions: the VNFs run as VMs on physical machine (\textit{called \textbf{Points of Presence - PoPs}}) so the placement it's generally located where it's function it's optimal. As an example, consider \texttt{VFN-1} as a cache service that is placed at the edge of the network. Consider also the pictured schema where the nested function \textit{VNF-FG-2} is composed by three different \textit{Virtualized Network Functions} (\textit{respectively VNF-2A, VNF-2B, VNF-2C}). The virtualization allows to migrate and instantiate those functions among different PoPs, also automating those operations by \textbf{orchestrating} the setup, installation and execution of VFN autonomously.
+The \textit{topological view} of the previous scenario in \ref{topological-view-eg1} indicates also that VNF can be decomposed in different functions: the VNFs run as VMs on physical machine (\textit{called \textbf{Points of Presence - PoPs}}) so the placement it's generally located where it's function it's optimal. As an example, consider \texttt{VFN-1} as a cache service that is placed at the edge of the network. Consider also the pictured schema where the nested function \textit{VNF-FG-2} is composed by three different \textit{Virtualized Network Functions} (\textit{respectively VNF-2A, VNF-2B, VNF-2C}). The virtualization allows to migrate and instantiate those functions among different PoPs, also automating those operations by \textbf{orchestrating} the setup, installation and execution of VFN autonomously.
 \subsection{NFV Architectural Framework}\label{sec:nfv-architectural-framework}
 The \textbf{architectural framework} addresses the following:
 \begin{itemize}
 	\item 
-	\textbf{NFVI (Network Function Virtualization Infrastructure)}: The resources required to setup a Network service
+	\textbf{NFVI (Network Function Virtualization Infrastructure)}: The resources required to setup a Network Service
 	\item 
-	\textbf{VNF (Virtualized Network Function)}: The functionality that is required due to the decoupling network functions into software and hardware
+	\textbf{VNF (Virtualized Network Function)}: The functionality that is required due to the decoupling Network Functions into software and hardware
 	\item 
 	\textbf{MANO (Management and Orchestration)}: Allocate a set of virtual resources and support the management of orchestration of the functions
 \end{itemize}
-
 The general infrastructure schema is pictured in \ref{nfv-arch-schema}.
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230405171948.png}
 	\caption{NFV Infrastructure schema}
 \label{nfv-arch-schema}
 \end{figure}
-
-
 The \textbf{NFV infrastructure (NFVI)} comprises the hardware and software resources that create the environment in which VNFs are deployed. Each \textbf{VNF} is implemented in software to run on virtual computing, storage, and networking resources. Finally, the \textit{\textbf{NFV management and orchestration (NFV-MANO)}}  is the component responsible for the management and orchestration of all resources in the NFV environment, ensuring the quality of service and the SLAs.
 \paragraph{NFV Infrastructure}\label{sec:nfv-infrastructure}
 It comprehends the totality of all \textbf{hardware and software components} which build up the environment in which VNFs are deployed, managed and executed by  virtualizing physical computing, storage, and networking and places them into resource pools.
@@ -5916,7 +5910,7 @@ Going bottom-up,  the first component is \textbf{VIM - Virtualized Infrastructur
 A single instance of a VIM is responsible for controlling and managing the NFVI compute, storage, and network resources, usually within one operator’s infrastructure domain. To deal with the overall networking environment, multiple VIMs within a single MANO may be needed.\\
 The second component is the \textbf{Virtual Network Function Manager - VNFM}: It oversees the \textit{lifecycle management} by instation, update, query, scaling up/down, terminate of VNF instance. It's also under its responsibility the \textit{collection of NFVI performance measurement results} and faults/events information, and correlation to VNF instance -related events/faults.
 
-Finally, the \textbf{NFV Orchestator - NFVO} is responsible for installing and configuring new network services (\textit{NS}) and virtual network functions (\textit{VNF}) packages alonside the management of the lifecycle of network service and global resources.
+Finally, the \textbf{NFV Orchestator - NFVO} is responsible for installing and configuring new Network Services (\textit{NS}) and virtual network functions (\textit{VNF}) packages alonside the management of the lifecycle of network service and global resources.
 The \textbf{Network services orchestration} it's responsible of manage/coordinate the creation of an end-to-end service that involves VNFs: it creates end-to-end service between different VNFs  and can instantiate VNFMs, where applicable.
 Differently, the \textbf{Resource orchestration} manages and coordinates the resources under the management of different VIMs.\\
 Overall, the \textit{NFV MANO} internal schema is pictured in \ref{mano-inside}. 
@@ -5957,7 +5951,7 @@ Each subnetwork will perform slicing of the physical network resources to yield 
 	\caption{5G Use cases table}
 	\label{5g-use-cases-table}
 \end{figure}
-Basically network slices allows to create \textit{customzed networks} realized by creating multiple virtual and end-to-end networks.
+Basically network slices allows to create \textit{customized networks} realized by creating multiple virtual and end-to-end networks.
 This can be done by exploiting the two technical element already presented:
 \begin{itemize}
 	\item \textbf{NFV}: implemenets the NFs in a \textit{network slice}. The virtualization alllows the isolation of each network slice from all other slices: this assures QoS and security requirements for that slice, independently from other network slices.
@@ -5995,7 +5989,7 @@ NFV allows to move those functions where needed, based on specific requirements 
 For the \textit{phone slice}, the core is distributed in the core cloud, moving the workload to the more resource-powered location.
 
 \begin{figure}[h]
-	\centering\includegraphics[scale=0.50]{images/Pasted image 20230420150455.png}
+	\centering\includegraphics[scale=0.60]{images/Pasted image 20230420150455.png}
 	\caption{Flow filtering, different view of \ref{slicing-overall-components}}
 	\label{flow-filtering-view}
 \end{figure}
@@ -6226,7 +6220,7 @@ where $T = b-a$, obtaining the following pictured extension:
 Signals may have different nature, depending on the type of transmission channel: they can be \textit{electromagnetic, sound, optical, waves, etc}.
 At the source, a \textbf{transducer} converts a message into a signal, while at the destination another transducer converts a signal into a message (\textit{e.g. an antenna is a tansducer for electromagnetic signals}).
 During the transmission from source to destination, the signal can be \textbf{distorted} or turbated by the \textbf{noises} that charaterize the specific \textit{trasmissive medium}. The \textit{distortion} of a signal is common when dealing with a signal composed by \textit{different waves} that are attenuated during the transmission, obtaining at destination a different signal respect to the source one.
-A common metric for signal is \textbf{SNR - Signal to Noise ratio} express the index quality of a chanel, allowing to measure the intrinsic property of the transmissive medium, not of a message itself.
+A common metric for signals is \textbf{SNR - Signal to Noise Ratio} express the index quality of a channel, allowing to measure the intrinsic property of the transmissive medium, not of a message itself.
 
 The transmission process can be \textbf{analogic} or \textbf{digital} based on the type of signal to be transmitted.
 The \textit{analog transission} \ref{analog-trans} use devices called \textbf{adaptors} that reduce the effect of noise and increase the efficiency, improving the quality of the signal. A \textbf{transducer} can be imagined as the \textit{antenna} that emits the \textit{electromagnetic waves} on the sender side or on the receiver-one used during signal reception, transforming it into an \textbf{electrical signal}, as shown in the following figure.
@@ -6246,7 +6240,7 @@ Differently, in the \textbf{digital transmission} \ref{digital-trans}, there is 
 
 The previous schema made use of the \textit{analog channel} transmission component already described, using at both the transmission and reception phase a component called \textbf{modem}: it allows to perform \textit{modulation} and \textit{demodulation}, transforming the \textit{discrete signal} in an \textit{analog signal} (\textit{\textbf{modulation}}) and, at receiver side, extracting from the received \textit{analog signal} the correspondent \textit{digital message} transmitted by the source.
 
-The error probability is computed based on probability of \textit{noise/distortion} happened during the analog transmission phase, combined with error in the \textit{demodulation phase}. An optimal solution is to provide a stable or predictable limit to this probabiltiy, allowing \textbf{channel encoding} to use also \textit{redundancy mechanism} to correct errors in \textit{transmission and demodulation phase}.
+The error probability is computed based on probability of \textit{noise/distortion} happened during the analog transmission phase, combined with error in the \textit{demodulation phase}. An optimal solution is to provide a stable or predictable limit to this probability, allowing \textbf{channel encoding} to use also \textit{redundancy mechanism} to correct errors in \textit{transmission and demodulation phase}.
 \paragraph{Sampling and quantization}\label{sec:sampling-and-quantization}
 Referring to the \textbf{digital transmission}, there are preliminar operations to be carried out both by the transmitter and receiver before starting transmitting the signal.
 The \textbf{transmitter} first sample the \textit{analog signal} at \textit{discrete intervals} (\textit{\textbf{quantization operation}}) by means of an \textbf{Analog to Digital Converter (ADC)}, allowing the analog signal to be represented into a sequence of computable digital symbols.
@@ -6281,7 +6275,7 @@ $x(t) = sin(2\pi t) + sin(4\pi t)$
 	\caption{Example of different harmonic with their amplitude factor}
 	\label{harmonic-eg2}
 \end{figure}
-Based on the example pictured in \ref{harmonic-eg2}, we can merge the different components of the signal with their frequencies as:
+Based on the example pictured in \ref{harmonic-eg2}, we can merge the different components of the signal with their frequencies that indicates:
 \begin{itemize}
 	\item 
 	$s_{0}(t)$: \textbf{constant component} (\textit{frequency $0$})
@@ -6301,12 +6295,12 @@ Based on the example pictured in \ref{harmonic-eg2}, we can merge the different 
 	\caption{Modulation of the coefficient factor for each harmonic}
 \end{figure}
 The \textbf{Fourier series} and \textbf{FDA} allows to \textit{revert the process}, identifying the basic building block functions and their frequencies from a single signal, even composed by different waves at different frequencies.\\
-The key idea is to \textbf{decompose the signal} in its basic building block identified, expressing it as the \textbf{sum of an infinite number of continous functions}, oscillating at \textit{different frequencies.} This represents a change of coordinates: from \textit{time} domain to \textit{frequency} domain.\\
-This set of continuous functions defines the \textit{\textbf{base}} of decomposition: the Fourier series has a base represented by a set of functions $\varphi_{n}(t), n \in \mathbb{Z}$ in which the functions must be \textbf{orthogonal} (\textit{as in the case of decomposition of vectors in a vector space}).\\
+The key idea is to \textbf{decompose the signal} in its basic building blocks, expressing it as the \textbf{sum of an infinite number of continous functions}, oscillating at \textit{different frequencies.} This represents a change of coordinates: from \textit{time} domain to \textit{frequency} domain.\\
+This set of continuous functions defines the \textit{\textbf{base of decomposition}}: the Fourier series has a base represented by a set of functions $\varphi_{n}(t), n \in \mathbb{Z}$ in which the functions must be \textbf{orthogonal} (\textit{as in the case of decomposition of vectors in a vector space}).\\
 
 
 \begin{definition}[Fourier series]
-	Given a \textit{\textbf{continuous}} singal $s(t):\mathbb{R} \rightarrow \mathbb{R}$, \textit{\textbf{periodic}} in the interval $[-\pi, \pi]$, its \textbf{Fourier series} is defined as:
+	Given a \textit{\textbf{continuous}} signal $s(t):\mathbb{R} \rightarrow \mathbb{R}$, \textit{\textbf{periodic}} in the interval $[-\pi, \pi]$, its \textbf{Fourier series} is defined as:
 	\begin{equation}
 		s(t) = \frac{1}{2}a_{0}+\sum_{n=1}^{\infty}a_{n}cos(nt)+b_{n}sin(nt)
 	\end{equation}
@@ -6391,14 +6385,14 @@ s(t) = \frac{3}{2}-\sum_{k=1}^{\infty}\frac{2}{(2k-1)\pi}sin((2k-1)t)
 
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.40]{images/Pasted image 20230507182103.png}
-	\caption{Signal approximation with Fourier series over $k=20$ and $k=100$ harmonics}
+	\caption{Signal approximation with Fourier series over $k=20$ and $k=50$ harmonics}
 	\label{harmonic-approx}
 \end{figure}
 
 As shown in \ref{harmonic-approx}, the approximation improves with an high number of harmonics.
 
 
-The Fourier series is defined also for signals with \textbf{arbitrary period}. Given a continuous signal $s(t): \mathbb{R} \rightarrow \mathbb{R}$, periodic in the interval $[-\frac{T}{2}, \frac{T}{2}]$.
+The Fourier series is defined also for signals with \textbf{arbitrary period}. Given a continuous signal $s(t): \mathbb{R} \rightarrow \mathbb{R}$, periodic in the interval $[-\frac{T}{2}, \frac{T}{2}]$.\\
 Use the substitution $y = \frac{2\pi t}{T}$ obtaining:
 \begin{equation}
 	f(y) = s(\frac{2\pi t}{T})
@@ -6550,7 +6544,10 @@ Or, by expressing them as a coffiecient for real and imaginary part:
 	a = |x|, b = |x|\sin{\varphi}
 \end{equation}
 By complex number property, we can reformulate as:
-$|x|e^{j\varphi} = |x|\cos{\varphi} + j|x|\sin{\varphi}$
+\begin{equation}
+	|x|e^{j\varphi} = |x|\cos{\varphi} + j|x|\sin{\varphi}
+\end{equation}
+
 
 This notation allows to express the Fourier series with a different \textit{exponential base}. Usually, the Fourier series is expressed in the complex domain, representing signals $s(t): \mathbb{R} \rightarrow \mathbb{C}$ that also includes signals defined in $\mathbb{
 R} \rightarrow \mathbb{R}$. \\
@@ -6591,7 +6588,7 @@ The coeffient $S_{0} = \frac{1}{T}\int_{0}^{T}s(t)dt$ is the average value of $s
 Referring \ref{geometric-complex-fourier}, for $n=0$ we have the continuous signal $S_{0}$, for $|n|=1$ we obtain the fundamental frequency $f_{0} = F$ with period $T=\frac{1}{F}$, lastly for $|n| > 1$ we obtain the harmonics of frequency $f_{n} = nF$ with periodi $T/n$.
 
 \subparagraph{Signals with limited support}
-The Fourier series can also be derived for an \textbf{aperiodic signal} with limited support (\textit{n.b.: null out of interval $[a,b]$}): the series assume that the signal is periodic anywat, taking as period thhe entire duration of the signal. The main consequences is that, if you revert from $S_{n}$ to $s(t)$ you obtain the periodic extension of the signal, as seen in \ref{periodic-extension-diagram}.
+The Fourier series can also be derived for an \textbf{aperiodic signal} with limited support (\textit{n.b.: null out of interval $[a,b]$}): the series assume that the signal is periodic anyway, taking as period the entire duration of the signal. The main consequences is that, if you revert from $S_{n}$ to $s(t)$ you obtain the periodic extension of the signal, as seen in \ref{periodic-extension-diagram}.
 
 \begin{figure}[h]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230511150144.png}
@@ -6665,7 +6662,7 @@ and by letting $T = 4$ (\textit{the same of having $F = 1/4$}) we have \ref{four
 
 \paragraph{Spectrum of a signal}
 Given a signal $s(t)$, by Fourier we have a mean to find the coefficients of the series $S_{n}$: on the other hand, given the coefficient $S_{n}$ we can reconstruct the signal $s(t)$. The \textbf{ordered coeffiecients} $S_{n}$ from $-\infty$ to $\infty$ is called \textbf{spectrum of $s(t)$} (\textit{we can also define the spectrum as a discrete signal}).\\
-It's not always possible to represent the spectrum with one 2D diagram but we can rperesent the complex number $S_{n}$ by using the Euler's exponential:
+It's not always possible to represent the spectrum with one 2D diagram but we can represent the complex number $S_{n}$ by using the Euler's exponential:
 \begin{equation}
 	S_{n} = |S_{n}|e^{j\varphi_{n}}
 \end{equation}
@@ -6686,7 +6683,7 @@ Referring the previous example \ref{fourier-eg2}, the spectrum of $s(t)$ is pict
 
 
 \subsection{Fourier Transform for non-periodic signals}
-The transform so far applies only to periodic signals but can be applied also to \textbf{finite signals} (\textit{in a timeframe of length $T$}). In this case, the counter-transform returns a periodic signal with periodi $T$: the key idea is that we consider a periodic signal but with an \textbf{increasing period $T$ to infinity} thus the fundamental frequency is decreasing so the signal became less and less periodic, obtaining an aperiodic or non-perdioic signal because the frequency are closer to eacher other, obtaining a continuous set of frequencies thus the periodicity progressively disappear.\\
+The transform so far applies only to periodic signals but can be applied also to \textbf{finite signals} (\textit{in a timeframe of length $T$}). In this case, the counter-transform returns a periodic signal with period $T$: the key idea is that we consider a periodic signal but with an \textbf{increasing period $T$ to infinity} thus the fundamental frequency is decreasing so the signal became less and less periodic, obtaining an aperiodic or non-periodic signal because the frequency are closer to eacher other, obtaining a continuous set of frequencies thus the periodicity progressively disappear.\\
 A \textbf{non-periodic signal $s(t)$} can be expressed as:
 \begin{equation}
 	s(t) = \int_{-\infty}^{\infty} S(f)e^{j2\pi ft}df
@@ -6816,9 +6813,8 @@ Imagine to have the signal $s(t)=\sin(t)$ with frequency $f = \frac{1}{2\pi} = 0
 \end{figure}
 
 The sampling is a signal itself, $s(nT_{c})$, which takes a value for every multiple of the sampling period $T_{c}$.
-The original signal is a \textit{power signal} while the signal we obtain with the sampling it's composed by values taken at distnace $T_{c}$ thus it's now a \textit{power signal}.
-The sampling frequency is little more than $2f$ (\textit{two times the signal}).
-
+The original signal is a \textit{power signal} while the signal we obtain with the sampling it's composed by values taken at distnace $T_{c}$ thus it's not a \textit{power signal}.
+The sampling frequency is little more than $2f$.\\
 To reconstruct a continuous signal from a given set of samples, several methods can be applied, like \textbf{interpolation}. There are several way to reconstruct the signal, based on it's type:
 \begin{itemize}
 	\item 
@@ -6922,7 +6918,7 @@ From this set we can reconstruct different signals, all different from the origi
 \end{figure}
 
 
-Starting from the given set of sample we could reconstruct an \textbf{infinite number of armonics}, undistinguishable from the armoncis of the original signal, like the one pictured in \ref{infinite-reconstruct}:
+Starting from the given set of sample we could reconstruct an \textbf{infinite number of armonics}, undistinguishable from the armonics of the original signal, like the one pictured in \ref{infinite-reconstruct}:
 \begin{figure}[h!]
 	\centering\includegraphics[scale=0.50]{images/Pasted image 20230526115550.png}
 	\caption{Infinite number of armonics from the given set of sample}
@@ -7003,7 +6999,7 @@ The quantization activity allows to encode $x_{k}$ in a \textbf{integer value} $
 $R_{b} = R \times f_{c}$ bit/sec
 \end{center}
 
-The error can be quantified  as \textbf{quantized error}:$s(t)-y_{k}$ where $y_{k}$ is the quantized value.
+The error can be quantified  as \textbf{quantized error} expressed as $s(t)-y_{k}$ where $y_{k}$ is the quantized value.
 
 The \textit{quantization noise} can be of two different type:
 \begin{itemize}

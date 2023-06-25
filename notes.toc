@@ -202,7 +202,7 @@
 \contentsline {subparagraph}{Example}{157}{section*.334}%
 \contentsline {subsubsection}{OpenFlow Switch}{157}{section*.336}%
 \contentsline {section}{\numberline {11.2}Control Plane}{158}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}OpenFlow}{159}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.1}OpenFlow}{158}{subsection.11.2.1}%
 \contentsline {subsubsection}{Control/data plane interaction example}{160}{section*.342}%
 \contentsline {section}{\numberline {11.3}Topology discovery and forwarding}{160}{section.11.3}%
 \contentsline {subsection}{\numberline {11.3.1}LLDP - Link Layer Discovery Protocol}{161}{subsection.11.3.1}%
@@ -217,7 +217,7 @@
 \contentsline {subsection}{\numberline {12.0.4}Management and Orchestration (MANO)}{170}{subsection.12.0.4}%
 \contentsline {section}{\numberline {12.1}Network Slicing}{171}{section.12.1}%
 \contentsline {subsubsection}{5G Use case}{172}{section*.366}%
-\contentsline {subsection}{\numberline {12.1.1}Network Slicing Example}{173}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.1}Network Slicing Example}{174}{subsection.12.1.1}%
 \contentsline {chapter}{\numberline {13}Theory of signals}{176}{chapter.13}%
 \contentsline {section}{\numberline {13.1}Classification of signals}{176}{section.13.1}%
 \contentsline {paragraph}{Digital signals example}{177}{section*.374}%

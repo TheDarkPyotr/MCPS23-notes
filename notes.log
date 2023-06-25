@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.2)  24 JUN 2023 09:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.2)  24 JUN 2023 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -958,7 +958,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count347
  (./cover.tex
-<images/cherubino_pant541_144.png, id=569, 144.54pt x 147.55125pt>
+<images/cherubino_pant541_144.png, id=565, 144.54pt x 147.55125pt>
 File: images/cherubino_pant541_144.png Graphic file (type png)
 <use images/cherubino_pant541_144.png>
 Package pdftex.def Info: images/cherubino_pant541_144.png  used on input line 4
@@ -991,13 +991,13 @@ l.88 ... Service primitives}{73}{subsection.6.0.5}
 
  [3]
 Chapter 1.
-<images/Pasted image 20230221153200.png, id=739, 751.80875pt x 358.33875pt>
+<images/Pasted image 20230221153200.png, id=734, 751.80875pt x 358.33875pt>
 File: images/Pasted image 20230221153200.png Graphic file (type png)
 <use images/Pasted image 20230221153200.png>
 Package pdftex.def Info: images/Pasted image 20230221153200.png  used on input 
 line 126.
 (pdftex.def)             Requested size: 375.90344pt x 179.16893pt.
-<images/Pasted image 20230221153337.png, id=742, 519.9425pt x 349.305pt>
+<images/Pasted image 20230221153337.png, id=737, 519.9425pt x 349.305pt>
 File: images/Pasted image 20230221153337.png Graphic file (type png)
 <use images/Pasted image 20230221153337.png>
 Package pdftex.def Info: images/Pasted image 20230221153337.png  used on input 
@@ -1011,13 +1011,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  <./images/Pasted image 20230221153200.png>] [5 <./images/Pasted image 20230221
 153337.png>]
-<images/Pasted image 20230221155324.png, id=761, 563.10374pt x 224.84pt>
+<images/Pasted image 20230221155324.png, id=756, 563.10374pt x 224.84pt>
 File: images/Pasted image 20230221155324.png Graphic file (type png)
 <use images/Pasted image 20230221155324.png>
 Package pdftex.def Info: images/Pasted image 20230221155324.png  used on input 
 line 183.
 (pdftex.def)             Requested size: 394.16994pt x 157.38692pt.
-<images/Pasted image 20230221155442.png, id=763, 704.6325pt x 441.65pt>
+<images/Pasted image 20230221155442.png, id=758, 704.6325pt x 441.65pt>
 File: images/Pasted image 20230221155442.png Graphic file (type png)
 <use images/Pasted image 20230221155442.png>
 Package pdftex.def Info: images/Pasted image 20230221155442.png  used on input 
@@ -1025,7 +1025,7 @@ line 193.
 (pdftex.def)             Requested size: 352.3154pt x 220.82445pt.
  [6 <./images/Pasted image 20230221155324.png> <./images/Pasted image 202302211
 55442.png>]
-<images/Pasted image 20230221160450.png, id=776, 987.69pt x 277.035pt>
+<images/Pasted image 20230221160450.png, id=771, 987.69pt x 277.035pt>
 File: images/Pasted image 20230221160450.png Graphic file (type png)
 <use images/Pasted image 20230221160450.png>
 Package pdftex.def Info: images/Pasted image 20230221160450.png  used on input 
@@ -1036,7 +1036,7 @@ Overfull \hbox (38.59969pt too wide) in paragraph at lines 226--227
  [][] 
  []
 
-<images/Pasted image 20230221160655.png, id=778, 568.1225pt x 310.15875pt>
+<images/Pasted image 20230221160655.png, id=773, 568.1225pt x 310.15875pt>
 File: images/Pasted image 20230221160655.png Graphic file (type png)
 <use images/Pasted image 20230221160655.png>
 Package pdftex.def Info: images/Pasted image 20230221160655.png  used on input 
@@ -1050,13 +1050,13 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 251.
 
 [7 <./images/Pasted image 20230221160450.png>]
-<images/Pasted image 20230222185737.png, id=788, 608.2725pt x 419.5675pt>
+<images/Pasted image 20230222185737.png, id=783, 608.2725pt x 419.5675pt>
 File: images/Pasted image 20230222185737.png Graphic file (type png)
 <use images/Pasted image 20230222185737.png>
 Package pdftex.def Info: images/Pasted image 20230222185737.png  used on input 
 line 284.
 (pdftex.def)             Requested size: 304.13551pt x 209.78323pt.
-<images/Pasted image 20230222185842.png, id=789, 579.16376pt x 502.87875pt>
+<images/Pasted image 20230222185842.png, id=784, 579.16376pt x 502.87875pt>
 File: images/Pasted image 20230222185842.png Graphic file (type png)
 <use images/Pasted image 20230222185842.png>
 Package pdftex.def Info: images/Pasted image 20230222185842.png  used on input 
@@ -1064,7 +1064,7 @@ line 294.
 (pdftex.def)             Requested size: 289.58116pt x 251.43875pt.
  [8 <./images/Pasted image 20230221160655.png> <./images/Pasted image 202302221
 85737.png>]
-<images/Pasted image 20230222191530.png, id=798, 695.59875pt x 319.1925pt>
+<images/Pasted image 20230222191530.png, id=793, 695.59875pt x 319.1925pt>
 File: images/Pasted image 20230222191530.png Graphic file (type png)
 <use images/Pasted image 20230222191530.png>
 Package pdftex.def Info: images/Pasted image 20230222191530.png  used on input 
@@ -1077,20 +1077,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--318
 
 [9 <./images/Pasted image 20230222185842.png> <./images/Pasted image 2023022219
 1530.png>]
-<images/Pasted image 20230222192441.png, id=809, 681.54625pt x 345.29pt>
+<images/Pasted image 20230222192441.png, id=804, 681.54625pt x 345.29pt>
 File: images/Pasted image 20230222192441.png Graphic file (type png)
 <use images/Pasted image 20230222192441.png>
 Package pdftex.def Info: images/Pasted image 20230222192441.png  used on input 
 line 329.
 (pdftex.def)             Requested size: 408.93091pt x 207.17558pt.
  [10 <./images/Pasted image 20230222192441.png>]
-<images/Pasted image 20230223102134.png, id=818, 661.47125pt x 382.42876pt>
+<images/Pasted image 20230223102134.png, id=813, 661.47125pt x 382.42876pt>
 File: images/Pasted image 20230223102134.png Graphic file (type png)
 <use images/Pasted image 20230223102134.png>
 Package pdftex.def Info: images/Pasted image 20230223102134.png  used on input 
 line 352.
 (pdftex.def)             Requested size: 330.73482pt x 191.2139pt.
-<images/Pasted image 20230223100530.png, id=820, 560.0925pt x 383.4325pt>
+<images/Pasted image 20230223100530.png, id=815, 560.0925pt x 383.4325pt>
 File: images/Pasted image 20230223100530.png Graphic file (type png)
 <use images/Pasted image 20230223100530.png>
 Package pdftex.def Info: images/Pasted image 20230223100530.png  used on input 
@@ -1100,7 +1100,7 @@ line 363.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230228112347.png, id=822, 662.475pt x 260.975pt>
+<images/Pasted image 20230228112347.png, id=817, 662.475pt x 260.975pt>
 File: images/Pasted image 20230228112347.png Graphic file (type png)
 <use images/Pasted image 20230228112347.png>
 Package pdftex.def Info: images/Pasted image 20230228112347.png  used on input 
@@ -1112,7 +1112,7 @@ Overfull \hbox (8.48523pt too wide) in paragraph at lines 381--382
  []
 
 [11 <./images/Pasted image 20230223102134.png>]
-<images/Pasted image 20230228112743.png, id=834, 646.415pt x 272.01625pt>
+<images/Pasted image 20230228112743.png, id=829, 646.415pt x 272.01625pt>
 File: images/Pasted image 20230228112743.png Graphic file (type png)
 <use images/Pasted image 20230228112743.png>
 Package pdftex.def Info: images/Pasted image 20230228112743.png  used on input 
@@ -1120,13 +1120,13 @@ line 391.
 (pdftex.def)             Requested size: 452.48741pt x 190.41006pt.
  [12 <./images/Pasted image 20230223100530.png> <./images/Pasted image 20230228
 112347.png>]
-<images/Pasted image 20230228114110.png, id=846, 415.5525pt x 273.02pt>
+<images/Pasted image 20230228114110.png, id=840, 415.5525pt x 273.02pt>
 File: images/Pasted image 20230228114110.png Graphic file (type png)
 <use images/Pasted image 20230228114110.png>
 Package pdftex.def Info: images/Pasted image 20230228114110.png  used on input 
 line 398.
 (pdftex.def)             Requested size: 290.88477pt x 191.11269pt.
-<images/Pasted image 20230228114543.png, id=848, 492.84125pt x 393.47pt>
+<images/Pasted image 20230228114543.png, id=842, 492.84125pt x 393.47pt>
 File: images/Pasted image 20230228114543.png Graphic file (type png)
 <use images/Pasted image 20230228114543.png>
 Package pdftex.def Info: images/Pasted image 20230228114543.png  used on input 
@@ -1138,7 +1138,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13 <./images/Pasted image 20230228112743.png> <./images/Pasted image 202302281
 14110.png>] [14 <./images/Pasted image 20230228114543.png>]
-<images/Pasted image 20230529150410.png, id=863, 457.71pt x 720.6925pt>
+<images/Pasted image 20230529150410.png, id=858, 457.71pt x 720.6925pt>
 File: images/Pasted image 20230529150410.png Graphic file (type png)
 <use images/Pasted image 20230529150410.png>
 Package pdftex.def Info: images/Pasted image 20230529150410.png  used on input 
@@ -1146,13 +1146,13 @@ line 455.
 (pdftex.def)             Requested size: 137.31406pt x 216.20941pt.
  [15 <./images/Pasted image 20230529150410.png>]
 Chapter 2.
-<images/Pasted image 20230301091322.png, id=871, 395.4775pt x 229.85875pt>
+<images/Pasted image 20230301091322.png, id=866, 395.4775pt x 229.85875pt>
 File: images/Pasted image 20230301091322.png Graphic file (type png)
 <use images/Pasted image 20230301091322.png>
 Package pdftex.def Info: images/Pasted image 20230301091322.png  used on input 
 line 487.
 (pdftex.def)             Requested size: 276.83235pt x 160.90001pt.
-<images/Pasted image 20230301091527.png, id=873, 395.4775pt x 295.1025pt>
+<images/Pasted image 20230301091527.png, id=868, 395.4775pt x 295.1025pt>
 File: images/Pasted image 20230301091527.png Graphic file (type png)
 <use images/Pasted image 20230301091527.png>
 Package pdftex.def Info: images/Pasted image 20230301091527.png  used on input 
@@ -1164,7 +1164,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230301091741.png, id=875, 1105.12875pt x 554.07pt>
+<images/Pasted image 20230301091741.png, id=870, 1105.12875pt x 554.07pt>
 File: images/Pasted image 20230301091741.png Graphic file (type png)
 <use images/Pasted image 20230301091741.png>
 Package pdftex.def Info: images/Pasted image 20230301091741.png  used on input 
@@ -1187,7 +1187,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 515--521
 
 [17 <./images/Pasted image 20230301091322.png> <./images/Pasted image 202303010
 91527.png>]
-<images/Pasted image 20230303163018.png, id=895, 335.2525pt x 165.61874pt>
+<images/Pasted image 20230303163018.png, id=890, 335.2525pt x 165.61874pt>
 File: images/Pasted image 20230303163018.png Graphic file (type png)
 <use images/Pasted image 20230303163018.png>
 Package pdftex.def Info: images/Pasted image 20230303163018.png  used on input 
@@ -1195,7 +1195,7 @@ line 530.
 (pdftex.def)             Requested size: 167.62584pt x 82.80916pt.
  [18 <./images/Pasted image 20230301091741.png> <./images/Pasted image 20230303
 163018.png>]
-<images/Pasted image 20230303165056.png, id=906, 465.74pt x 311.1625pt>
+<images/Pasted image 20230303165056.png, id=901, 465.74pt x 311.1625pt>
 File: images/Pasted image 20230303165056.png Graphic file (type png)
 <use images/Pasted image 20230303165056.png>
 Package pdftex.def Info: images/Pasted image 20230303165056.png  used on input 
@@ -1204,7 +1204,7 @@ line 570.
  [19 <./images/Pasted image 20230303165056.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 645.
-<images/Pasted image 20230304093804.png, id=915, 689.57625pt x 279.0425pt>
+<images/Pasted image 20230304093804.png, id=910, 689.57625pt x 279.0425pt>
 File: images/Pasted image 20230304093804.png Graphic file (type png)
 <use images/Pasted image 20230304093804.png>
 Package pdftex.def Info: images/Pasted image 20230304093804.png  used on input 
@@ -1216,26 +1216,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 652--665
  []
 
 [20] [21 <./images/Pasted image 20230304093804.png>]
-<images/Pasted image 20230304101151.png, id=934, 787.94376pt x 227.85126pt>
+<images/Pasted image 20230304101151.png, id=929, 787.94376pt x 227.85126pt>
 File: images/Pasted image 20230304101151.png Graphic file (type png)
 <use images/Pasted image 20230304101151.png>
 Package pdftex.def Info: images/Pasted image 20230304101151.png  used on input 
 line 752.
 (pdftex.def)             Requested size: 393.97092pt x 113.92534pt.
  [22]
-<images/Pasted image 20230304101920.png, id=939, 843.15pt x 184.69pt>
+<images/Pasted image 20230304101920.png, id=934, 843.15pt x 184.69pt>
 File: images/Pasted image 20230304101920.png Graphic file (type png)
 <use images/Pasted image 20230304101920.png>
 Package pdftex.def Info: images/Pasted image 20230304101920.png  used on input 
 line 760.
 (pdftex.def)             Requested size: 337.25401pt x 73.87468pt.
-<images/Pasted image 20230304101933.png, id=941, 950.55125pt x 210.7875pt>
+<images/Pasted image 20230304101933.png, id=936, 950.55125pt x 210.7875pt>
 File: images/Pasted image 20230304101933.png Graphic file (type png)
 <use images/Pasted image 20230304101933.png>
 Package pdftex.def Info: images/Pasted image 20230304101933.png  used on input 
 line 767.
 (pdftex.def)             Requested size: 332.69792pt x 73.77672pt.
-<images/Pasted image 20230304102050.png, id=943, 914.41624pt x 648.4225pt>
+<images/Pasted image 20230304102050.png, id=938, 914.41624pt x 648.4225pt>
 File: images/Pasted image 20230304102050.png Graphic file (type png)
 <use images/Pasted image 20230304102050.png>
 Package pdftex.def Info: images/Pasted image 20230304102050.png  used on input 
@@ -1243,7 +1243,7 @@ line 781.
 (pdftex.def)             Requested size: 274.32698pt x 194.52824pt.
  [23 <./images/Pasted image 20230304101151.png> <./images/Pasted image 20230304
 101920.png> <./images/Pasted image 20230304101933.png>]
-<images/Pasted image 20230304102808.png, id=956, 537.00626pt x 560.0925pt>
+<images/Pasted image 20230304102808.png, id=951, 537.00626pt x 560.0925pt>
 File: images/Pasted image 20230304102808.png Graphic file (type png)
 <use images/Pasted image 20230304102808.png>
 Package pdftex.def Info: images/Pasted image 20230304102808.png  used on input 
@@ -1251,13 +1251,13 @@ line 802.
 (pdftex.def)             Requested size: 214.79869pt x 224.03302pt.
  [24 <./images/Pasted image 20230304102050.png> <./images/Pasted image 20230304
 102808.png>]
-<images/Pasted image 20230307112648.png, id=966, 532.99126pt x 239.89626pt>
+<images/Pasted image 20230307112648.png, id=961, 532.99126pt x 239.89626pt>
 File: images/Pasted image 20230307112648.png Graphic file (type png)
 <use images/Pasted image 20230307112648.png>
 Package pdftex.def Info: images/Pasted image 20230307112648.png  used on input 
 line 870.
 (pdftex.def)             Requested size: 373.09134pt x 167.92622pt.
-<images/Pasted image 20230307113500.png, id=968, 544.0325pt x 372.39125pt>
+<images/Pasted image 20230307113500.png, id=963, 544.0325pt x 372.39125pt>
 File: images/Pasted image 20230307113500.png Graphic file (type png)
 <use images/Pasted image 20230307113500.png>
 Package pdftex.def Info: images/Pasted image 20230307113500.png  used on input 
@@ -1279,7 +1279,7 @@ LaTeX Warning: Command \textendash invalid in math mode on input line 922.
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 924.
 
-<images/Pasted image 20230307162949.png, id=985, 517.935pt x 468.75125pt>
+<images/Pasted image 20230307162949.png, id=979, 517.935pt x 468.75125pt>
 File: images/Pasted image 20230307162949.png Graphic file (type png)
 <use images/Pasted image 20230307162949.png>
 Package pdftex.def Info: images/Pasted image 20230307162949.png  used on input 
@@ -1291,13 +1291,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [27
 
 ]
-<images/Pasted image 20230307163527.png, id=997, 435.6275pt x 164.615pt>
+<images/Pasted image 20230307163527.png, id=992, 435.6275pt x 164.615pt>
 File: images/Pasted image 20230307163527.png Graphic file (type png)
 <use images/Pasted image 20230307163527.png>
 Package pdftex.def Info: images/Pasted image 20230307163527.png  used on input 
 line 961.
 (pdftex.def)             Requested size: 217.81322pt x 82.3073pt.
-<images/Pasted image 20230307163642.png, id=999, 692.5875pt x 349.305pt>
+<images/Pasted image 20230307163642.png, id=994, 692.5875pt x 349.305pt>
 File: images/Pasted image 20230307163642.png Graphic file (type png)
 <use images/Pasted image 20230307163642.png>
 Package pdftex.def Info: images/Pasted image 20230307163642.png  used on input 
@@ -1307,7 +1307,7 @@ line 968.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230307163743.png, id=1001, 528.97626pt x 436.63126pt>
+<images/Pasted image 20230307163743.png, id=996, 528.97626pt x 436.63126pt>
 File: images/Pasted image 20230307163743.png Graphic file (type png)
 <use images/Pasted image 20230307163743.png>
 Package pdftex.def Info: images/Pasted image 20230307163743.png  used on input 
@@ -1318,7 +1318,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [28 <./images/Pasted image 20230307162949.png> <./images/Pasted image 202303071
 63527.png>]
-<images/Pasted image 20230307164039.png, id=1014, 697.60625pt x 208.78pt>
+<images/Pasted image 20230307164039.png, id=1009, 697.60625pt x 208.78pt>
 File: images/Pasted image 20230307164039.png Graphic file (type png)
 <use images/Pasted image 20230307164039.png>
 Package pdftex.def Info: images/Pasted image 20230307164039.png  used on input 
@@ -1330,13 +1330,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [29 <./images/Pasted image 20230307163642.png> <./images/Pasted image 202303071
 63743.png>]
-<images/Pasted image 20230307165435.png, id=1027, 1780.6525pt x 722.7pt>
+<images/Pasted image 20230307165435.png, id=1022, 1780.6525pt x 722.7pt>
 File: images/Pasted image 20230307165435.png Graphic file (type png)
 <use images/Pasted image 20230307165435.png>
 Package pdftex.def Info: images/Pasted image 20230307165435.png  used on input 
 line 1030.
 (pdftex.def)             Requested size: 445.16203pt x 180.67455pt.
-<images/Pasted image 20230311120710.png, id=1029, 550.055pt x 347.2975pt>
+<images/Pasted image 20230311120710.png, id=1024, 550.055pt x 347.2975pt>
 File: images/Pasted image 20230311120710.png Graphic file (type png)
 <use images/Pasted image 20230311120710.png>
 Package pdftex.def Info: images/Pasted image 20230311120710.png  used on input 
@@ -1348,7 +1348,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [30 <./images/Pasted image 20230307164039.png> <./images/Pasted image 202303071
 65435.png>]
-<images/Pasted image 20230311121418.png, id=1048, 547.04375pt x 554.07pt>
+<images/Pasted image 20230311121418.png, id=1043, 547.04375pt x 554.07pt>
 File: images/Pasted image 20230311121418.png Graphic file (type png)
 <use images/Pasted image 20230311121418.png>
 Package pdftex.def Info: images/Pasted image 20230311121418.png  used on input 
@@ -1356,20 +1356,20 @@ line 1070.
 (pdftex.def)             Requested size: 218.81361pt x 221.62407pt.
  [31 <./images/Pasted image 20230311120710.png> <./images/Pasted image 20230311
 121418.png>]
-<images/Pasted image 20230311121914.png, id=1059, 550.055pt x 604.2575pt>
+<images/Pasted image 20230311121914.png, id=1054, 550.055pt x 604.2575pt>
 File: images/Pasted image 20230311121914.png Graphic file (type png)
 <use images/Pasted image 20230311121914.png>
 Package pdftex.def Info: images/Pasted image 20230311121914.png  used on input 
 line 1088.
 (pdftex.def)             Requested size: 330.03554pt x 362.5573pt.
  [32 <./images/Pasted image 20230311121914.png>]
-<images/Pasted image 20230523172036.png, id=1074, 592.2125pt x 211.79124pt>
+<images/Pasted image 20230523172036.png, id=1069, 592.2125pt x 211.79124pt>
 File: images/Pasted image 20230523172036.png Graphic file (type png)
 <use images/Pasted image 20230523172036.png>
 Package pdftex.def Info: images/Pasted image 20230523172036.png  used on input 
 line 1122.
 (pdftex.def)             Requested size: 355.33023pt x 127.07571pt.
-<images/Pasted image 20230524141226.png, id=1078, 434.62375pt x 366.36874pt>
+<images/Pasted image 20230524141226.png, id=1073, 434.62375pt x 366.36874pt>
 File: images/Pasted image 20230524141226.png Graphic file (type png)
 <use images/Pasted image 20230524141226.png>
 Package pdftex.def Info: images/Pasted image 20230524141226.png  used on input 
@@ -1380,13 +1380,13 @@ line 1143.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [33 <./images/Pasted image 20230523172036.png>]
-<images/Pasted image 20230524141323.png, id=1087, 763.85374pt x 418.56375pt>
+<images/Pasted image 20230524141323.png, id=1082, 763.85374pt x 418.56375pt>
 File: images/Pasted image 20230524141323.png Graphic file (type png)
 <use images/Pasted image 20230524141323.png>
 Package pdftex.def Info: images/Pasted image 20230524141323.png  used on input 
 line 1154.
 (pdftex.def)             Requested size: 381.92593pt x 209.28136pt.
-<images/Pasted image 20230311122809.png, id=1089, 484.81125pt x 455.7025pt>
+<images/Pasted image 20230311122809.png, id=1084, 484.81125pt x 455.7025pt>
 File: images/Pasted image 20230311122809.png Graphic file (type png)
 <use images/Pasted image 20230311122809.png>
 Package pdftex.def Info: images/Pasted image 20230311122809.png  used on input 
@@ -1403,7 +1403,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1184--1189
 
 [34 <./images/Pasted image 20230524141226.png> <./images/Pasted image 202305241
 41323.png>]
-<images/Pasted image 20230311123327.png, id=1103, 744.7825pt x 308.15125pt>
+<images/Pasted image 20230311123327.png, id=1098, 744.7825pt x 308.15125pt>
 File: images/Pasted image 20230311123327.png Graphic file (type png)
 <use images/Pasted image 20230311123327.png>
 Package pdftex.def Info: images/Pasted image 20230311123327.png  used on input 
@@ -1411,7 +1411,7 @@ line 1191.
 (pdftex.def)             Requested size: 297.90771pt x 123.2583pt.
  [35 <./images/Pasted image 20230311122809.png> <./images/Pasted image 20230311
 123327.png>]
-<images/Pasted image 20230311124737.png, id=1112, 758.835pt x 519.9425pt>
+<images/Pasted image 20230311124737.png, id=1107, 758.835pt x 519.9425pt>
 File: images/Pasted image 20230311124737.png Graphic file (type png)
 <use images/Pasted image 20230311124737.png>
 Package pdftex.def Info: images/Pasted image 20230311124737.png  used on input 
@@ -1422,7 +1422,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1219--1221
 
  []
 
-<images/Pasted image 20230311161838.png, id=1114, 731.73375pt x 293.095pt>
+<images/Pasted image 20230311161838.png, id=1109, 731.73375pt x 293.095pt>
 File: images/Pasted image 20230311161838.png Graphic file (type png)
 <use images/Pasted image 20230311161838.png>
 Package pdftex.def Info: images/Pasted image 20230311161838.png  used on input 
@@ -1432,7 +1432,7 @@ line 1231.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36 <./images/Pasted image 20230311124737.png>]
-<images/Pasted image 20230311162150.png, id=1128, 521.95pt x 427.5975pt>
+<images/Pasted image 20230311162150.png, id=1123, 521.95pt x 427.5975pt>
 File: images/Pasted image 20230311162150.png Graphic file (type png)
 <use images/Pasted image 20230311162150.png>
 Package pdftex.def Info: images/Pasted image 20230311162150.png  used on input 
@@ -1453,13 +1453,13 @@ ti-fier \OT1/cmr/m/n/10 into the pair \OT1/cmtt/m/n/10 <destination endpoint, d
 estination network address>\OT1/cmr/m/n/10 .
  []
 
-<images/Pasted image 20230311163416.png, id=1138, 1018.80624pt x 305.14pt>
+<images/Pasted image 20230311163416.png, id=1133, 1018.80624pt x 305.14pt>
 File: images/Pasted image 20230311163416.png Graphic file (type png)
 <use images/Pasted image 20230311163416.png>
 Package pdftex.def Info: images/Pasted image 20230311163416.png  used on input 
 line 1279.
 (pdftex.def)             Requested size: 305.64423pt x 91.5427pt.
-<images/Pasted image 20230311163736.png, id=1141, 816.04875pt x 302.12875pt>
+<images/Pasted image 20230311163736.png, id=1136, 816.04875pt x 302.12875pt>
 File: images/Pasted image 20230311163736.png Graphic file (type png)
 <use images/Pasted image 20230311163736.png>
 Package pdftex.def Info: images/Pasted image 20230311163736.png  used on input 
@@ -1474,7 +1474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1300--1307
 
  []
 
-<images/Pasted image 20230311165232.png, id=1151, 730.73pt x 256.96pt>
+<images/Pasted image 20230311165232.png, id=1146, 730.73pt x 256.96pt>
 File: images/Pasted image 20230311165232.png Graphic file (type png)
 <use images/Pasted image 20230311165232.png>
 Package pdftex.def Info: images/Pasted image 20230311165232.png  used on input 
@@ -1489,7 +1489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1313--1323
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [39]
-<images/Pasted image 20230311165919.png, id=1160, 736.7525pt x 412.54124pt>
+<images/Pasted image 20230311165919.png, id=1155, 736.7525pt x 412.54124pt>
 File: images/Pasted image 20230311165919.png Graphic file (type png)
 <use images/Pasted image 20230311165919.png>
 Package pdftex.def Info: images/Pasted image 20230311165919.png  used on input 
@@ -1499,25 +1499,25 @@ line 1359.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230311165957.png, id=1162, 904.37875pt x 466.74374pt>
+<images/Pasted image 20230311165957.png, id=1157, 904.37875pt x 466.74374pt>
 File: images/Pasted image 20230311165957.png Graphic file (type png)
 <use images/Pasted image 20230311165957.png>
 Package pdftex.def Info: images/Pasted image 20230311165957.png  used on input 
 line 1367.
 (pdftex.def)             Requested size: 406.96669pt x 210.03275pt.
-<images/Pasted image 20230311170348.png, id=1164, 1068.99374pt x 770.88pt>
+<images/Pasted image 20230311170348.png, id=1159, 1068.99374pt x 770.88pt>
 File: images/Pasted image 20230311170348.png Graphic file (type png)
 <use images/Pasted image 20230311170348.png>
 Package pdftex.def Info: images/Pasted image 20230311170348.png  used on input 
 line 1378.
 (pdftex.def)             Requested size: 320.70059pt x 231.26578pt.
-<images/Pasted image 20230311170452.png, id=1166, 1255.69125pt x 711.65875pt>
+<images/Pasted image 20230311170452.png, id=1161, 1255.69125pt x 711.65875pt>
 File: images/Pasted image 20230311170452.png Graphic file (type png)
 <use images/Pasted image 20230311170452.png>
 Package pdftex.def Info: images/Pasted image 20230311170452.png  used on input 
 line 1387.
 (pdftex.def)             Requested size: 251.1338pt x 142.32922pt.
-<images/Pasted image 20230311170646.png, id=1168, 1206.5075pt x 581.17125pt>
+<images/Pasted image 20230311170646.png, id=1163, 1206.5075pt x 581.17125pt>
 File: images/Pasted image 20230311170646.png Graphic file (type png)
 <use images/Pasted image 20230311170646.png>
 Package pdftex.def Info: images/Pasted image 20230311170646.png  used on input 
@@ -1541,7 +1541,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230311171010.png, id=1181, 760.8425pt x 402.50375pt>
+<images/Pasted image 20230311171010.png, id=1176, 760.8425pt x 402.50375pt>
 File: images/Pasted image 20230311171010.png Graphic file (type png)
 <use images/Pasted image 20230311171010.png>
 Package pdftex.def Info: images/Pasted image 20230311171010.png  used on input 
@@ -1561,7 +1561,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1486--1490
 
 [44] [45]
 Chapter 4.
-<images/Pasted image 20230324162428.png, id=1224, 348.30125pt x 328.22626pt>
+<images/Pasted image 20230324162428.png, id=1219, 348.30125pt x 328.22626pt>
 File: images/Pasted image 20230324162428.png Graphic file (type png)
 <use images/Pasted image 20230324162428.png>
 Package pdftex.def Info: images/Pasted image 20230324162428.png  used on input 
@@ -1573,13 +1573,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [46
 
 ]
-<images/Pasted image 20230324162704.png, id=1234, 446.66875pt x 329.23pt>
+<images/Pasted image 20230324162704.png, id=1229, 446.66875pt x 329.23pt>
 File: images/Pasted image 20230324162704.png Graphic file (type png)
 <use images/Pasted image 20230324162704.png>
 Package pdftex.def Info: images/Pasted image 20230324162704.png  used on input 
 line 1562.
 (pdftex.def)             Requested size: 223.33382pt x 164.6146pt.
-<images/Pasted image 20230324162732.png, id=1236, 361.35pt x 245.91875pt>
+<images/Pasted image 20230324162732.png, id=1231, 361.35pt x 245.91875pt>
 File: images/Pasted image 20230324162732.png Graphic file (type png)
 <use images/Pasted image 20230324162732.png>
 Package pdftex.def Info: images/Pasted image 20230324162732.png  used on input 
@@ -1587,7 +1587,7 @@ line 1569.
 (pdftex.def)             Requested size: 180.67456pt x 122.95906pt.
  [47 <./images/Pasted image 20230324162428.png> <./images/Pasted image 20230324
 162704.png> <./images/Pasted image 20230324162732.png>]
-<images/Pasted image 20230324165412.png, id=1248, 659.46375pt x 271.0125pt>
+<images/Pasted image 20230324165412.png, id=1243, 659.46375pt x 271.0125pt>
 File: images/Pasted image 20230324165412.png Graphic file (type png)
 <use images/Pasted image 20230324165412.png>
 Package pdftex.def Info: images/Pasted image 20230324165412.png  used on input 
@@ -1598,13 +1598,13 @@ line 1627.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [48]
-<images/Pasted image 20230324171110.png, id=1280, 781.92125pt x 308.15125pt>
+<images/Pasted image 20230324171110.png, id=1275, 781.92125pt x 308.15125pt>
 File: images/Pasted image 20230324171110.png Graphic file (type png)
 <use images/Pasted image 20230324171110.png>
 Package pdftex.def Info: images/Pasted image 20230324171110.png  used on input 
 line 1658.
 (pdftex.def)             Requested size: 390.95967pt x 154.07524pt.
-<images/Pasted image 20230324171214.png, id=1282, 605.26125pt x 473.77pt>
+<images/Pasted image 20230324171214.png, id=1277, 605.26125pt x 473.77pt>
 File: images/Pasted image 20230324171214.png Graphic file (type png)
 <use images/Pasted image 20230324171214.png>
 Package pdftex.def Info: images/Pasted image 20230324171214.png  used on input 
@@ -1614,7 +1614,7 @@ line 1665.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230324171652.png, id=1285, 676.5275pt x 481.8pt>
+<images/Pasted image 20230324171652.png, id=1280, 676.5275pt x 481.8pt>
 File: images/Pasted image 20230324171652.png Graphic file (type png)
 <use images/Pasted image 20230324171652.png>
 Package pdftex.def Info: images/Pasted image 20230324171652.png  used on input 
@@ -1623,7 +1623,7 @@ line 1676.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230324171858.png, id=1286, 555.07375pt x 543.02875pt>
+<images/Pasted image 20230324171858.png, id=1281, 555.07375pt x 543.02875pt>
 File: images/Pasted image 20230324171858.png Graphic file (type png)
 <use images/Pasted image 20230324171858.png>
 Package pdftex.def Info: images/Pasted image 20230324171858.png  used on input 
@@ -1634,7 +1634,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [49 <./images/Pasted image 20230324165412.png> <./images/Pasted image 202303241
 71110.png>]
-<images/Pasted image 20230327151219.png, id=1309, 832.10875pt x 761.84625pt>
+<images/Pasted image 20230327151219.png, id=1304, 832.10875pt x 761.84625pt>
 File: images/Pasted image 20230327151219.png Graphic file (type png)
 <use images/Pasted image 20230327151219.png>
 Package pdftex.def Info: images/Pasted image 20230327151219.png  used on input 
@@ -1646,14 +1646,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [50 <./images/Pasted image 20230324171214.png> <./images/Pasted image 202303241
 71652.png>]
-<images/Pasted image 20230327151650.png, id=1321, 1452.42625pt x 485.815pt>
+<images/Pasted image 20230327151650.png, id=1316, 1452.42625pt x 485.815pt>
 File: images/Pasted image 20230327151650.png Graphic file (type png)
 <use images/Pasted image 20230327151650.png>
 Package pdftex.def Info: images/Pasted image 20230327151650.png  used on input 
 line 1767.
 (pdftex.def)             Requested size: 435.73123pt x 145.74562pt.
  [51 <./images/Pasted image 20230324171858.png>]
-<images/Pasted image 20230327151825.png, id=1334, 1498.59875pt x 525.965pt>
+<images/Pasted image 20230327151825.png, id=1329, 1498.59875pt x 525.965pt>
 File: images/Pasted image 20230327151825.png Graphic file (type png)
 <use images/Pasted image 20230327151825.png>
 Package pdftex.def Info: images/Pasted image 20230327151825.png  used on input 
@@ -1665,7 +1665,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [52 <./images/Pasted image 20230327151219.png> <./images/Pasted image 202303271
 51650.png>]
-<images/Pasted image 20230508152346.png, id=1346, 561.09625pt x 380.42125pt>
+<images/Pasted image 20230508152346.png, id=1341, 561.09625pt x 380.42125pt>
 File: images/Pasted image 20230508152346.png Graphic file (type png)
 <use images/Pasted image 20230508152346.png>
 Package pdftex.def Info: images/Pasted image 20230508152346.png  used on input 
@@ -1673,7 +1673,7 @@ line 1814.
 (pdftex.def)             Requested size: 252.49098pt x 171.18797pt.
  [53 <./images/Pasted image 20230327151825.png> <./images/Pasted image 20230508
 152346.png>]
-<images/Pasted image 20230328161140.png, id=1376, 516.93124pt x 365.365pt>
+<images/Pasted image 20230328161140.png, id=1371, 516.93124pt x 365.365pt>
 File: images/Pasted image 20230328161140.png Graphic file (type png)
 <use images/Pasted image 20230328161140.png>
 Package pdftex.def Info: images/Pasted image 20230328161140.png  used on input 
@@ -1685,14 +1685,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1873--1874
  []
 
 [54 <./images/Pasted image 20230328161140.png>]
-<images/Pasted image 20230328162514.png, id=1393, 502.87875pt x 371.3875pt>
+<images/Pasted image 20230328162514.png, id=1388, 502.87875pt x 371.3875pt>
 File: images/Pasted image 20230328162514.png Graphic file (type png)
 <use images/Pasted image 20230328162514.png>
 Package pdftex.def Info: images/Pasted image 20230328162514.png  used on input 
 line 1898.
 (pdftex.def)             Requested size: 251.43875pt x 185.69328pt.
  [55 <./images/Pasted image 20230328162514.png>]
-<images/Pasted image 20230328174646.png, id=1403, 492.84125pt x 297.11pt>
+<images/Pasted image 20230328174646.png, id=1398, 492.84125pt x 297.11pt>
 File: images/Pasted image 20230328174646.png Graphic file (type png)
 <use images/Pasted image 20230328174646.png>
 Package pdftex.def Info: images/Pasted image 20230328174646.png  used on input 
@@ -1708,13 +1708,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2054--2061
 [58
 
 ]
-<images/Pasted image 20230404171403.png, id=1424, 591.20876pt x 310.15875pt>
+<images/Pasted image 20230404171403.png, id=1419, 591.20876pt x 310.15875pt>
 File: images/Pasted image 20230404171403.png Graphic file (type png)
 <use images/Pasted image 20230404171403.png>
 Package pdftex.def Info: images/Pasted image 20230404171403.png  used on input 
 line 2072.
 (pdftex.def)             Requested size: 295.60365pt x 155.079pt.
-<images/Pasted image 20230404171802.png, id=1427, 599.23875pt x 137.51375pt>
+<images/Pasted image 20230404171802.png, id=1422, 599.23875pt x 137.51375pt>
 File: images/Pasted image 20230404171802.png Graphic file (type png)
 <use images/Pasted image 20230404171802.png>
 Package pdftex.def Info: images/Pasted image 20230404171802.png  used on input 
@@ -1725,7 +1725,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2077--2082
 
  []
 
-<images/Pasted image 20230404171944.png, id=1429, 648.4225pt x 520.94624pt>
+<images/Pasted image 20230404171944.png, id=1424, 648.4225pt x 520.94624pt>
 File: images/Pasted image 20230404171944.png Graphic file (type png)
 <use images/Pasted image 20230404171944.png>
 Package pdftex.def Info: images/Pasted image 20230404171944.png  used on input 
@@ -1734,7 +1734,7 @@ line 2087.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230405103011.png, id=1431, 755.82375pt x 407.5225pt>
+<images/Pasted image 20230405103011.png, id=1426, 755.82375pt x 407.5225pt>
 File: images/Pasted image 20230405103011.png Graphic file (type png)
 <use images/Pasted image 20230405103011.png>
 Package pdftex.def Info: images/Pasted image 20230405103011.png  used on input 
@@ -1743,7 +1743,7 @@ line 2099.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230405103750.png, id=1433, 797.98125pt x 419.5675pt>
+<images/Pasted image 20230405103750.png, id=1428, 797.98125pt x 419.5675pt>
 File: images/Pasted image 20230405103750.png Graphic file (type png)
 <use images/Pasted image 20230405103750.png>
 Package pdftex.def Info: images/Pasted image 20230405103750.png  used on input 
@@ -1760,13 +1760,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2123--2124
 
  []
 
-<images/Pasted image 20230405104057.png, id=1454, 577.15625pt x 450.68375pt>
+<images/Pasted image 20230405104057.png, id=1449, 577.15625pt x 450.68375pt>
 File: images/Pasted image 20230405104057.png Graphic file (type png)
 <use images/Pasted image 20230405104057.png>
 Package pdftex.def Info: images/Pasted image 20230405104057.png  used on input 
 line 2127.
 (pdftex.def)             Requested size: 230.8584pt x 180.2703pt.
-<images/Pasted image 20230405104440.png, id=1456, 910.40125pt x 555.07375pt>
+<images/Pasted image 20230405104440.png, id=1451, 910.40125pt x 555.07375pt>
 File: images/Pasted image 20230405104440.png Graphic file (type png)
 <use images/Pasted image 20230405104440.png>
 Package pdftex.def Info: images/Pasted image 20230405104440.png  used on input 
@@ -1774,7 +1774,7 @@ line 2137.
 (pdftex.def)             Requested size: 455.19951pt x 277.53618pt.
 [61 <./images/Pasted image 20230405103750.png> <./images/Pasted image 202304051
 04057.png>]
-<images/Pasted image 20230409084546.png, id=1467, 398.48875pt x 236.885pt>
+<images/Pasted image 20230409084546.png, id=1462, 398.48875pt x 236.885pt>
 File: images/Pasted image 20230409084546.png Graphic file (type png)
 <use images/Pasted image 20230409084546.png>
 Package pdftex.def Info: images/Pasted image 20230409084546.png  used on input 
@@ -1784,19 +1784,19 @@ line 2188.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230409084848.png, id=1470, 620.3175pt x 441.65pt>
+<images/Pasted image 20230409084848.png, id=1465, 620.3175pt x 441.65pt>
 File: images/Pasted image 20230409084848.png Graphic file (type png)
 <use images/Pasted image 20230409084848.png>
 Package pdftex.def Info: images/Pasted image 20230409084848.png  used on input 
 line 2203.
 (pdftex.def)             Requested size: 204.85846pt x 145.85277pt.
-<images/Pasted image 20230409084955.png, id=1471, 628.3475pt x 423.5825pt>
+<images/Pasted image 20230409084955.png, id=1466, 628.3475pt x 423.5825pt>
 File: images/Pasted image 20230409084955.png Graphic file (type png)
 <use images/Pasted image 20230409084955.png>
 Package pdftex.def Info: images/Pasted image 20230409084955.png  used on input 
 line 2209.
 (pdftex.def)             Requested size: 204.85846pt x 138.09572pt.
-<images/Pasted image 20230409085338.png, id=1474, 425.59pt x 353.32pt>
+<images/Pasted image 20230409085338.png, id=1469, 425.59pt x 353.32pt>
 File: images/Pasted image 20230409085338.png Graphic file (type png)
 <use images/Pasted image 20230409085338.png>
 Package pdftex.def Info: images/Pasted image 20230409085338.png  used on input 
@@ -1805,13 +1805,13 @@ line 2221.
 [62 <./images/Pasted image 20230405104440.png>] [63 <./images/Pasted image 2023
 0409084546.png> <./images/Pasted image 20230409084848.png> <./images/Pasted ima
 ge 20230409084955.png> <./images/Pasted image 20230409085338.png>]
-<images/Pasted image 20230409090007.png, id=1498, 595.22375pt x 506.89375pt>
+<images/Pasted image 20230409090007.png, id=1493, 595.22375pt x 506.89375pt>
 File: images/Pasted image 20230409090007.png Graphic file (type png)
 <use images/Pasted image 20230409090007.png>
 Package pdftex.def Info: images/Pasted image 20230409090007.png  used on input 
 line 2252.
 (pdftex.def)             Requested size: 357.13701pt x 304.1386pt.
-<images/Pasted image 20230409090844.png, id=1500, 698.61pt x 487.8225pt>
+<images/Pasted image 20230409090844.png, id=1495, 698.61pt x 487.8225pt>
 File: images/Pasted image 20230409090844.png Graphic file (type png)
 <use images/Pasted image 20230409090844.png>
 Package pdftex.def Info: images/Pasted image 20230409090844.png  used on input 
@@ -1821,14 +1821,14 @@ line 2262.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230409091352.png, id=1502, 673.51625pt x 290.08376pt>
+<images/Pasted image 20230409091352.png, id=1497, 673.51625pt x 290.08376pt>
 File: images/Pasted image 20230409091352.png Graphic file (type png)
 <use images/Pasted image 20230409091352.png>
 Package pdftex.def Info: images/Pasted image 20230409091352.png  used on input 
 line 2270.
 (pdftex.def)             Requested size: 336.7573pt x 145.04152pt.
 [64 <./images/Pasted image 20230409090007.png>]
-<images/Pasted image 20230409091501.png, id=1518, 913.4125pt x 451.6875pt>
+<images/Pasted image 20230409091501.png, id=1513, 913.4125pt x 451.6875pt>
 File: images/Pasted image 20230409091501.png Graphic file (type png)
 <use images/Pasted image 20230409091501.png>
 Package pdftex.def Info: images/Pasted image 20230409091501.png  used on input 
@@ -1850,13 +1850,13 @@ LaTeX Warning: Command \textendash invalid in math mode on input line 2299.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 2304.
 
-<images/Pasted image 20230409093421.png, id=1538, 374.39874pt x 254.9525pt>
+<images/Pasted image 20230409093421.png, id=1533, 374.39874pt x 254.9525pt>
 File: images/Pasted image 20230409093421.png Graphic file (type png)
 <use images/Pasted image 20230409093421.png>
 Package pdftex.def Info: images/Pasted image 20230409093421.png  used on input 
 line 2307.
 (pdftex.def)             Requested size: 187.19891pt x 127.47592pt.
-<images/Pasted image 20230409094546.png, id=1540, 580.1675pt x 432.61626pt>
+<images/Pasted image 20230409094546.png, id=1535, 580.1675pt x 432.61626pt>
 File: images/Pasted image 20230409094546.png Graphic file (type png)
 <use images/Pasted image 20230409094546.png>
 Package pdftex.def Info: images/Pasted image 20230409094546.png  used on input 
@@ -1868,7 +1868,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [67
 
  <./images/Pasted image 20230409093421.png>]
-<images/Pasted image 20230409095527.png, id=1550, 436.63126pt x 200.75pt>
+<images/Pasted image 20230409095527.png, id=1545, 436.63126pt x 200.75pt>
 File: images/Pasted image 20230409095527.png Graphic file (type png)
 <use images/Pasted image 20230409095527.png>
 Package pdftex.def Info: images/Pasted image 20230409095527.png  used on input 
@@ -1879,7 +1879,7 @@ line 2351.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [68 <./images/Pasted image 20230409094546.png>]
-<images/Pasted image 20230409100959.png, id=1562, 419.5675pt x 244.915pt>
+<images/Pasted image 20230409100959.png, id=1557, 419.5675pt x 244.915pt>
 File: images/Pasted image 20230409100959.png Graphic file (type png)
 <use images/Pasted image 20230409100959.png>
 Package pdftex.def Info: images/Pasted image 20230409100959.png  used on input 
@@ -1887,13 +1887,13 @@ line 2386.
 (pdftex.def)             Requested size: 209.78323pt x 122.45718pt.
  [69 <./images/Pasted image 20230409095527.png> <./images/Pasted image 20230409
 100959.png>]
-<images/Pasted image 20230409102712.png, id=1577, 621.32124pt x 200.75pt>
+<images/Pasted image 20230409102712.png, id=1572, 621.32124pt x 200.75pt>
 File: images/Pasted image 20230409102712.png Graphic file (type png)
 <use images/Pasted image 20230409102712.png>
 Package pdftex.def Info: images/Pasted image 20230409102712.png  used on input 
 line 2412.
 (pdftex.def)             Requested size: 310.65987pt x 100.37474pt.
-<images/Pasted image 20230409103442.png, id=1578, 497.86pt x 191.71625pt>
+<images/Pasted image 20230409103442.png, id=1573, 497.86pt x 191.71625pt>
 File: images/Pasted image 20230409103442.png Graphic file (type png)
 <use images/Pasted image 20230409103442.png>
 Package pdftex.def Info: images/Pasted image 20230409103442.png  used on input 
@@ -1913,7 +1913,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2425--2426
  []
 
 [70 <./images/Pasted image 20230409102712.png>]
-<images/Pasted image 20230417090745.png, id=1590, 1443.3925pt x 706.64pt>
+<images/Pasted image 20230417090745.png, id=1585, 1443.3925pt x 706.64pt>
 File: images/Pasted image 20230417090745.png Graphic file (type png)
 <use images/Pasted image 20230417090745.png>
 Package pdftex.def Info: images/Pasted image 20230417090745.png  used on input 
@@ -1923,7 +1923,7 @@ line 2445.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230417091003.png, id=1593, 948.54375pt x 154.5775pt>
+<images/Pasted image 20230417091003.png, id=1588, 948.54375pt x 154.5775pt>
 File: images/Pasted image 20230417091003.png Graphic file (type png)
 <use images/Pasted image 20230417091003.png>
 Package pdftex.def Info: images/Pasted image 20230417091003.png  used on input 
@@ -1938,7 +1938,7 @@ Overfull \hbox (19.0266pt too wide) in paragraph at lines 2456--2457
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [71 <./images/Pasted image 20230409103442.png>]
-<images/Pasted image 20230417091534.png, id=1608, 1512.65125pt x 597.23125pt>
+<images/Pasted image 20230417091534.png, id=1603, 1512.65125pt x 597.23125pt>
 File: images/Pasted image 20230417091534.png Graphic file (type png)
 <use images/Pasted image 20230417091534.png>
 Package pdftex.def Info: images/Pasted image 20230417091534.png  used on input 
@@ -1946,13 +1946,13 @@ line 2467.
 (pdftex.def)             Requested size: 453.79887pt x 179.17075pt.
  [72 <./images/Pasted image 20230417090745.png> <./images/Pasted image 20230417
 091003.png> <./images/Pasted image 20230417091534.png>]
-<images/Pasted image 20230417091904.png, id=1619, 1077.02374pt x 441.65pt>
+<images/Pasted image 20230417091904.png, id=1614, 1077.02374pt x 441.65pt>
 File: images/Pasted image 20230417091904.png Graphic file (type png)
 <use images/Pasted image 20230417091904.png>
 Package pdftex.def Info: images/Pasted image 20230417091904.png  used on input 
 line 2492.
 (pdftex.def)             Requested size: 323.10962pt x 132.49602pt.
-<images/Pasted image 20230417092320.png, id=1621, 1445.4pt x 587.19376pt>
+<images/Pasted image 20230417092320.png, id=1616, 1445.4pt x 587.19376pt>
 File: images/Pasted image 20230417092320.png Graphic file (type png)
 <use images/Pasted image 20230417092320.png>
 Package pdftex.def Info: images/Pasted image 20230417092320.png  used on input 
@@ -1962,7 +1962,7 @@ line 2502.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230417092611.png, id=1623, 1481.535pt x 629.35126pt>
+<images/Pasted image 20230417092611.png, id=1618, 1481.535pt x 629.35126pt>
 File: images/Pasted image 20230417092611.png Graphic file (type png)
 <use images/Pasted image 20230417092611.png>
 Package pdftex.def Info: images/Pasted image 20230417092611.png  used on input 
@@ -1971,7 +1971,7 @@ line 2511.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230417092900.png, id=1625, 1103.12125pt x 704.6325pt>
+<images/Pasted image 20230417092900.png, id=1620, 1103.12125pt x 704.6325pt>
 File: images/Pasted image 20230417092900.png Graphic file (type png)
 <use images/Pasted image 20230417092900.png>
 Package pdftex.def Info: images/Pasted image 20230417092900.png  used on input 
@@ -1992,20 +1992,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 2554--2557
 [76
 
 ]
-<images/Pasted image 20230418100640.png, id=1657, 761.84625pt x 338.26375pt>
+<images/Pasted image 20230418100640.png, id=1652, 761.84625pt x 338.26375pt>
 File: images/Pasted image 20230418100640.png Graphic file (type png)
 <use images/Pasted image 20230418100640.png>
 Package pdftex.def Info: images/Pasted image 20230418100640.png  used on input 
 line 2596.
 (pdftex.def)             Requested size: 380.9222pt x 169.13145pt.
  [77 <./images/Pasted image 20230418100640.png>]
-<images/Pasted image 20230418102218.png, id=1670, 758.835pt x 369.38pt>
+<images/Pasted image 20230418102218.png, id=1665, 758.835pt x 369.38pt>
 File: images/Pasted image 20230418102218.png Graphic file (type png)
 <use images/Pasted image 20230418102218.png>
 Package pdftex.def Info: images/Pasted image 20230418102218.png  used on input 
 line 2633.
 (pdftex.def)             Requested size: 379.41658pt x 184.68954pt.
-<images/Pasted image 20230418120212.png, id=1673, 841.1425pt x 309.155pt>
+<images/Pasted image 20230418120212.png, id=1668, 841.1425pt x 309.155pt>
 File: images/Pasted image 20230418120212.png Graphic file (type png)
 <use images/Pasted image 20230418120212.png>
 Package pdftex.def Info: images/Pasted image 20230418120212.png  used on input 
@@ -2015,13 +2015,13 @@ line 2642.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230418120438.png, id=1674, 825.0825pt x 443.6575pt>
+<images/Pasted image 20230418120438.png, id=1669, 825.0825pt x 443.6575pt>
 File: images/Pasted image 20230418120438.png Graphic file (type png)
 <use images/Pasted image 20230418120438.png>
 Package pdftex.def Info: images/Pasted image 20230418120438.png  used on input 
 line 2649.
 (pdftex.def)             Requested size: 412.54024pt x 221.8282pt.
-<images/Pasted image 20230418120543.png, id=1676, 866.23625pt x 460.72125pt>
+<images/Pasted image 20230418120543.png, id=1671, 866.23625pt x 460.72125pt>
 File: images/Pasted image 20230418120543.png Graphic file (type png)
 <use images/Pasted image 20230418120543.png>
 Package pdftex.def Info: images/Pasted image 20230418120543.png  used on input 
@@ -2033,7 +2033,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [79 <./images/Pasted image 20230418120212.png> <./images/Pasted image 202304181
 20438.png>]
-<images/Pasted image 20230418122207.png, id=1697, 750.805pt x 590.205pt>
+<images/Pasted image 20230418122207.png, id=1692, 750.805pt x 590.205pt>
 File: images/Pasted image 20230418122207.png Graphic file (type png)
 <use images/Pasted image 20230418122207.png>
 Package pdftex.def Info: images/Pasted image 20230418122207.png  used on input 
@@ -2046,7 +2046,7 @@ highByte(); bitRead(); bitWrite(); bitSet(); bitClear();
  []
 
 [81 <./images/Pasted image 20230418122207.png>]
-<images/Pasted image 20230418153709.png, id=1726, 659.46375pt x 289.08pt>
+<images/Pasted image 20230418153709.png, id=1721, 659.46375pt x 289.08pt>
 File: images/Pasted image 20230418153709.png Graphic file (type png)
 <use images/Pasted image 20230418153709.png>
 Package pdftex.def Info: images/Pasted image 20230418153709.png  used on input 
@@ -2058,7 +2058,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [82] [83 <./images/Pasted image 20230418153709.png>]
 Chapter 8.
-<images/Pasted image 20230424163213.png, id=1776, 478.78876pt x 426.59375pt>
+<images/Pasted image 20230424163213.png, id=1771, 478.78876pt x 426.59375pt>
 File: images/Pasted image 20230424163213.png Graphic file (type png)
 <use images/Pasted image 20230424163213.png>
 Package pdftex.def Info: images/Pasted image 20230424163213.png  used on input 
@@ -2070,13 +2070,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [84
 
 ]
-<images/Pasted image 20230424163616.png, id=1788, 403.5075pt x 300.12125pt>
+<images/Pasted image 20230424163616.png, id=1783, 403.5075pt x 300.12125pt>
 File: images/Pasted image 20230424163616.png Graphic file (type png)
 <use images/Pasted image 20230424163616.png>
 Package pdftex.def Info: images/Pasted image 20230424163616.png  used on input 
 line 2933.
 (pdftex.def)             Requested size: 201.75325pt x 150.06026pt.
-<images/Pasted image 20230424163729.png, id=1790, 620.3175pt x 509.905pt>
+<images/Pasted image 20230424163729.png, id=1785, 620.3175pt x 509.905pt>
 File: images/Pasted image 20230424163729.png Graphic file (type png)
 <use images/Pasted image 20230424163729.png>
 Package pdftex.def Info: images/Pasted image 20230424163729.png  used on input 
@@ -2086,13 +2086,13 @@ line 2941.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230424164214.png, id=1792, 387.4475pt x 338.26375pt>
+<images/Pasted image 20230424164214.png, id=1787, 387.4475pt x 338.26375pt>
 File: images/Pasted image 20230424164214.png Graphic file (type png)
 <use images/Pasted image 20230424164214.png>
 Package pdftex.def Info: images/Pasted image 20230424164214.png  used on input 
 line 2957.
 (pdftex.def)             Requested size: 193.72327pt x 169.13145pt.
-<images/Pasted image 20230421171802.png, id=1794, 635.37375pt x 523.9575pt>
+<images/Pasted image 20230421171802.png, id=1789, 635.37375pt x 523.9575pt>
 File: images/Pasted image 20230421171802.png Graphic file (type png)
 <use images/Pasted image 20230421171802.png>
 Package pdftex.def Info: images/Pasted image 20230421171802.png  used on input 
@@ -2104,13 +2104,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [85 <./images/Pasted image 20230424163213.png> <./images/Pasted image 202304241
 63616.png>] [86 <./images/Pasted image 20230424163729.png> <./images/Pasted ima
 ge 20230424164214.png>] [87 <./images/Pasted image 20230421171802.png>]
-<images/Pasted image 20230505162831.png, id=1820, 791.95876pt x 289.08pt>
+<images/Pasted image 20230505162831.png, id=1815, 791.95876pt x 289.08pt>
 File: images/Pasted image 20230505162831.png Graphic file (type png)
 <use images/Pasted image 20230505162831.png>
 Package pdftex.def Info: images/Pasted image 20230505162831.png  used on input 
 line 3060.
 (pdftex.def)             Requested size: 395.97841pt x 144.53964pt.
-<images/Pasted image 20230506081233.png, id=1821, 371.3875pt x 323.2075pt>
+<images/Pasted image 20230506081233.png, id=1816, 371.3875pt x 323.2075pt>
 File: images/Pasted image 20230506081233.png Graphic file (type png)
 <use images/Pasted image 20230506081233.png>
 Package pdftex.def Info: images/Pasted image 20230506081233.png  used on input 
@@ -2119,7 +2119,7 @@ line 3069.
 
 [88 <./images/Pasted image 20230505162831.png> <./images/Pasted image 202305060
 81233.png>]
-<images/Pasted image 20230506081428.png, id=1831, 405.515pt x 158.5925pt>
+<images/Pasted image 20230506081428.png, id=1826, 405.515pt x 158.5925pt>
 File: images/Pasted image 20230506081428.png Graphic file (type png)
 <use images/Pasted image 20230506081428.png>
 Package pdftex.def Info: images/Pasted image 20230506081428.png  used on input 
@@ -2134,19 +2134,19 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `wind-turbine-value' on page 89 undefined on input lin
 e 3094.
 
-<images/Pasted image 20230506081753.png, id=1833, 481.8pt x 348.30125pt>
+<images/Pasted image 20230506081753.png, id=1828, 481.8pt x 348.30125pt>
 File: images/Pasted image 20230506081753.png Graphic file (type png)
 <use images/Pasted image 20230506081753.png>
 Package pdftex.def Info: images/Pasted image 20230506081753.png  used on input 
 line 3097.
 (pdftex.def)             Requested size: 216.80798pt x 156.73412pt.
-<images/Pasted image 20230506082045.png, id=1836, 808.01875pt x 460.72125pt>
+<images/Pasted image 20230506082045.png, id=1831, 808.01875pt x 460.72125pt>
 File: images/Pasted image 20230506082045.png Graphic file (type png)
 <use images/Pasted image 20230506082045.png>
 Package pdftex.def Info: images/Pasted image 20230506082045.png  used on input 
 line 3103.
 (pdftex.def)             Requested size: 242.4075pt x 138.21744pt.
-<images/Pasted image 20230506082101.png, id=1837, 773.89125pt x 504.88625pt>
+<images/Pasted image 20230506082101.png, id=1832, 773.89125pt x 504.88625pt>
 File: images/Pasted image 20230506082101.png Graphic file (type png)
 <use images/Pasted image 20230506082101.png>
 Package pdftex.def Info: images/Pasted image 20230506082101.png  used on input 
@@ -2157,13 +2157,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [89 <./images/Pasted image 20230506081428.png> <./images/Pasted image 202305060
 81753.png> <./images/Pasted image 20230506082045.png>]
-<images/Pasted image 20230506082624.png, id=1851, 545.03625pt x 455.7025pt>
+<images/Pasted image 20230506082624.png, id=1846, 545.03625pt x 455.7025pt>
 File: images/Pasted image 20230506082624.png Graphic file (type png)
 <use images/Pasted image 20230506082624.png>
 Package pdftex.def Info: images/Pasted image 20230506082624.png  used on input 
 line 3124.
 (pdftex.def)             Requested size: 272.51746pt x 227.85068pt.
-<images/Pasted image 20230506083409.png, id=1853, 676.5275pt x 509.905pt>
+<images/Pasted image 20230506083409.png, id=1848, 676.5275pt x 509.905pt>
 File: images/Pasted image 20230506083409.png Graphic file (type png)
 <use images/Pasted image 20230506083409.png>
 Package pdftex.def Info: images/Pasted image 20230506083409.png  used on input 
@@ -2173,7 +2173,7 @@ line 3132.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230506084028.png, id=1854, 713.66624pt x 560.0925pt>
+<images/Pasted image 20230506084028.png, id=1849, 713.66624pt x 560.0925pt>
 File: images/Pasted image 20230506084028.png Graphic file (type png)
 <use images/Pasted image 20230506084028.png>
 Package pdftex.def Info: images/Pasted image 20230506084028.png  used on input 
@@ -2182,7 +2182,7 @@ line 3141.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230506084308.png, id=1857, 668.4975pt x 689.57625pt>
+<images/Pasted image 20230506084308.png, id=1852, 668.4975pt x 689.57625pt>
 File: images/Pasted image 20230506084308.png Graphic file (type png)
 <use images/Pasted image 20230506084308.png>
 Package pdftex.def Info: images/Pasted image 20230506084308.png  used on input 
@@ -2195,13 +2195,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [91 <./images/Pasted image 20230506083409.png> <./images/Pasted image 202305060
 84028.png>]
-<images/Pasted image 20230506084735.png, id=1881, 1377.145pt x 369.38pt>
+<images/Pasted image 20230506084735.png, id=1876, 1377.145pt x 369.38pt>
 File: images/Pasted image 20230506084735.png Graphic file (type png)
 <use images/Pasted image 20230506084735.png>
 Package pdftex.def Info: images/Pasted image 20230506084735.png  used on input 
 line 3165.
 (pdftex.def)             Requested size: 413.14668pt x 110.81485pt.
-<images/Pasted image 20230508170934.png, id=1883, 745.78625pt x 483.8075pt>
+<images/Pasted image 20230508170934.png, id=1878, 745.78625pt x 483.8075pt>
 File: images/Pasted image 20230508170934.png Graphic file (type png)
 <use images/Pasted image 20230508170934.png>
 Package pdftex.def Info: images/Pasted image 20230508170934.png  used on input 
@@ -2211,7 +2211,7 @@ line 3176.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230506085540.png, id=1884, 396.48125pt x 212.795pt>
+<images/Pasted image 20230506085540.png, id=1879, 396.48125pt x 212.795pt>
 File: images/Pasted image 20230506085540.png Graphic file (type png)
 <use images/Pasted image 20230506085540.png>
 Package pdftex.def Info: images/Pasted image 20230506085540.png  used on input 
@@ -2220,7 +2220,7 @@ line 3183.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230506085756.png, id=1885, 1367.1075pt x 559.08875pt>
+<images/Pasted image 20230506085756.png, id=1880, 1367.1075pt x 559.08875pt>
 File: images/Pasted image 20230506085756.png Graphic file (type png)
 <use images/Pasted image 20230506085756.png>
 Package pdftex.def Info: images/Pasted image 20230506085756.png  used on input 
@@ -2233,7 +2233,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [93 <./images/Pasted image 20230508170934.png (PNG copy)> <./images/Pasted imag
 e 20230506085540.png>]
-<images/Pasted image 20230506091322.png, id=1905, 686.565pt x 550.055pt>
+<images/Pasted image 20230506091322.png, id=1900, 686.565pt x 550.055pt>
 File: images/Pasted image 20230506091322.png Graphic file (type png)
 <use images/Pasted image 20230506091322.png>
 Package pdftex.def Info: images/Pasted image 20230506091322.png  used on input 
@@ -2241,7 +2241,7 @@ line 3230.
 (pdftex.def)             Requested size: 171.64082pt x 137.51341pt.
  [94 <./images/Pasted image 20230506085756.png> <./images/Pasted image 20230506
 091322.png>]
-<images/Pasted image 20230506093616.png, id=1917, 852.18375pt x 657.45625pt>
+<images/Pasted image 20230506093616.png, id=1912, 852.18375pt x 657.45625pt>
 File: images/Pasted image 20230506093616.png Graphic file (type png)
 <use images/Pasted image 20230506093616.png>
 Package pdftex.def Info: images/Pasted image 20230506093616.png  used on input 
@@ -2251,7 +2251,7 @@ line 3308.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230509145820.png, id=1919, 730.73pt x 455.7025pt>
+<images/Pasted image 20230509145820.png, id=1914, 730.73pt x 455.7025pt>
 File: images/Pasted image 20230509145820.png Graphic file (type png)
 <use images/Pasted image 20230509145820.png>
 Package pdftex.def Info: images/Pasted image 20230509145820.png  used on input 
@@ -2261,7 +2261,7 @@ line 3322.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [95]
-<images/Pasted image 20230509113221.png, id=1930, 679.53876pt x 305.14pt>
+<images/Pasted image 20230509113221.png, id=1925, 679.53876pt x 305.14pt>
 File: images/Pasted image 20230509113221.png Graphic file (type png)
 <use images/Pasted image 20230509113221.png>
 Package pdftex.def Info: images/Pasted image 20230509113221.png  used on input 
@@ -2273,7 +2273,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [96 <./images/Pasted image 20230506093616.png> <./images/Pasted image 202305091
 45820.png>]
-<images/Pasted image 20230509151317.png, id=1940, 746.79pt x 605.26125pt>
+<images/Pasted image 20230509151317.png, id=1934, 746.79pt x 605.26125pt>
 File: images/Pasted image 20230509151317.png Graphic file (type png)
 <use images/Pasted image 20230509151317.png>
 Package pdftex.def Info: images/Pasted image 20230509151317.png  used on input 
@@ -2281,13 +2281,13 @@ line 3362.
 (pdftex.def)             Requested size: 224.03873pt x 181.57976pt.
  [97 <./images/Pasted image 20230509113221.png> <./images/Pasted image 20230509
 151317.png>]
-<images/Pasted image 20230509152717.png, id=1949, 406.51875pt x 282.05376pt>
+<images/Pasted image 20230509152717.png, id=1944, 406.51875pt x 282.05376pt>
 File: images/Pasted image 20230509152717.png Graphic file (type png)
 <use images/Pasted image 20230509152717.png>
 Package pdftex.def Info: images/Pasted image 20230509152717.png  used on input 
 line 3383.
 (pdftex.def)             Requested size: 203.25887pt x 141.02652pt.
-<images/Pasted image 20230510084605.png, id=1950, 681.54625pt x 371.3875pt>
+<images/Pasted image 20230510084605.png, id=1945, 681.54625pt x 371.3875pt>
 File: images/Pasted image 20230510084605.png Graphic file (type png)
 <use images/Pasted image 20230510084605.png>
 Package pdftex.def Info: images/Pasted image 20230510084605.png  used on input 
@@ -2297,7 +2297,7 @@ line 3413.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230509153439.png, id=1952, 996.72375pt x 290.08376pt>
+<images/Pasted image 20230509153439.png, id=1947, 996.72375pt x 290.08376pt>
 File: images/Pasted image 20230509153439.png Graphic file (type png)
 <use images/Pasted image 20230509153439.png>
 Package pdftex.def Info: images/Pasted image 20230509153439.png  used on input 
@@ -2307,13 +2307,13 @@ line 3423.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [98 <./images/Pasted image 20230509152717.png>]
-<images/Pasted image 20230509154741.png, id=1966, 916.42375pt x 198.7425pt>
+<images/Pasted image 20230509154741.png, id=1961, 916.42375pt x 198.7425pt>
 File: images/Pasted image 20230509154741.png Graphic file (type png)
 <use images/Pasted image 20230509154741.png>
 Package pdftex.def Info: images/Pasted image 20230509154741.png  used on input 
 line 3444.
 (pdftex.def)             Requested size: 274.92924pt x 59.6232pt.
-<images/Pasted image 20230509154808.png, id=1968, 843.15pt x 570.13pt>
+<images/Pasted image 20230509154808.png, id=1963, 843.15pt x 570.13pt>
 File: images/Pasted image 20230509154808.png Graphic file (type png)
 <use images/Pasted image 20230509154808.png>
 Package pdftex.def Info: images/Pasted image 20230509154808.png  used on input 
@@ -2325,7 +2325,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [99 <./images/Pasted image 20230510084605.png> <./images/Pasted image 202305091
 53439.png> <./images/Pasted image 20230509154741.png>]
-<images/Pasted image 20230509162158.png, id=1985, 706.64pt x 639.38875pt>
+<images/Pasted image 20230509162158.png, id=1980, 706.64pt x 639.38875pt>
 File: images/Pasted image 20230509162158.png Graphic file (type png)
 <use images/Pasted image 20230509162158.png>
 Package pdftex.def Info: images/Pasted image 20230509162158.png  used on input 
@@ -2333,7 +2333,7 @@ line 3488.
 (pdftex.def)             Requested size: 353.31914pt x 319.69359pt.
  [100 <./images/Pasted image 20230509154808.png> <./images/Pasted image 2023050
 9162158.png>]
-<images/Pasted image 20230509162726.png, id=1995, 583.17876pt x 390.45876pt>
+<images/Pasted image 20230509162726.png, id=1990, 583.17876pt x 390.45876pt>
 File: images/Pasted image 20230509162726.png Graphic file (type png)
 <use images/Pasted image 20230509162726.png>
 Package pdftex.def Info: images/Pasted image 20230509162726.png  used on input 
@@ -2348,7 +2348,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `storage-energy-diagram' on page 101 undefined on inpu
 t line 3545.
 
-<images/Pasted image 20230509165631.png, id=1998, 1049.9225pt x 382.42876pt>
+<images/Pasted image 20230509165631.png, id=1993, 1049.9225pt x 382.42876pt>
 File: images/Pasted image 20230509165631.png Graphic file (type png)
 <use images/Pasted image 20230509165631.png>
 Package pdftex.def Info: images/Pasted image 20230509165631.png  used on input 
@@ -2359,7 +2359,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [101 <./images/Pasted image 20230509162726.png>] [102 <./images/Pasted image 20
 230509165631.png>]
-<images/Pasted image 20230509172945.png, id=2018, 697.60625pt x 282.05376pt>
+<images/Pasted image 20230509172945.png, id=2013, 697.60625pt x 282.05376pt>
 File: images/Pasted image 20230509172945.png Graphic file (type png)
 <use images/Pasted image 20230509172945.png>
 Package pdftex.def Info: images/Pasted image 20230509172945.png  used on input 
@@ -2370,7 +2370,7 @@ Overfull \hbox (33.07693pt too wide) in paragraph at lines 3630--3631
  [][] 
  []
 
-<images/Pasted image 20230510093207.png, id=2019, 759.83875pt x 202.7575pt>
+<images/Pasted image 20230510093207.png, id=2014, 759.83875pt x 202.7575pt>
 File: images/Pasted image 20230510093207.png Graphic file (type png)
 <use images/Pasted image 20230510093207.png>
 Package pdftex.def Info: images/Pasted image 20230510093207.png  used on input 
@@ -2380,13 +2380,13 @@ line 3640.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [103 <./images/Pasted image 20230509172945.png>]
-<images/Pasted image 20230514104525.png, id=2030, 616.3025pt x 250.9375pt>
+<images/Pasted image 20230514104525.png, id=2025, 616.3025pt x 250.9375pt>
 File: images/Pasted image 20230514104525.png Graphic file (type png)
 <use images/Pasted image 20230514104525.png>
 Package pdftex.def Info: images/Pasted image 20230514104525.png  used on input 
 line 3661.
 (pdftex.def)             Requested size: 308.1505pt x 125.46843pt.
-<images/Pasted image 20230514104715.png, id=2031, 323.2075pt x 199.74625pt>
+<images/Pasted image 20230514104715.png, id=2026, 323.2075pt x 199.74625pt>
 File: images/Pasted image 20230514104715.png Graphic file (type png)
 <use images/Pasted image 20230514104715.png>
 Package pdftex.def Info: images/Pasted image 20230514104715.png  used on input 
@@ -2394,7 +2394,7 @@ line 3669.
 (pdftex.def)             Requested size: 161.60335pt x 99.87288pt.
  [104 <./images/Pasted image 20230510093207.png> <./images/Pasted image 2023051
 4104525.png>]
-<images/Pasted image 20230514104854.png, id=2041, 722.7pt x 167.62625pt>
+<images/Pasted image 20230514104854.png, id=2036, 722.7pt x 167.62625pt>
 File: images/Pasted image 20230514104854.png Graphic file (type png)
 <use images/Pasted image 20230514104854.png>
 Package pdftex.def Info: images/Pasted image 20230514104854.png  used on input 
@@ -2402,7 +2402,7 @@ line 3675.
 (pdftex.def)             Requested size: 361.3491pt x 83.81291pt.
  [105 <./images/Pasted image 20230514104715.png> <./images/Pasted image 2023051
 4104854.png>]
-<images/Pasted image 20230514113515.png, id=2056, 653.44125pt x 500.87125pt>
+<images/Pasted image 20230514113515.png, id=2051, 653.44125pt x 500.87125pt>
 File: images/Pasted image 20230514113515.png Graphic file (type png)
 <use images/Pasted image 20230514113515.png>
 Package pdftex.def Info: images/Pasted image 20230514113515.png  used on input 
@@ -2414,7 +2414,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3769--3770
 
  []
 
-<images/Pasted image 20230515151827.png, id=2071, 1406.25375pt x 556.0775pt>
+<images/Pasted image 20230515151827.png, id=2066, 1406.25375pt x 556.0775pt>
 File: images/Pasted image 20230515151827.png Graphic file (type png)
 <use images/Pasted image 20230515151827.png>
 Package pdftex.def Info: images/Pasted image 20230515151827.png  used on input 
@@ -2423,7 +2423,7 @@ line 3773.
 [107 <./images/Pasted image 20230514113515.png> <./images/Pasted image 20230515
 151827.png>] [108]
 Chapter 9.
-<images/Pasted image 20230522162020.png, id=2087, 2652.91125pt x 1565.85pt>
+<images/Pasted image 20230522162020.png, id=2082, 2652.91125pt x 1565.85pt>
 File: images/Pasted image 20230522162020.png Graphic file (type png)
 <use images/Pasted image 20230522162020.png>
 Package pdftex.def Info: images/Pasted image 20230522162020.png  used on input 
@@ -2436,13 +2436,13 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 [109
 
  <./images/Pasted image 20230522162020.png (PNG copy)>]
-<images/Pasted image 20230522190051.png, id=2093, 454.69875pt x 287.0725pt>
+<images/Pasted image 20230522190051.png, id=2088, 454.69875pt x 287.0725pt>
 File: images/Pasted image 20230522190051.png Graphic file (type png)
 <use images/Pasted image 20230522190051.png>
 Package pdftex.def Info: images/Pasted image 20230522190051.png  used on input 
 line 3819.
 (pdftex.def)             Requested size: 227.34882pt x 143.53589pt.
-<images/Pasted image 20230522190108.png, id=2094, 470.75874pt x 274.02374pt>
+<images/Pasted image 20230522190108.png, id=2089, 470.75874pt x 274.02374pt>
 File: images/Pasted image 20230522190108.png Graphic file (type png)
 <use images/Pasted image 20230522190108.png>
 Package pdftex.def Info: images/Pasted image 20230522190108.png  used on input 
@@ -2450,7 +2450,7 @@ line 3825.
 (pdftex.def)             Requested size: 235.3788pt x 137.01154pt.
  [110 <./images/Pasted image 20230522190051.png> <./images/Pasted image 2023052
 2190108.png>]
-<images/Pasted image 20230522191229.png, id=2103, 853.1875pt x 414.54875pt>
+<images/Pasted image 20230522191229.png, id=2098, 853.1875pt x 414.54875pt>
 File: images/Pasted image 20230522191229.png Graphic file (type png)
 <use images/Pasted image 20230522191229.png>
 Package pdftex.def Info: images/Pasted image 20230522191229.png  used on input 
@@ -2458,26 +2458,26 @@ line 3842.
 (pdftex.def)             Requested size: 426.59271pt x 207.27386pt.
 
 [111 <./images/Pasted image 20230522191229.png (PNG copy)>]
-<images/Pasted image 20230522171354.png, id=2112, 820.06375pt x 388.45125pt>
+<images/Pasted image 20230522171354.png, id=2107, 820.06375pt x 388.45125pt>
 File: images/Pasted image 20230522171354.png Graphic file (type png)
 <use images/Pasted image 20230522171354.png>
 Package pdftex.def Info: images/Pasted image 20230522171354.png  used on input 
 line 3887.
 (pdftex.def)             Requested size: 410.03087pt x 194.22514pt.
  [112 <./images/Pasted image 20230522171354.png>]
-<images/Pasted image 20230522174514.png, id=2123, 660.4675pt x 516.93124pt>
+<images/Pasted image 20230522174514.png, id=2118, 660.4675pt x 516.93124pt>
 File: images/Pasted image 20230522174514.png Graphic file (type png)
 <use images/Pasted image 20230522174514.png>
 Package pdftex.def Info: images/Pasted image 20230522174514.png  used on input 
 line 3916.
 (pdftex.def)             Requested size: 330.23294pt x 258.46498pt.
-<images/Pasted image 20230522174654.png, id=2124, 506.89375pt x 284.06125pt>
+<images/Pasted image 20230522174654.png, id=2119, 506.89375pt x 284.06125pt>
 File: images/Pasted image 20230522174654.png Graphic file (type png)
 <use images/Pasted image 20230522174654.png>
 Package pdftex.def Info: images/Pasted image 20230522174654.png  used on input 
 line 3923.
 (pdftex.def)             Requested size: 253.44626pt x 142.03026pt.
-<images/Pasted image 20230522175151.png, id=2125, 508.90125pt x 298.11375pt>
+<images/Pasted image 20230522175151.png, id=2120, 508.90125pt x 298.11375pt>
 File: images/Pasted image 20230522175151.png Graphic file (type png)
 <use images/Pasted image 20230522175151.png>
 Package pdftex.def Info: images/Pasted image 20230522175151.png  used on input 
@@ -2485,7 +2485,7 @@ line 3932.
 (pdftex.def)             Requested size: 254.45pt x 149.0565pt.
  [113 <./images/Pasted image 20230522174514.png> <./images/Pasted image 2023052
 2174654.png>]
-<images/Pasted image 20230522175419.png, id=2137, 514.92375pt x 279.0425pt>
+<images/Pasted image 20230522175419.png, id=2132, 514.92375pt x 279.0425pt>
 File: images/Pasted image 20230522175419.png Graphic file (type png)
 <use images/Pasted image 20230522175419.png>
 Package pdftex.def Info: images/Pasted image 20230522175419.png  used on input 
@@ -2493,25 +2493,25 @@ line 3939.
 (pdftex.def)             Requested size: 257.46124pt x 139.5209pt.
  [114 <./images/Pasted image 20230522175151.png> <./images/Pasted image 2023052
 2175419.png>]
-<images/Pasted image 20230522180801.png, id=2151, 661.47125pt x 661.47125pt>
+<images/Pasted image 20230522180801.png, id=2146, 661.47125pt x 661.47125pt>
 File: images/Pasted image 20230522180801.png Graphic file (type png)
 <use images/Pasted image 20230522180801.png>
 Package pdftex.def Info: images/Pasted image 20230522180801.png  used on input 
 line 3963.
 (pdftex.def)             Requested size: 159.33473pt x 159.33165pt.
-<images/Pasted image 20230522180206.png, id=2152, 670.505pt x 676.5275pt>
+<images/Pasted image 20230522180206.png, id=2147, 670.505pt x 676.5275pt>
 File: images/Pasted image 20230522180206.png Graphic file (type png)
 <use images/Pasted image 20230522180206.png>
 Package pdftex.def Info: images/Pasted image 20230522180206.png  used on input 
 line 3969.
 (pdftex.def)             Requested size: 159.33473pt x 160.75952pt.
-<images/Pasted image 20230522181333.png, id=2154, 589.20125pt x 626.34pt>
+<images/Pasted image 20230522181333.png, id=2149, 589.20125pt x 626.34pt>
 File: images/Pasted image 20230522181333.png Graphic file (type png)
 <use images/Pasted image 20230522181333.png>
 Package pdftex.def Info: images/Pasted image 20230522181333.png  used on input 
 line 3980.
 (pdftex.def)             Requested size: 176.76173pt x 187.90344pt.
-<images/Pasted image 20230522182050.png, id=2155, 788.9475pt x 252.945pt>
+<images/Pasted image 20230522182050.png, id=2150, 788.9475pt x 252.945pt>
 File: images/Pasted image 20230522182050.png Graphic file (type png)
 <use images/Pasted image 20230522182050.png>
 Package pdftex.def Info: images/Pasted image 20230522182050.png  used on input 
@@ -2525,7 +2525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3993--3994
 [115 <./images/Pasted image 20230522180801.png> <./images/Pasted image 20230522
 180206.png> <./images/Pasted image 20230522181333.png> <./images/Pasted image 2
 0230522182050.png>]
-<images/Pasted image 20230523144654.png, id=2173, 764.8575pt x 684.5575pt>
+<images/Pasted image 20230523144654.png, id=2168, 764.8575pt x 684.5575pt>
 File: images/Pasted image 20230523144654.png Graphic file (type png)
 <use images/Pasted image 20230523144654.png>
 Package pdftex.def Info: images/Pasted image 20230523144654.png  used on input 
@@ -2535,7 +2535,7 @@ line 4035.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230523150219.png, id=2174, 656.4525pt x 394.47375pt>
+<images/Pasted image 20230523150219.png, id=2169, 656.4525pt x 394.47375pt>
 File: images/Pasted image 20230523150219.png Graphic file (type png)
 <use images/Pasted image 20230523150219.png>
 Package pdftex.def Info: images/Pasted image 20230523150219.png  used on input 
@@ -2545,7 +2545,7 @@ line 4042.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [116]
-<images/Pasted image 20230523151747.png, id=2184, 306.14375pt x 213.79875pt>
+<images/Pasted image 20230523151747.png, id=2179, 306.14375pt x 213.79875pt>
 File: images/Pasted image 20230523151747.png Graphic file (type png)
 <use images/Pasted image 20230523151747.png>
 Package pdftex.def Info: images/Pasted image 20230523151747.png  used on input 
@@ -2553,7 +2553,7 @@ line 4065.
 (pdftex.def)             Requested size: 153.07149pt x 106.89911pt.
  [117 <./images/Pasted image 20230523144654.png> <./images/Pasted image 2023052
 3150219.png>]
-<images/Pasted image 20230523152038.png, id=2194, 541.02126pt x 320.19624pt>
+<images/Pasted image 20230523152038.png, id=2189, 541.02126pt x 320.19624pt>
 File: images/Pasted image 20230523152038.png Graphic file (type png)
 <use images/Pasted image 20230523152038.png>
 Package pdftex.def Info: images/Pasted image 20230523152038.png  used on input 
@@ -2561,19 +2561,19 @@ line 4079.
 (pdftex.def)             Requested size: 270.50996pt x 160.09772pt.
  [118 <./images/Pasted image 20230523151747.png> <./images/Pasted image 2023052
 3152038.png>]
-<images/Pasted image 20230523153320.png, id=2205, 695.59875pt x 453.695pt>
+<images/Pasted image 20230523153320.png, id=2200, 695.59875pt x 453.695pt>
 File: images/Pasted image 20230523153320.png Graphic file (type png)
 <use images/Pasted image 20230523153320.png>
 Package pdftex.def Info: images/Pasted image 20230523153320.png  used on input 
 line 4110.
 (pdftex.def)             Requested size: 139.11728pt x 90.73738pt.
-<images/Pasted image 20230523153953.png, id=2206, 447.6725pt x 288.07625pt>
+<images/Pasted image 20230523153953.png, id=2201, 447.6725pt x 288.07625pt>
 File: images/Pasted image 20230523153953.png Graphic file (type png)
 <use images/Pasted image 20230523153953.png>
 Package pdftex.def Info: images/Pasted image 20230523153953.png  used on input 
 line 4126.
 (pdftex.def)             Requested size: 134.30278pt x 86.42354pt.
-<images/Pasted image 20230523154039.png, id=2207, 791.95876pt x 328.22626pt>
+<images/Pasted image 20230523154039.png, id=2202, 791.95876pt x 328.22626pt>
 File: images/Pasted image 20230523154039.png Graphic file (type png)
 <use images/Pasted image 20230523154039.png>
 Package pdftex.def Info: images/Pasted image 20230523154039.png  used on input 
@@ -2581,7 +2581,7 @@ line 4132.
 (pdftex.def)             Requested size: 395.97841pt x 164.11272pt.
  [119 <./images/Pasted image 20230523153320.png> <./images/Pasted image 2023052
 3153953.png> <./images/Pasted image 20230523154039.png>]
-<images/Pasted image 20230523155042.png, id=2222, 591.20876pt x 452.69125pt>
+<images/Pasted image 20230523155042.png, id=2217, 591.20876pt x 452.69125pt>
 File: images/Pasted image 20230523155042.png Graphic file (type png)
 <use images/Pasted image 20230523155042.png>
 Package pdftex.def Info: images/Pasted image 20230523155042.png  used on input 
@@ -2592,7 +2592,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4156--4158
 
  []
 
-<images/Pasted image 20230523163147.png, id=2224, 491.8375pt x 183.68625pt>
+<images/Pasted image 20230523163147.png, id=2219, 491.8375pt x 183.68625pt>
 File: images/Pasted image 20230523163147.png Graphic file (type png)
 <use images/Pasted image 20230523163147.png>
 Package pdftex.def Info: images/Pasted image 20230523163147.png  used on input 
@@ -2600,19 +2600,19 @@ line 4170.
 (pdftex.def)             Requested size: 245.91814pt x 91.84288pt.
 [120 <./images/Pasted image 20230523155042.png> <./images/Pasted image 20230523
 163147.png>]
-<images/Pasted image 20230523163539.png, id=2236, 552.0625pt x 449.68pt>
+<images/Pasted image 20230523163539.png, id=2231, 552.0625pt x 449.68pt>
 File: images/Pasted image 20230523163539.png Graphic file (type png)
 <use images/Pasted image 20230523163539.png>
 Package pdftex.def Info: images/Pasted image 20230523163539.png  used on input 
 line 4182.
 (pdftex.def)             Requested size: 276.03056pt x 224.83945pt.
-<images/Pasted image 20230523164730.png, id=2240, 505.89pt x 320.19624pt>
+<images/Pasted image 20230523164730.png, id=2235, 505.89pt x 320.19624pt>
 File: images/Pasted image 20230523164730.png Graphic file (type png)
 <use images/Pasted image 20230523164730.png>
 Package pdftex.def Info: images/Pasted image 20230523164730.png  used on input 
 line 4207.
 (pdftex.def)             Requested size: 204.85846pt x 129.66411pt.
-<images/Pasted image 20230523164756.png, id=2241, 486.81876pt x 314.17375pt>
+<images/Pasted image 20230523164756.png, id=2236, 486.81876pt x 314.17375pt>
 File: images/Pasted image 20230523164756.png Graphic file (type png)
 <use images/Pasted image 20230523164756.png>
 Package pdftex.def Info: images/Pasted image 20230523164756.png  used on input 
@@ -2622,7 +2622,7 @@ line 4213.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230523165604.png, id=2244, 672.5125pt x 309.155pt>
+<images/Pasted image 20230523165604.png, id=2239, 672.5125pt x 309.155pt>
 File: images/Pasted image 20230523165604.png Graphic file (type png)
 <use images/Pasted image 20230523165604.png>
 Package pdftex.def Info: images/Pasted image 20230523165604.png  used on input 
@@ -2636,7 +2636,7 @@ Chapter 10.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4238.
 
-<images/Pasted image 20230224162943.png, id=2262, 938.50626pt x 428.60126pt>
+<images/Pasted image 20230224162943.png, id=2257, 938.50626pt x 428.60126pt>
 File: images/Pasted image 20230224162943.png Graphic file (type png)
 <use images/Pasted image 20230224162943.png>
 Package pdftex.def Info: images/Pasted image 20230224162943.png  used on input 
@@ -2647,19 +2647,19 @@ Overfull \hbox (14.00787pt too wide) in paragraph at lines 4248--4249
  [][] 
  []
 
-<images/Pasted image 20230531102906.png, id=2264, 521.95pt x 314.17375pt>
+<images/Pasted image 20230531102906.png, id=2259, 521.95pt x 314.17375pt>
 File: images/Pasted image 20230531102906.png Graphic file (type png)
 <use images/Pasted image 20230531102906.png>
 Package pdftex.def Info: images/Pasted image 20230531102906.png  used on input 
 line 4261.
 (pdftex.def)             Requested size: 204.85846pt x 123.30867pt.
-<images/Pasted image 20230531102921.png, id=2265, 776.9025pt x 312.16624pt>
+<images/Pasted image 20230531102921.png, id=2260, 776.9025pt x 312.16624pt>
 File: images/Pasted image 20230531102921.png Graphic file (type png)
 <use images/Pasted image 20230531102921.png>
 Package pdftex.def Info: images/Pasted image 20230531102921.png  used on input 
 line 4265.
 (pdftex.def)             Requested size: 204.85846pt x 82.31401pt.
-<images/Pasted image 20230224163936.png, id=2267, 817.0525pt x 325.215pt>
+<images/Pasted image 20230224163936.png, id=2262, 817.0525pt x 325.215pt>
 File: images/Pasted image 20230224163936.png Graphic file (type png)
 <use images/Pasted image 20230224163936.png>
 Package pdftex.def Info: images/Pasted image 20230224163936.png  used on input 
@@ -2669,7 +2669,7 @@ line 4277.
 
 
  <./images/Pasted image 20230224162943.png>]
-<images/Pasted image 20230225093643.png, id=2276, 656.4525pt x 311.1625pt>
+<images/Pasted image 20230225093643.png, id=2271, 656.4525pt x 311.1625pt>
 File: images/Pasted image 20230225093643.png Graphic file (type png)
 <use images/Pasted image 20230225093643.png>
 Package pdftex.def Info: images/Pasted image 20230225093643.png  used on input 
@@ -2681,19 +2681,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [124 <./images/Pasted image 20230531102906.png> <./images/Pasted image 20230531
 102921.png> <./images/Pasted image 20230224163936.png>]
-<images/Pasted image 20230224165435.png, id=2288, 551.05875pt x 230.8625pt>
+<images/Pasted image 20230224165435.png, id=2283, 551.05875pt x 230.8625pt>
 File: images/Pasted image 20230224165435.png Graphic file (type png)
 <use images/Pasted image 20230224165435.png>
 Package pdftex.def Info: images/Pasted image 20230224165435.png  used on input 
 line 4323.
 (pdftex.def)             Requested size: 330.63779pt x 138.51855pt.
-<images/Pasted image 20230224170808.png, id=2290, 502.87875pt x 452.69125pt>
+<images/Pasted image 20230224170808.png, id=2285, 502.87875pt x 452.69125pt>
 File: images/Pasted image 20230224170808.png Graphic file (type png)
 <use images/Pasted image 20230224170808.png>
 Package pdftex.def Info: images/Pasted image 20230224170808.png  used on input 
 line 4331.
 (pdftex.def)             Requested size: 251.43875pt x 226.34506pt.
-<images/Pasted image 20230224171228.png, id=2291, 416.55624pt x 385.44pt>
+<images/Pasted image 20230224171228.png, id=2286, 416.55624pt x 385.44pt>
 File: images/Pasted image 20230224171228.png Graphic file (type png)
 <use images/Pasted image 20230224171228.png>
 Package pdftex.def Info: images/Pasted image 20230224171228.png  used on input 
@@ -2701,7 +2701,7 @@ line 4350.
 (pdftex.def)             Requested size: 208.2776pt x 192.71953pt.
  [125 <./images/Pasted image 20230225093643.png> <./images/Pasted image 2023022
 4165435.png>]
-<images/Pasted image 20230225094641.png, id=2304, 906.38625pt x 304.13625pt>
+<images/Pasted image 20230225094641.png, id=2299, 906.38625pt x 304.13625pt>
 File: images/Pasted image 20230225094641.png Graphic file (type png)
 <use images/Pasted image 20230225094641.png>
 Package pdftex.def Info: images/Pasted image 20230225094641.png  used on input 
@@ -2713,13 +2713,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [126 <./images/Pasted image 20230224170808.png> <./images/Pasted image 20230224
 171228.png>]
-<images/Pasted image 20230225094934.png, id=2315, 862.22125pt x 106.3975pt>
+<images/Pasted image 20230225094934.png, id=2310, 862.22125pt x 106.3975pt>
 File: images/Pasted image 20230225094934.png Graphic file (type png)
 <use images/Pasted image 20230225094934.png>
 Package pdftex.def Info: images/Pasted image 20230225094934.png  used on input 
 line 4384.
 (pdftex.def)             Requested size: 431.10957pt x 53.19861pt.
-<images/Pasted image 20230225100029.png, id=2319, 856.19875pt x 425.59pt>
+<images/Pasted image 20230225100029.png, id=2314, 856.19875pt x 425.59pt>
 File: images/Pasted image 20230225100029.png Graphic file (type png)
 <use images/Pasted image 20230225100029.png>
 Package pdftex.def Info: images/Pasted image 20230225100029.png  used on input 
@@ -2731,7 +2731,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [127 <./images/Pasted image 20230225094641.png> <./images/Pasted image 20230225
 094934.png>]
-<images/Pasted image 20230225100636.png, id=2335, 722.7pt x 382.42876pt>
+<images/Pasted image 20230225100636.png, id=2330, 722.7pt x 382.42876pt>
 File: images/Pasted image 20230225100636.png Graphic file (type png)
 <use images/Pasted image 20230225100636.png>
 Package pdftex.def Info: images/Pasted image 20230225100636.png  used on input 
@@ -2739,13 +2739,13 @@ line 4430.
 (pdftex.def)             Requested size: 361.3491pt x 191.2139pt.
  [128 <./images/Pasted image 20230225100029.png> <./images/Pasted image 2023022
 5100636.png>]
-<images/Pasted image 20230225101254.png, id=2344, 649.42625pt x 383.4325pt>
+<images/Pasted image 20230225101254.png, id=2339, 649.42625pt x 383.4325pt>
 File: images/Pasted image 20230225101254.png Graphic file (type png)
 <use images/Pasted image 20230225101254.png>
 Package pdftex.def Info: images/Pasted image 20230225101254.png  used on input 
 line 4446.
 (pdftex.def)             Requested size: 324.71233pt x 191.71577pt.
-<images/Pasted image 20230225102406.png, id=2346, 659.46375pt x 374.39874pt>
+<images/Pasted image 20230225102406.png, id=2341, 659.46375pt x 374.39874pt>
 File: images/Pasted image 20230225102406.png Graphic file (type png)
 <use images/Pasted image 20230225102406.png>
 Package pdftex.def Info: images/Pasted image 20230225102406.png  used on input 
@@ -2755,7 +2755,7 @@ line 4469.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230225102447.png, id=2347, 635.37375pt x 376.40625pt>
+<images/Pasted image 20230225102447.png, id=2342, 635.37375pt x 376.40625pt>
 File: images/Pasted image 20230225102447.png Graphic file (type png)
 <use images/Pasted image 20230225102447.png>
 Package pdftex.def Info: images/Pasted image 20230225102447.png  used on input 
@@ -2764,7 +2764,7 @@ line 4478.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230225102504.png, id=2348, 643.40375pt x 395.4775pt>
+<images/Pasted image 20230225102504.png, id=2343, 643.40375pt x 395.4775pt>
 File: images/Pasted image 20230225102504.png Graphic file (type png)
 <use images/Pasted image 20230225102504.png>
 Package pdftex.def Info: images/Pasted image 20230225102504.png  used on input 
@@ -2773,7 +2773,7 @@ line 4487.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230225102530.png, id=2349, 575.14874pt x 374.39874pt>
+<images/Pasted image 20230225102530.png, id=2344, 575.14874pt x 374.39874pt>
 File: images/Pasted image 20230225102530.png Graphic file (type png)
 <use images/Pasted image 20230225102530.png>
 Package pdftex.def Info: images/Pasted image 20230225102530.png  used on input 
@@ -2782,7 +2782,7 @@ line 4495.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230225102559.png, id=2351, 593.21625pt x 354.32375pt>
+<images/Pasted image 20230225102559.png, id=2346, 593.21625pt x 354.32375pt>
 File: images/Pasted image 20230225102559.png Graphic file (type png)
 <use images/Pasted image 20230225102559.png>
 Package pdftex.def Info: images/Pasted image 20230225102559.png  used on input 
@@ -2791,7 +2791,7 @@ line 4505.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230225102614.png, id=2353, 598.235pt x 373.395pt>
+<images/Pasted image 20230225102614.png, id=2348, 598.235pt x 373.395pt>
 File: images/Pasted image 20230225102614.png Graphic file (type png)
 <use images/Pasted image 20230225102614.png>
 Package pdftex.def Info: images/Pasted image 20230225102614.png  used on input 
@@ -2801,7 +2801,7 @@ line 4513.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [129 <./images/Pasted image 20230225101254.png>]
-<images/Pasted image 20230531110613.png, id=2367, 269.005pt x 128.48pt>
+<images/Pasted image 20230531110613.png, id=2362, 269.005pt x 128.48pt>
 File: images/Pasted image 20230531110613.png Graphic file (type png)
 <use images/Pasted image 20230531110613.png>
 Package pdftex.def Info: images/Pasted image 20230531110613.png  used on input 
@@ -2815,27 +2815,27 @@ Overfull \vbox (11.54747pt too high) has occurred while \output is active []
 [131 <./images/Pasted image 20230225102504.png> <./images/Pasted image 20230225
 102530.png> <./images/Pasted image 20230225102559.png>] [132 <./images/Pasted i
 mage 20230225102614.png> <./images/Pasted image 20230531110613.png>]
-<images/Pasted image 20230301163319.png, id=2400, 516.93124pt x 274.02374pt>
+<images/Pasted image 20230301163319.png, id=2395, 516.93124pt x 274.02374pt>
 File: images/Pasted image 20230301163319.png Graphic file (type png)
 <use images/Pasted image 20230301163319.png>
 Package pdftex.def Info: images/Pasted image 20230301163319.png  used on input 
 line 4602.
 (pdftex.def)             Requested size: 258.46498pt x 137.01154pt.
  [133 <./images/Pasted image 20230301163319.png>]
-<images/Pasted image 20230301165125.png, id=2409, 501.875pt x 352.31625pt>
+<images/Pasted image 20230301165125.png, id=2404, 501.875pt x 352.31625pt>
 File: images/Pasted image 20230301165125.png Graphic file (type png)
 <use images/Pasted image 20230301165125.png>
 Package pdftex.def Info: images/Pasted image 20230301165125.png  used on input 
 line 4643.
 (pdftex.def)             Requested size: 250.93687pt x 176.15768pt.
  [134 <./images/Pasted image 20230301165125.png>]
-<images/Pasted image 20230301182340.png, id=2424, 610.28pt x 253.94875pt>
+<images/Pasted image 20230301182340.png, id=2419, 610.28pt x 253.94875pt>
 File: images/Pasted image 20230301182340.png Graphic file (type png)
 <use images/Pasted image 20230301182340.png>
 Package pdftex.def Info: images/Pasted image 20230301182340.png  used on input 
 line 4680.
 (pdftex.def)             Requested size: 305.13925pt x 126.97406pt.
-<images/Pasted image 20230301172546.png, id=2426, 659.46375pt x 410.53375pt>
+<images/Pasted image 20230301172546.png, id=2421, 659.46375pt x 410.53375pt>
 File: images/Pasted image 20230301172546.png Graphic file (type png)
 <use images/Pasted image 20230301172546.png>
 Package pdftex.def Info: images/Pasted image 20230301172546.png  used on input 
@@ -2845,20 +2845,20 @@ line 4702.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230301173232.png, id=2430, 470.75874pt x 402.50375pt>
+<images/Pasted image 20230301173232.png, id=2425, 470.75874pt x 402.50375pt>
 File: images/Pasted image 20230301173232.png Graphic file (type png)
 <use images/Pasted image 20230301173232.png>
 Package pdftex.def Info: images/Pasted image 20230301173232.png  used on input 
 line 4715.
 (pdftex.def)             Requested size: 141.22871pt x 120.75204pt.
 [135 <./images/Pasted image 20230301182340.png (PNG copy)>]
-<images/Pasted image 20230301173537.png, id=2439, 355.3275pt x 322.20375pt>
+<images/Pasted image 20230301173537.png, id=2434, 355.3275pt x 322.20375pt>
 File: images/Pasted image 20230301173537.png Graphic file (type png)
 <use images/Pasted image 20230301173537.png>
 Package pdftex.def Info: images/Pasted image 20230301173537.png  used on input 
 line 4724.
 (pdftex.def)             Requested size: 177.6633pt x 161.10147pt.
-<images/Pasted image 20230301173902.png, id=2441, 480.79625pt x 415.5525pt>
+<images/Pasted image 20230301173902.png, id=2436, 480.79625pt x 415.5525pt>
 File: images/Pasted image 20230301173902.png Graphic file (type png)
 <use images/Pasted image 20230301173902.png>
 Package pdftex.def Info: images/Pasted image 20230301173902.png  used on input 
@@ -2866,7 +2866,7 @@ line 4733.
 (pdftex.def)             Requested size: 336.55507pt x 290.88477pt.
  [136 <./images/Pasted image 20230301172546.png> <./images/Pasted image 2023030
 1173232.png> <./images/Pasted image 20230301173537.png>]
-<images/Pasted image 20230301174502.png, id=2452, 616.3025pt x 250.9375pt>
+<images/Pasted image 20230301174502.png, id=2447, 616.3025pt x 250.9375pt>
 File: images/Pasted image 20230301174502.png Graphic file (type png)
 <use images/Pasted image 20230301174502.png>
 Package pdftex.def Info: images/Pasted image 20230301174502.png  used on input 
@@ -2874,13 +2874,13 @@ line 4741.
 (pdftex.def)             Requested size: 369.78435pt x 150.56364pt.
  [137 <./images/Pasted image 20230301173902.png> <./images/Pasted image 2023030
 1174502.png>]
-<images/Pasted image 20230301174908.png, id=2463, 312.16624pt x 95.35625pt>
+<images/Pasted image 20230301174908.png, id=2458, 312.16624pt x 95.35625pt>
 File: images/Pasted image 20230301174908.png Graphic file (type png)
 <use images/Pasted image 20230301174908.png>
 Package pdftex.def Info: images/Pasted image 20230301174908.png  used on input 
 line 4755.
 (pdftex.def)             Requested size: 124.86427pt x 38.14182pt.
-<images/Pasted image 20230301174843.png, id=2464, 682.55pt x 285.065pt>
+<images/Pasted image 20230301174843.png, id=2459, 682.55pt x 285.065pt>
 File: images/Pasted image 20230301174843.png Graphic file (type png)
 <use images/Pasted image 20230301174843.png>
 Package pdftex.def Info: images/Pasted image 20230301174843.png  used on input 
@@ -2891,13 +2891,13 @@ Overfull \hbox (68.15671pt too wide) in paragraph at lines 4762--4763
  [][] 
  []
 
-<images/Pasted image 20230308162341.png, id=2465, 616.3025pt x 396.48125pt>
+<images/Pasted image 20230308162341.png, id=2460, 616.3025pt x 396.48125pt>
 File: images/Pasted image 20230308162341.png Graphic file (type png)
 <use images/Pasted image 20230308162341.png>
 Package pdftex.def Info: images/Pasted image 20230308162341.png  used on input 
 line 4772.
 (pdftex.def)             Requested size: 308.1505pt x 198.24013pt.
-<images/Pasted image 20230309160003.png, id=2467, 583.17876pt x 237.88875pt>
+<images/Pasted image 20230309160003.png, id=2462, 583.17876pt x 237.88875pt>
 File: images/Pasted image 20230309160003.png Graphic file (type png)
 <use images/Pasted image 20230309160003.png>
 Package pdftex.def Info: images/Pasted image 20230309160003.png  used on input 
@@ -2908,13 +2908,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [138 <./images/Pasted image 20230301174908.png> <./images/Pasted image 20230301
 174843.png> <./images/Pasted image 20230308162341.png>]
-<images/Pasted image 20230309160212.png, id=2481, 512.91624pt x 371.3875pt>
+<images/Pasted image 20230309160212.png, id=2476, 512.91624pt x 371.3875pt>
 File: images/Pasted image 20230309160212.png Graphic file (type png)
 <use images/Pasted image 20230309160212.png>
 Package pdftex.def Info: images/Pasted image 20230309160212.png  used on input 
 line 4815.
 (pdftex.def)             Requested size: 256.45749pt x 185.69328pt.
-<images/Pasted image 20230309160614.png, id=2482, 585.18625pt x 341.275pt>
+<images/Pasted image 20230309160614.png, id=2477, 585.18625pt x 341.275pt>
 File: images/Pasted image 20230309160614.png Graphic file (type png)
 <use images/Pasted image 20230309160614.png>
 Package pdftex.def Info: images/Pasted image 20230309160614.png  used on input 
@@ -2936,7 +2936,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4836--4843
 
 [139 <./images/Pasted image 20230309160003.png> <./images/Pasted image 20230309
 160212.png>]
-<images/Pasted image 20230308164331.png, id=2492, 529.98pt x 225.84375pt>
+<images/Pasted image 20230308164331.png, id=2487, 529.98pt x 225.84375pt>
 File: images/Pasted image 20230308164331.png Graphic file (type png)
 <use images/Pasted image 20230308164331.png>
 Package pdftex.def Info: images/Pasted image 20230308164331.png  used on input 
@@ -2947,7 +2947,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4851--4853
 
  []
 
-<images/Pasted image 20230308164601.png, id=2494, 772.8875pt x 325.215pt>
+<images/Pasted image 20230308164601.png, id=2489, 772.8875pt x 325.215pt>
 File: images/Pasted image 20230308164601.png Graphic file (type png)
 <use images/Pasted image 20230308164601.png>
 Package pdftex.def Info: images/Pasted image 20230308164601.png  used on input 
@@ -2958,13 +2958,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [140 <./images/Pasted image 20230309160614.png> <./images/Pasted image 20230308
 164331.png>]
-<images/Pasted image 20230309162952.png, id=2504, 433.62pt x 259.97125pt>
+<images/Pasted image 20230309162952.png, id=2499, 433.62pt x 259.97125pt>
 File: images/Pasted image 20230309162952.png Graphic file (type png)
 <use images/Pasted image 20230309162952.png>
 Package pdftex.def Info: images/Pasted image 20230309162952.png  used on input 
 line 4868.
 (pdftex.def)             Requested size: 216.80946pt x 129.9853pt.
-<images/Pasted image 20230308165559.png, id=2507, 522.95375pt x 339.2675pt>
+<images/Pasted image 20230308165559.png, id=2502, 522.95375pt x 339.2675pt>
 File: images/Pasted image 20230308165559.png Graphic file (type png)
 <use images/Pasted image 20230308165559.png>
 Package pdftex.def Info: images/Pasted image 20230308165559.png  used on input 
@@ -2974,7 +2974,7 @@ line 4880.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230308165650.png, id=2509, 355.3275pt x 330.23375pt>
+<images/Pasted image 20230308165650.png, id=2504, 355.3275pt x 330.23375pt>
 File: images/Pasted image 20230308165650.png Graphic file (type png)
 <use images/Pasted image 20230308165650.png>
 Package pdftex.def Info: images/Pasted image 20230308165650.png  used on input 
@@ -2985,7 +2985,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [141 <./images/Pasted image 20230308164601.png> <./images/Pasted image 20230309
 162952.png>]
-<images/Pasted image 20230309164925.png, id=2522, 631.35875pt x 121.45375pt>
+<images/Pasted image 20230309164925.png, id=2517, 631.35875pt x 121.45375pt>
 File: images/Pasted image 20230309164925.png Graphic file (type png)
 <use images/Pasted image 20230309164925.png>
 Package pdftex.def Info: images/Pasted image 20230309164925.png  used on input 
@@ -2997,27 +2997,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 4939--4942
 
  []
 
-<images/Pasted image 20230309171843.png, id=2535, 639.38875pt x 469.755pt>
+<images/Pasted image 20230309171843.png, id=2530, 639.38875pt x 469.755pt>
 File: images/Pasted image 20230309171843.png Graphic file (type png)
 <use images/Pasted image 20230309171843.png>
 Package pdftex.def Info: images/Pasted image 20230309171843.png  used on input 
 line 4945.
 (pdftex.def)             Requested size: 383.6362pt x 281.85518pt.
 [143 <./images/Pasted image 20230309171843.png>]
-<images/Pasted image 20230309172235.png, id=2549, 395.4775pt x 205.76875pt>
+<images/Pasted image 20230309172235.png, id=2544, 395.4775pt x 205.76875pt>
 File: images/Pasted image 20230309172235.png Graphic file (type png)
 <use images/Pasted image 20230309172235.png>
 Package pdftex.def Info: images/Pasted image 20230309172235.png  used on input 
 line 4982.
 (pdftex.def)             Requested size: 276.83235pt x 144.03712pt.
  [144 <./images/Pasted image 20230309172235.png>]
-<images/Pasted image 20230308172804.png, id=2561, 600.2425pt x 413.545pt>
+<images/Pasted image 20230308172804.png, id=2556, 600.2425pt x 413.545pt>
 File: images/Pasted image 20230308172804.png Graphic file (type png)
 <use images/Pasted image 20230308172804.png>
 Package pdftex.def Info: images/Pasted image 20230308172804.png  used on input 
 line 4997.
 (pdftex.def)             Requested size: 300.12051pt x 206.77199pt.
-<images/Pasted image 20230308173344.png, id=2563, 760.8425pt x 295.1025pt>
+<images/Pasted image 20230308173344.png, id=2558, 760.8425pt x 295.1025pt>
 File: images/Pasted image 20230308173344.png Graphic file (type png)
 <use images/Pasted image 20230308173344.png>
 Package pdftex.def Info: images/Pasted image 20230308173344.png  used on input 
@@ -3025,13 +3025,13 @@ line 5008.
 (pdftex.def)             Requested size: 380.42032pt x 147.55087pt.
  [145 <./images/Pasted image 20230308172804.png> <./images/Pasted image 2023030
 8173344.png>]
-<images/Pasted image 20230309174849.png, id=2575, 512.91624pt x 355.3275pt>
+<images/Pasted image 20230309174849.png, id=2570, 512.91624pt x 355.3275pt>
 File: images/Pasted image 20230309174849.png Graphic file (type png)
 <use images/Pasted image 20230309174849.png>
 Package pdftex.def Info: images/Pasted image 20230309174849.png  used on input 
 line 5018.
 (pdftex.def)             Requested size: 256.45749pt x 177.6633pt.
-<images/Pasted image 20230309180332.png, id=2578, 824.07875pt x 388.45125pt>
+<images/Pasted image 20230309180332.png, id=2573, 824.07875pt x 388.45125pt>
 File: images/Pasted image 20230309180332.png Graphic file (type png)
 <use images/Pasted image 20230309180332.png>
 Package pdftex.def Info: images/Pasted image 20230309180332.png  used on input 
@@ -3041,7 +3041,7 @@ line 5046.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230309180602.png, id=2579, 797.98125pt x 347.2975pt>
+<images/Pasted image 20230309180602.png, id=2574, 797.98125pt x 347.2975pt>
 File: images/Pasted image 20230309180602.png Graphic file (type png)
 <use images/Pasted image 20230309180602.png>
 Package pdftex.def Info: images/Pasted image 20230309180602.png  used on input 
@@ -3050,7 +3050,7 @@ line 5055.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230322114404.png, id=2581, 764.8575pt x 243.91125pt>
+<images/Pasted image 20230322114404.png, id=2576, 764.8575pt x 243.91125pt>
 File: images/Pasted image 20230322114404.png Graphic file (type png)
 <use images/Pasted image 20230322114404.png>
 Package pdftex.def Info: images/Pasted image 20230322114404.png  used on input 
@@ -3077,7 +3077,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5083--5085
 
 [147 <./images/Pasted image 20230309180332.png> <./images/Pasted image 20230309
 180602.png>]
-<images/Pasted image 20230322120159.png, id=2609, 843.15pt x 388.45125pt>
+<images/Pasted image 20230322120159.png, id=2605, 843.15pt x 388.45125pt>
 File: images/Pasted image 20230322120159.png Graphic file (type png)
 <use images/Pasted image 20230322120159.png>
 Package pdftex.def Info: images/Pasted image 20230322120159.png  used on input 
@@ -3085,31 +3085,27 @@ line 5115.
 (pdftex.def)             Requested size: 421.57396pt x 194.22514pt.
  [148 <./images/Pasted image 20230322114404.png> <./images/Pasted image 2023032
 2120159.png>]
-<images/Pasted image 20230322120641.png, id=2621, 419.5675pt x 148.555pt>
+<images/Pasted image 20230322120641.png, id=2617, 419.5675pt x 148.555pt>
 File: images/Pasted image 20230322120641.png Graphic file (type png)
 <use images/Pasted image 20230322120641.png>
 Package pdftex.def Info: images/Pasted image 20230322120641.png  used on input 
 line 5129.
 (pdftex.def)             Requested size: 293.69524pt x 103.98778pt.
-<images/Pasted image 20230322120711.png, id=2623, 486.81876pt x 274.02374pt>
+<images/Pasted image 20230322120711.png, id=2619, 486.81876pt x 274.02374pt>
 File: images/Pasted image 20230322120711.png Graphic file (type png)
 <use images/Pasted image 20230322120711.png>
 Package pdftex.def Info: images/Pasted image 20230322120711.png  used on input 
 line 5143.
-(pdftex.def)             Requested size: 243.40878pt x 137.01154pt.
-<images/Pasted image 20230322120944.png, id=2624, 418.56375pt x 202.7575pt>
+(pdftex.def)             Requested size: 340.7708pt x 191.8153pt.
+<images/Pasted image 20230322120944.png, id=2620, 418.56375pt x 202.7575pt>
 File: images/Pasted image 20230322120944.png Graphic file (type png)
 <use images/Pasted image 20230322120944.png>
 Package pdftex.def Info: images/Pasted image 20230322120944.png  used on input 
 line 5154.
 (pdftex.def)             Requested size: 251.14018pt x 121.65543pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[149 <./images/Pasted image 20230322120641.png> <./images/Pasted image 20230322
-120711.png>]
-<images/Pasted image 20230322121438.png, id=2640, 453.695pt x 193.72375pt>
+ [149 <./images/Pasted image 20230322120641.png> <./images/Pasted image 2023032
+2120711.png>]
+<images/Pasted image 20230322121438.png, id=2635, 453.695pt x 193.72375pt>
 File: images/Pasted image 20230322121438.png Graphic file (type png)
 <use images/Pasted image 20230322121438.png>
 Package pdftex.def Info: images/Pasted image 20230322121438.png  used on input 
@@ -3118,13 +3114,13 @@ line 5169.
  [150 <./images/Pasted image 20230322120944.png> <./images/Pasted image 2023032
 2121438.png>]
 Chapter 11.
-<images/Pasted image 20230322105517.png, id=2661, 780.9175pt x 456.70625pt>
+<images/Pasted image 20230322105517.png, id=2657, 780.9175pt x 456.70625pt>
 File: images/Pasted image 20230322105517.png Graphic file (type png)
 <use images/Pasted image 20230322105517.png>
 Package pdftex.def Info: images/Pasted image 20230322105517.png  used on input 
 line 5209.
 (pdftex.def)             Requested size: 390.4578pt x 228.35255pt.
-<images/Pasted image 20230322105540.png, id=2663, 948.54375pt x 497.86pt>
+<images/Pasted image 20230322105540.png, id=2659, 948.54375pt x 497.86pt>
 File: images/Pasted image 20230322105540.png Graphic file (type png)
 <use images/Pasted image 20230322105540.png>
 Package pdftex.def Info: images/Pasted image 20230322105540.png  used on input 
@@ -3141,13 +3137,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [151
 
  <./images/Pasted image 20230322105517.png>]
-<images/Pasted image 20230322110125.png, id=2673, 504.88625pt x 182.6825pt>
+<images/Pasted image 20230322110125.png, id=2669, 504.88625pt x 182.6825pt>
 File: images/Pasted image 20230322110125.png Graphic file (type png)
 <use images/Pasted image 20230322110125.png>
 Package pdftex.def Info: images/Pasted image 20230322110125.png  used on input 
 line 5235.
 (pdftex.def)             Requested size: 252.44249pt x 91.34102pt.
-<images/Pasted image 20230322110143.png, id=2675, 486.81876pt x 179.67125pt>
+<images/Pasted image 20230322110143.png, id=2671, 486.81876pt x 179.67125pt>
 File: images/Pasted image 20230322110143.png Graphic file (type png)
 <use images/Pasted image 20230322110143.png>
 Package pdftex.def Info: images/Pasted image 20230322110143.png  used on input 
@@ -3157,7 +3153,7 @@ line 5245.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230322110235.png, id=2677, 502.87875pt x 198.7425pt>
+<images/Pasted image 20230322110235.png, id=2673, 502.87875pt x 198.7425pt>
 File: images/Pasted image 20230322110235.png Graphic file (type png)
 <use images/Pasted image 20230322110235.png>
 Package pdftex.def Info: images/Pasted image 20230322110235.png  used on input 
@@ -3166,7 +3162,7 @@ line 5255.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230322110317.png, id=2679, 1267.73625pt x 553.06625pt>
+<images/Pasted image 20230322110317.png, id=2675, 1267.73625pt x 553.06625pt>
 File: images/Pasted image 20230322110317.png Graphic file (type png)
 <use images/Pasted image 20230322110317.png>
 Package pdftex.def Info: images/Pasted image 20230322110317.png  used on input 
@@ -3176,7 +3172,7 @@ line 5265.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 5269.
 
-<images/Pasted image 20230322110445.png, id=2680, 308.15125pt x 362.35374pt>
+<images/Pasted image 20230322110445.png, id=2676, 308.15125pt x 362.35374pt>
 File: images/Pasted image 20230322110445.png Graphic file (type png)
 <use images/Pasted image 20230322110445.png>
 Package pdftex.def Info: images/Pasted image 20230322110445.png  used on input 
@@ -3193,7 +3189,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5286--5290
 
 [153 <./images/Pasted image 20230322110143.png> <./images/Pasted image 20230322
 110235.png> <./images/Pasted image 20230322110317.png>]
-<images/Pasted image 20230322112942.png, id=2706, 676.5275pt x 658.46pt>
+<images/Pasted image 20230322112942.png, id=2702, 676.5275pt x 658.46pt>
 File: images/Pasted image 20230322112942.png Graphic file (type png)
 <use images/Pasted image 20230322112942.png>
 Package pdftex.def Info: images/Pasted image 20230322112942.png  used on input 
@@ -3210,13 +3206,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5313--5314
  []
 
 [155 <./images/Pasted image 20230322112942.png>]
-<images/Pasted image 20230322114152.png, id=2729, 750.805pt x 155.58125pt>
+<images/Pasted image 20230322114152.png, id=2725, 750.805pt x 155.58125pt>
 File: images/Pasted image 20230322114152.png Graphic file (type png)
 <use images/Pasted image 20230322114152.png>
 Package pdftex.def Info: images/Pasted image 20230322114152.png  used on input 
 line 5337.
 (pdftex.def)             Requested size: 375.40158pt x 77.79042pt.
-<images/Pasted image 20230322114224.png, id=2731, 610.28pt x 353.32pt>
+<images/Pasted image 20230322114224.png, id=2727, 610.28pt x 353.32pt>
 File: images/Pasted image 20230322114224.png Graphic file (type png)
 <use images/Pasted image 20230322114224.png>
 Package pdftex.def Info: images/Pasted image 20230322114224.png  used on input 
@@ -3224,13 +3220,13 @@ line 5345.
 (pdftex.def)             Requested size: 305.13925pt x 176.65956pt.
  [156 <./images/Pasted image 20230322114152.png> <./images/Pasted image 2023032
 2114224.png>]
-<images/image_2023-03-27_181350562.png, id=2743, 805.0075pt x 493.845pt>
+<images/image_2023-03-27_181350562.png, id=2739, 805.0075pt x 493.845pt>
 File: images/image_2023-03-27_181350562.png Graphic file (type png)
 <use images/image_2023-03-27_181350562.png>
 Package pdftex.def Info: images/image_2023-03-27_181350562.png  used on input l
 ine 5367.
 (pdftex.def)             Requested size: 402.50278pt x 246.92189pt.
-<images/Pasted image 20230322170913.png, id=2746, 589.20125pt x 363.3575pt>
+<images/Pasted image 20230322170913.png, id=2743, 589.20125pt x 363.3575pt>
 File: images/Pasted image 20230322170913.png Graphic file (type png)
 <use images/Pasted image 20230322170913.png>
 Package pdftex.def Info: images/Pasted image 20230322170913.png  used on input 
@@ -3240,13 +3236,13 @@ line 5380.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230322171338.png, id=2748, 471.7625pt x 92.345pt>
+<images/Pasted image 20230322171338.png, id=2745, 471.7625pt x 92.345pt>
 File: images/Pasted image 20230322171338.png Graphic file (type png)
 <use images/Pasted image 20230322171338.png>
 Package pdftex.def Info: images/Pasted image 20230322171338.png  used on input 
 line 5386.
 (pdftex.def)             Requested size: 235.88066pt x 46.17238pt.
-<images/Pasted image 20230322171528.png, id=2750, 596.2275pt x 152.57pt>
+<images/Pasted image 20230322171528.png, id=2747, 596.2275pt x 152.57pt>
 File: images/Pasted image 20230322171528.png Graphic file (type png)
 <use images/Pasted image 20230322171528.png>
 Package pdftex.def Info: images/Pasted image 20230322171528.png  used on input 
@@ -3258,59 +3254,67 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230324115208.png, id=2752, 609.27625pt x 426.59375pt>
+[157 <./images/image_2023-03-27_181350562.png>]
+<images/Pasted image 20230324115208.png, id=2764, 609.27625pt x 426.59375pt>
 File: images/Pasted image 20230324115208.png Graphic file (type png)
 <use images/Pasted image 20230324115208.png>
 Package pdftex.def Info: images/Pasted image 20230324115208.png  used on input 
 line 5410.
 (pdftex.def)             Requested size: 304.63737pt x 213.29634pt.
-[157 <./images/image_2023-03-27_181350562.png>] [158 <./images/Pasted image 202
-30322170913.png> <./images/Pasted image 20230322171338.png> <./images/Pasted im
-age 20230322171528.png> <./images/Pasted image 20230324115208.png>]
-<images/Pasted image 20230324115601.png, id=2776, 363.3575pt x 334.24875pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[158 <./images/Pasted image 20230322170913.png> <./images/Pasted image 20230322
+171338.png> <./images/Pasted image 20230322171528.png>]
+<images/Pasted image 20230324115601.png, id=2777, 363.3575pt x 334.24875pt>
 File: images/Pasted image 20230324115601.png Graphic file (type png)
 <use images/Pasted image 20230324115601.png>
 Package pdftex.def Info: images/Pasted image 20230324115601.png  used on input 
 line 5436.
 (pdftex.def)             Requested size: 109.00809pt x 100.27539pt.
- [159 <./images/Pasted image 20230324115601.png>]
-<images/Pasted image 20230324120358.png, id=2790, 429.605pt x 444.66125pt>
+ [159 <./images/Pasted image 20230324115208.png> <./images/Pasted image 2023032
+4115601.png>]
+<images/Pasted image 20230324120358.png, id=2789, 429.605pt x 444.66125pt>
 File: images/Pasted image 20230324120358.png Graphic file (type png)
 <use images/Pasted image 20230324120358.png>
 Package pdftex.def Info: images/Pasted image 20230324120358.png  used on input 
 line 5466.
 (pdftex.def)             Requested size: 257.76498pt x 266.7988pt.
  [160 <./images/Pasted image 20230324120358.png>]
-<images/Pasted image 20230329163121.png, id=2806, 788.9475pt x 141.52875pt>
+<images/Pasted image 20230329163121.png, id=2805, 788.9475pt x 141.52875pt>
 File: images/Pasted image 20230329163121.png Graphic file (type png)
 <use images/Pasted image 20230329163121.png>
 Package pdftex.def Info: images/Pasted image 20230329163121.png  used on input 
 line 5521.
 (pdftex.def)             Requested size: 394.47278pt x 70.76419pt.
-<images/Pasted image 20230330100230.png, id=2808, 233.87375pt x 238.8925pt>
+<images/Pasted image 20230330100230.png, id=2807, 233.87375pt x 238.8925pt>
 File: images/Pasted image 20230330100230.png Graphic file (type png)
 <use images/Pasted image 20230330100230.png>
 Package pdftex.def Info: images/Pasted image 20230330100230.png  used on input 
 line 5530.
 (pdftex.def)             Requested size: 116.93657pt x 119.44595pt.
- [161 <./images/Pasted image 20230329163121.png> <./images/Pasted image 2023033
-0100230.png>]
-<images/Pasted image 20230330100743.png, id=2823, 731.73375pt x 289.08pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[161 <./images/Pasted image 20230329163121.png>]
+<images/Pasted image 20230330100743.png, id=2821, 731.73375pt x 289.08pt>
 File: images/Pasted image 20230330100743.png Graphic file (type png)
 <use images/Pasted image 20230330100743.png>
 Package pdftex.def Info: images/Pasted image 20230330100743.png  used on input 
 line 5570.
 (pdftex.def)             Requested size: 365.86598pt x 144.53964pt.
-<images/host-reachability.png, id=2825, 883.3pt x 402.50375pt>
+<images/host-reachability.png, id=2823, 883.3pt x 402.50375pt>
 File: images/host-reachability.png Graphic file (type png)
 <use images/host-reachability.png>
 Package pdftex.def Info: images/host-reachability.png  used on input line 5582.
 
 (pdftex.def)             Requested size: 397.48132pt x 181.125pt.
- [162 <./images/Pasted image 20230330100743.png>] [163 <./images/host-reachabil
-ity.png>]
+ [162 <./images/Pasted image 20230330100230.png> <./images/Pasted image 2023033
+0100743.png>] [163 <./images/host-reachability.png>]
 Chapter 12.
-<images/Pasted image 20230405162647.png, id=2846, 690.58pt x 419.5675pt>
+<images/Pasted image 20230405162647.png, id=2845, 690.58pt x 419.5675pt>
 File: images/Pasted image 20230405162647.png Graphic file (type png)
 <use images/Pasted image 20230405162647.png>
 Package pdftex.def Info: images/Pasted image 20230405162647.png  used on input 
@@ -3320,7 +3324,7 @@ line 5751.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 5762.
 
-<images/Pasted image 20230405164413.png, id=2850, 714.67pt x 281.05pt>
+<images/Pasted image 20230405164413.png, id=2849, 714.67pt x 281.05pt>
 File: images/Pasted image 20230405164413.png Graphic file (type png)
 <use images/Pasted image 20230405164413.png>
 Package pdftex.def Info: images/Pasted image 20230405164413.png  used on input 
@@ -3329,7 +3333,7 @@ line 5769.
 [164
 
  <./images/Pasted image 20230405162647.png>]
-<images/Pasted image 20230405165048.png, id=2860, 674.52pt x 464.73625pt>
+<images/Pasted image 20230405165048.png, id=2858, 674.52pt x 464.73625pt>
 File: images/Pasted image 20230405165048.png Graphic file (type png)
 <use images/Pasted image 20230405165048.png>
 Package pdftex.def Info: images/Pasted image 20230405165048.png  used on input 
@@ -3346,13 +3350,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5799--5810
  []
 
 [165 <./images/Pasted image 20230405164413.png>]
-<images/Pasted image 20230405165919.png, id=2871, 836.12375pt x 317.185pt>
+<images/Pasted image 20230405165919.png, id=2868, 836.12375pt x 317.185pt>
 File: images/Pasted image 20230405165919.png Graphic file (type png)
 <use images/Pasted image 20230405165919.png>
 Package pdftex.def Info: images/Pasted image 20230405165919.png  used on input 
 line 5814.
 (pdftex.def)             Requested size: 418.06085pt x 158.5921pt.
-<images/Pasted image 20230405171050.png, id=2874, 838.13126pt x 448.67625pt>
+<images/Pasted image 20230405171050.png, id=2871, 838.13126pt x 448.67625pt>
 File: images/Pasted image 20230405171050.png Graphic file (type png)
 <use images/Pasted image 20230405171050.png>
 Package pdftex.def Info: images/Pasted image 20230405171050.png  used on input 
@@ -3370,31 +3374,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 5819--5830
 
 [166 <./images/Pasted image 20230405165048.png> <./images/Pasted image 20230405
 165919.png>]
-<images/Pasted image 20230405171343.png, id=2886, 810.02625pt x 441.65pt>
+<images/Pasted image 20230405171343.png, id=2880, 810.02625pt x 441.65pt>
 File: images/Pasted image 20230405171343.png Graphic file (type png)
 <use images/Pasted image 20230405171343.png>
 Package pdftex.def Info: images/Pasted image 20230405171343.png  used on input 
-line 5835.
+line 5833.
 (pdftex.def)             Requested size: 405.01213pt x 220.82445pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5831--5838
+
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230405171948.png, id=2890, 475.7775pt x 433.62pt>
+<images/Pasted image 20230405171948.png, id=2885, 475.7775pt x 433.62pt>
 File: images/Pasted image 20230405171948.png Graphic file (type png)
 <use images/Pasted image 20230405171948.png>
 Package pdftex.def Info: images/Pasted image 20230405171948.png  used on input 
-line 5854.
+line 5850.
 (pdftex.def)             Requested size: 237.88815pt x 216.80946pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [167 <./images/Pasted image 20230405171050.png>]
-<images/Pasted image 20230409200655.png, id=2899, 563.10374pt x 313.17pt>
+<images/Pasted image 20230409200655.png, id=2893, 563.10374pt x 313.17pt>
 File: images/Pasted image 20230409200655.png Graphic file (type png)
 <use images/Pasted image 20230409200655.png>
 Package pdftex.def Info: images/Pasted image 20230409200655.png  used on input 
-line 5865.
+line 5859.
 (pdftex.def)             Requested size: 281.55118pt x 156.58461pt.
 
 
@@ -3402,87 +3410,87 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [168 <./images/Pasted image 20230405171343.png> <./images/Pasted image 20230405
 171948.png>]
-<images/Pasted image 20230405172420.png, id=2913, 467.7475pt x 351.3125pt>
+<images/Pasted image 20230405172420.png, id=2906, 467.7475pt x 351.3125pt>
 File: images/Pasted image 20230405172420.png Graphic file (type png)
 <use images/Pasted image 20230405172420.png>
 Package pdftex.def Info: images/Pasted image 20230405172420.png  used on input 
-line 5888.
+line 5882.
 (pdftex.def)             Requested size: 233.87317pt x 175.6558pt.
-<images/Pasted image 20230405172826.png, id=2917, 242.9075pt x 277.035pt>
+<images/Pasted image 20230405172826.png, id=2910, 242.9075pt x 277.035pt>
 File: images/Pasted image 20230405172826.png Graphic file (type png)
 <use images/Pasted image 20230405172826.png>
 Package pdftex.def Info: images/Pasted image 20230405172826.png  used on input 
-line 5899.
+line 5893.
 (pdftex.def)             Requested size: 121.45345pt x 138.51715pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230405173054.png, id=2919, 625.33624pt x 464.73625pt>
+<images/Pasted image 20230405173054.png, id=2912, 625.33624pt x 464.73625pt>
 File: images/Pasted image 20230405173054.png Graphic file (type png)
 <use images/Pasted image 20230405173054.png>
 Package pdftex.def Info: images/Pasted image 20230405173054.png  used on input 
-line 5908.
+line 5902.
 (pdftex.def)             Requested size: 312.66736pt x 232.36755pt.
 [169 <./images/Pasted image 20230409200655.png> <./images/Pasted image 20230405
 172420.png>]
-<images/Pasted image 20230409203617.png, id=2930, 414.54875pt x 410.53375pt>
+<images/Pasted image 20230409203617.png, id=2922, 414.54875pt x 410.53375pt>
 File: images/Pasted image 20230409203617.png Graphic file (type png)
 <use images/Pasted image 20230409203617.png>
 Package pdftex.def Info: images/Pasted image 20230409203617.png  used on input 
-line 5924.
+line 5918.
 (pdftex.def)             Requested size: 207.27386pt x 205.26637pt.
  [170 <./images/Pasted image 20230405172826.png> <./images/Pasted image 2023040
 5173054.png>]
-<images/Pasted image 20230420150151.png, id=2939, 575.14874pt x 237.88875pt>
+<images/Pasted image 20230420150151.png, id=2931, 575.14874pt x 237.88875pt>
 File: images/Pasted image 20230420150151.png Graphic file (type png)
 <use images/Pasted image 20230420150151.png>
 Package pdftex.def Info: images/Pasted image 20230420150151.png  used on input 
-line 5956.
+line 5950.
 (pdftex.def)             Requested size: 287.57367pt x 118.94408pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [171 <./images/Pasted image 20230409203617.png>]
-<images/Pasted image 20230420121716.png, id=2952, 916.42375pt x 501.875pt>
+<images/Pasted image 20230420121716.png, id=2944, 916.42375pt x 501.875pt>
 File: images/Pasted image 20230420121716.png Graphic file (type png)
 <use images/Pasted image 20230420121716.png>
 Package pdftex.def Info: images/Pasted image 20230420121716.png  used on input 
-line 5968.
+line 5962.
 (pdftex.def)             Requested size: 458.21075pt x 250.93687pt.
 
-Overfull \hbox (2.96664pt too wide) in paragraph at lines 5968--5969
+Overfull \hbox (2.96664pt too wide) in paragraph at lines 5962--5963
  [][] 
  []
 
-<images/Pasted image 20230420122014.png, id=2954, 904.37875pt x 505.89pt>
+<images/Pasted image 20230420122014.png, id=2946, 904.37875pt x 505.89pt>
 File: images/Pasted image 20230420122014.png Graphic file (type png)
 <use images/Pasted image 20230420122014.png>
 Package pdftex.def Info: images/Pasted image 20230420122014.png  used on input 
-line 5977.
+line 5971.
 (pdftex.def)             Requested size: 361.7451pt x 202.3524pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [172 <./images/Pasted image 20230420150151.png> <./images/Pasted image 20230420
 121716.png>]
-<images/Pasted image 20230420150455.png, id=2965, 651.43375pt x 380.42125pt>
+<images/Pasted image 20230420150455.png, id=2957, 651.43375pt x 380.42125pt>
 File: images/Pasted image 20230420150455.png Graphic file (type png)
 <use images/Pasted image 20230420150455.png>
 Package pdftex.def Info: images/Pasted image 20230420150455.png  used on input 
-line 5998.
-(pdftex.def)             Requested size: 325.71606pt x 190.21014pt.
+line 5992.
+(pdftex.def)             Requested size: 390.86325pt x 228.2545pt.
  [173 <./images/Pasted image 20230420122014.png> <./images/Pasted image 2023042
 0150455.png>]
-<images/Pasted image 20230531155544.png, id=2978, 773.89125pt x 536.0025pt>
+<images/Pasted image 20230531155544.png, id=2970, 773.89125pt x 536.0025pt>
 File: images/Pasted image 20230531155544.png Graphic file (type png)
 <use images/Pasted image 20230531155544.png>
 Package pdftex.def Info: images/Pasted image 20230531155544.png  used on input 
-line 6025.
+line 6019.
 (pdftex.def)             Requested size: 386.94467pt x 268.0006pt.
  [174 <./images/Pasted image 20230531155544.png>]
-Overfull \hbox (29.34203pt too wide) in paragraph at lines 6071--6072
+Overfull \hbox (29.34203pt too wide) in paragraph at lines 6065--6066
 []\OT1/cmr/m/n/10 The \OT1/cmtt/m/n/10 switch[]features[]handler \OT1/cmr/m/n/1
 0 method is a dec-o-ra-tor func-tion that han-dles the \OT1/cmtt/m/n/10 EventOF
 PSwitchFeatures
@@ -3491,223 +3499,223 @@ PSwitchFeatures
 [175]
 Chapter 13.
 
-Overfull \hbox (6.10327pt too wide) in paragraph at lines 6137--6138
+Overfull \hbox (6.10327pt too wide) in paragraph at lines 6131--6132
 []\OT1/cmr/bx/n/10 Time-continuous and amplitude-continuous \OT1/cmr/m/n/10 (\O
 T1/cmr/m/it/10 ana-log sig-nals\OT1/cmr/m/n/10 ): if the do-main $\U/msb/m/n/10
  D$ \OT1/cmr/m/n/10 and the codomain
  []
 
-<images/Pasted image 20230503163054.png, id=3042, 339.2675pt x 205.76875pt>
+<images/Pasted image 20230503163054.png, id=3034, 339.2675pt x 205.76875pt>
 File: images/Pasted image 20230503163054.png Graphic file (type png)
 <use images/Pasted image 20230503163054.png>
 Package pdftex.def Info: images/Pasted image 20230503163054.png  used on input 
-line 6140.
+line 6134.
 (pdftex.def)             Requested size: 169.63333pt x 102.88411pt.
-<images/Pasted image 20230503163114.png, id=3044, 327.2225pt x 217.81375pt>
+<images/Pasted image 20230503163114.png, id=3036, 327.2225pt x 217.81375pt>
 File: images/Pasted image 20230503163114.png Graphic file (type png)
 <use images/Pasted image 20230503163114.png>
 Package pdftex.def Info: images/Pasted image 20230503163114.png  used on input 
-line 6147.
+line 6141.
 (pdftex.def)             Requested size: 163.61084pt x 108.9066pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230503163148.png, id=3046, 373.395pt x 241.90375pt>
+<images/Pasted image 20230503163148.png, id=3038, 373.395pt x 241.90375pt>
 File: images/Pasted image 20230503163148.png Graphic file (type png)
 <use images/Pasted image 20230503163148.png>
 Package pdftex.def Info: images/Pasted image 20230503163148.png  used on input 
-line 6156.
+line 6150.
 (pdftex.def)             Requested size: 186.69704pt x 120.95157pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230503163203.png, id=3048, 349.305pt x 214.8025pt>
+<images/Pasted image 20230503163203.png, id=3040, 349.305pt x 214.8025pt>
 File: images/Pasted image 20230503163203.png Graphic file (type png)
 <use images/Pasted image 20230503163203.png>
 Package pdftex.def Info: images/Pasted image 20230503163203.png  used on input 
-line 6164.
+line 6158.
 (pdftex.def)             Requested size: 174.65207pt x 107.40099pt.
 [176
 
  <./images/Pasted image 20230503163054.png>] [177 <./images/Pasted image 202305
 03163114.png> <./images/Pasted image 20230503163148.png> <./images/Pasted image
  20230503163203.png>]
-<images/Pasted image 20230505114537.png, id=3070, 733.74126pt x 276.03125pt>
+<images/Pasted image 20230505114537.png, id=3062, 733.74126pt x 276.03125pt>
 File: images/Pasted image 20230505114537.png Graphic file (type png)
 <use images/Pasted image 20230505114537.png>
 Package pdftex.def Info: images/Pasted image 20230505114537.png  used on input 
-line 6208.
+line 6202.
 (pdftex.def)             Requested size: 366.86974pt x 138.01527pt.
-<images/Pasted image 20230505115013.png, id=3071, 738.76pt x 175.65625pt>
+<images/Pasted image 20230505115013.png, id=3063, 738.76pt x 175.65625pt>
 File: images/Pasted image 20230505115013.png Graphic file (type png)
 <use images/Pasted image 20230505115013.png>
 Package pdftex.def Info: images/Pasted image 20230505115013.png  used on input 
-line 6220.
+line 6214.
 (pdftex.def)             Requested size: 369.37909pt x 87.8279pt.
-<images/Pasted image 20230505120141.png, id=3073, 633.36626pt x 154.5775pt>
+<images/Pasted image 20230505120141.png, id=3065, 633.36626pt x 154.5775pt>
 File: images/Pasted image 20230505120141.png Graphic file (type png)
 <use images/Pasted image 20230505120141.png>
 Package pdftex.def Info: images/Pasted image 20230505120141.png  used on input 
-line 6234.
+line 6228.
 (pdftex.def)             Requested size: 316.68236pt x 77.28854pt.
  [178 <./images/Pasted image 20230505114537.png> <./images/Pasted image 2023050
 5115013.png>]
-<images/Pasted image 20230505120531.png, id=3087, 645.41125pt x 152.57pt>
+<images/Pasted image 20230505120531.png, id=3078, 645.41125pt x 152.57pt>
 File: images/Pasted image 20230505120531.png Graphic file (type png)
 <use images/Pasted image 20230505120531.png>
 Package pdftex.def Info: images/Pasted image 20230505120531.png  used on input 
-line 6242.
+line 6236.
 (pdftex.def)             Requested size: 322.70483pt x 76.2848pt.
-<images/Pasted image 20230505121537.png, id=3088, 797.98125pt x 93.34875pt>
+<images/Pasted image 20230505121537.png, id=3079, 797.98125pt x 93.34875pt>
 File: images/Pasted image 20230505121537.png Graphic file (type png)
 <use images/Pasted image 20230505121537.png>
 Package pdftex.def Info: images/Pasted image 20230505121537.png  used on input 
-line 6255.
+line 6249.
 (pdftex.def)             Requested size: 398.98964pt x 46.67426pt.
  [179 <./images/Pasted image 20230505120141.png> <./images/Pasted image 2023050
 5120531.png> <./images/Pasted image 20230505121537.png>]
-<images/Pasted image 20230506094754.png, id=3101, 646.415pt x 515.9275pt>
+<images/Pasted image 20230506094754.png, id=3092, 646.415pt x 515.9275pt>
 File: images/Pasted image 20230506094754.png Graphic file (type png)
 <use images/Pasted image 20230506094754.png>
 Package pdftex.def Info: images/Pasted image 20230506094754.png  used on input 
-line 6273.
+line 6267.
 (pdftex.def)             Requested size: 258.56142pt x 206.36734pt.
-<images/Pasted image 20230506094845.png, id=3102, 778.91pt x 285.065pt>
+<images/Pasted image 20230506094845.png, id=3093, 778.91pt x 285.065pt>
 File: images/Pasted image 20230506094845.png Graphic file (type png)
 <use images/Pasted image 20230506094845.png>
 Package pdftex.def Info: images/Pasted image 20230506094845.png  used on input 
-line 6280.
+line 6274.
 (pdftex.def)             Requested size: 389.45406pt x 142.53215pt.
-<images/Pasted image 20230506095210.png, id=3104, 777.90625pt x 289.08pt>
+<images/Pasted image 20230506095210.png, id=3095, 777.90625pt x 289.08pt>
 File: images/Pasted image 20230506095210.png Graphic file (type png)
 <use images/Pasted image 20230506095210.png>
 Package pdftex.def Info: images/Pasted image 20230506095210.png  used on input 
-line 6300.
+line 6294.
 (pdftex.def)             Requested size: 388.95216pt x 144.53964pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6303--6306
+Underfull \hbox (badness 10000) in paragraph at lines 6297--6300
 
  []
 
 [180 <./images/Pasted image 20230506094754.png> <./images/Pasted image 20230506
 094845.png>]
-<images/Pasted image 20230506100244.png, id=3115, 542.025pt x 161.60374pt>
+<images/Pasted image 20230506100244.png, id=3105, 542.025pt x 161.60374pt>
 File: images/Pasted image 20230506100244.png Graphic file (type png)
 <use images/Pasted image 20230506100244.png>
 Package pdftex.def Info: images/Pasted image 20230506100244.png  used on input 
-line 6334.
+line 6328.
 (pdftex.def)             Requested size: 271.01183pt x 80.80167pt.
  [181 <./images/Pasted image 20230506095210.png> <./images/Pasted image 2023050
 6100244.png>]
-<images/Pasted image 20230507181924.png, id=3131, 685.56125pt x 583.17876pt>
+<images/Pasted image 20230507181924.png, id=3122, 685.56125pt x 583.17876pt>
 File: images/Pasted image 20230507181924.png Graphic file (type png)
 <use images/Pasted image 20230507181924.png>
 Package pdftex.def Info: images/Pasted image 20230507181924.png  used on input 
-line 6382.
+line 6376.
 (pdftex.def)             Requested size: 274.21964pt x 233.26736pt.
-<images/Pasted image 20230507182103.png, id=3133, 1122.1925pt x 322.20375pt>
+<images/Pasted image 20230507182103.png, id=3124, 1122.1925pt x 322.20375pt>
 File: images/Pasted image 20230507182103.png Graphic file (type png)
 <use images/Pasted image 20230507182103.png>
 Package pdftex.def Info: images/Pasted image 20230507182103.png  used on input 
-line 6393.
+line 6387.
 (pdftex.def)             Requested size: 448.86905pt x 128.87921pt.
  [182 <./images/Pasted image 20230507181924.png> <./images/Pasted image 2023050
 7182103.png>]
-<images/Pasted image 20230511094738.png, id=3149, 490.83376pt x 146.5475pt>
+<images/Pasted image 20230511094738.png, id=3139, 490.83376pt x 146.5475pt>
 File: images/Pasted image 20230511094738.png Graphic file (type png)
 <use images/Pasted image 20230511094738.png>
 Package pdftex.def Info: images/Pasted image 20230511094738.png  used on input 
-line 6476.
+line 6470.
 (pdftex.def)             Requested size: 245.41628pt x 73.27356pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [183] [184 <./images/Pasted image 20230511094738.png>]
-<images/Pasted image 20230511102243.png, id=3187, 551.05875pt x 184.69pt>
+<images/Pasted image 20230511102243.png, id=3177, 551.05875pt x 184.69pt>
 File: images/Pasted image 20230511102243.png Graphic file (type png)
 <use images/Pasted image 20230511102243.png>
 Package pdftex.def Info: images/Pasted image 20230511102243.png  used on input 
-line 6586.
+line 6583.
 (pdftex.def)             Requested size: 275.52869pt x 92.34476pt.
-<images/Pasted image 20230511150144.png, id=3190, 604.2575pt x 172.645pt>
+<images/Pasted image 20230511150144.png, id=3180, 604.2575pt x 172.645pt>
 File: images/Pasted image 20230511150144.png Graphic file (type png)
 <use images/Pasted image 20230511150144.png>
 Package pdftex.def Info: images/Pasted image 20230511150144.png  used on input 
-line 6597.
+line 6594.
 (pdftex.def)             Requested size: 302.128pt x 86.32228pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [185 <./images/Pasted image 20230511102243.png>]
-<images/Pasted image 20230531165143.png, id=3206, 755.82375pt x 166.6225pt>
+<images/Pasted image 20230531165143.png, id=3197, 755.82375pt x 166.6225pt>
 File: images/Pasted image 20230531165143.png Graphic file (type png)
 <use images/Pasted image 20230531165143.png>
 Package pdftex.def Info: images/Pasted image 20230531165143.png  used on input 
-line 6659.
+line 6656.
 (pdftex.def)             Requested size: 377.91095pt x 83.31104pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [186 <./images/Pasted image 20230511150144.png>]
-<images/Pasted image 20230531165703.png, id=3226, 722.7pt x 330.23375pt>
+<images/Pasted image 20230531165703.png, id=3217, 722.7pt x 330.23375pt>
 File: images/Pasted image 20230531165703.png Graphic file (type png)
 <use images/Pasted image 20230531165703.png>
 Package pdftex.def Info: images/Pasted image 20230531165703.png  used on input 
-line 6681.
+line 6678.
 (pdftex.def)             Requested size: 361.3491pt x 165.11646pt.
  [187 <./images/Pasted image 20230531165143.png> <./images/Pasted image 2023053
 1165703.png>]
 Missing character: There is no c in font msbm7!
-<images/Pasted image 20230531170122.png, id=3246, 561.09625pt x 175.65625pt>
+<images/Pasted image 20230531170122.png, id=3234, 561.09625pt x 175.65625pt>
 File: images/Pasted image 20230531170122.png Graphic file (type png)
 <use images/Pasted image 20230531170122.png>
 Package pdftex.def Info: images/Pasted image 20230531170122.png  used on input 
-line 6727.
+line 6724.
 (pdftex.def)             Requested size: 280.54744pt x 87.8279pt.
 [188 <./images/Pasted image 20230531170122.png>]
-<images/Pasted image 20230526111003.png, id=3264, 583.17876pt x 156.585pt>
+<images/Pasted image 20230526111003.png, id=3251, 583.17876pt x 156.585pt>
 File: images/Pasted image 20230526111003.png Graphic file (type png)
 <use images/Pasted image 20230526111003.png>
 Package pdftex.def Info: images/Pasted image 20230526111003.png  used on input 
-line 6795.
+line 6792.
 (pdftex.def)             Requested size: 291.58867pt x 78.2923pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230526111416.png, id=3265, 925.4575pt x 280.04625pt>
+<images/Pasted image 20230526111416.png, id=3252, 925.4575pt x 280.04625pt>
 File: images/Pasted image 20230526111416.png Graphic file (type png)
 <use images/Pasted image 20230526111416.png>
 Package pdftex.def Info: images/Pasted image 20230526111416.png  used on input 
-line 6806.
+line 6803.
 (pdftex.def)             Requested size: 462.72762pt x 140.02277pt.
 
-Overfull \hbox (7.4835pt too wide) in paragraph at lines 6806--6807
+Overfull \hbox (7.4835pt too wide) in paragraph at lines 6803--6804
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230526111958.png, id=3267, 577.15625pt x 569.12625pt>
+<images/Pasted image 20230526111958.png, id=3254, 577.15625pt x 569.12625pt>
 File: images/Pasted image 20230526111958.png Graphic file (type png)
 <use images/Pasted image 20230526111958.png>
 Package pdftex.def Info: images/Pasted image 20230526111958.png  used on input 
-line 6813.
+line 6810.
 (pdftex.def)             Requested size: 202.0077pt x 199.19717pt.
 [189]
-<images/Pasted image 20230526112203.png, id=3278, 487.8225pt x 374.39874pt>
+<images/Pasted image 20230526112203.png, id=3265, 487.8225pt x 374.39874pt>
 File: images/Pasted image 20230526112203.png Graphic file (type png)
 <use images/Pasted image 20230526112203.png>
 Package pdftex.def Info: images/Pasted image 20230526112203.png  used on input 
-line 6831.
+line 6827.
 (pdftex.def)             Requested size: 243.91064pt x 187.19891pt.
 
 
@@ -3715,77 +3723,77 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [190 <./images/Pasted image 20230526111003.png> <./images/Pasted image 20230526
 111416.png> <./images/Pasted image 20230526111958.png>]
-<images/Pasted image 20230526142720.png, id=3289, 637.38126pt x 510.90875pt>
+<images/Pasted image 20230526142720.png, id=3276, 637.38126pt x 510.90875pt>
 File: images/Pasted image 20230526142720.png Graphic file (type png)
 <use images/Pasted image 20230526142720.png>
 Package pdftex.def Info: images/Pasted image 20230526142720.png  used on input 
-line 6849.
+line 6845.
 (pdftex.def)             Requested size: 136.57462pt x 109.46904pt.
-<images/Pasted image 20230526142733.png, id=3290, 756.8275pt x 605.26125pt>
+<images/Pasted image 20230526142733.png, id=3277, 756.8275pt x 605.26125pt>
 File: images/Pasted image 20230526142733.png Graphic file (type png)
 <use images/Pasted image 20230526142733.png>
 Package pdftex.def Info: images/Pasted image 20230526142733.png  used on input 
-line 6855.
+line 6851.
 (pdftex.def)             Requested size: 136.57462pt x 109.21938pt.
  [191 <./images/Pasted image 20230526112203.png> <./images/Pasted image 2023052
 6142720.png> <./images/Pasted image 20230526142733.png>]
-<images/Pasted image 20230526114412.png, id=3303, 529.98pt x 269.005pt>
+<images/Pasted image 20230526114412.png, id=3290, 529.98pt x 269.005pt>
 File: images/Pasted image 20230526114412.png Graphic file (type png)
 <use images/Pasted image 20230526114412.png>
 Package pdftex.def Info: images/Pasted image 20230526114412.png  used on input 
-line 6889.
+line 6885.
 (pdftex.def)             Requested size: 264.98933pt x 134.50217pt.
-<images/Pasted image 20230526115252.png, id=3306, 428.60126pt x 116.435pt>
+<images/Pasted image 20230526115252.png, id=3293, 428.60126pt x 116.435pt>
 File: images/Pasted image 20230526115252.png Graphic file (type png)
 <use images/Pasted image 20230526115252.png>
 Package pdftex.def Info: images/Pasted image 20230526115252.png  used on input 
-line 6910.
+line 6906.
 (pdftex.def)             Requested size: 204.85846pt x 55.65186pt.
-<images/Pasted image 20230526115356.png, id=3307, 428.60126pt x 119.44624pt>
+<images/Pasted image 20230526115356.png, id=3294, 428.60126pt x 119.44624pt>
 File: images/Pasted image 20230526115356.png Graphic file (type png)
 <use images/Pasted image 20230526115356.png>
 Package pdftex.def Info: images/Pasted image 20230526115356.png  used on input 
-line 6916.
+line 6912.
 (pdftex.def)             Requested size: 204.85846pt x 57.09113pt.
-<images/Pasted image 20230526115550.png, id=3309, 420.57124pt x 180.675pt>
+<images/Pasted image 20230526115550.png, id=3296, 420.57124pt x 180.675pt>
 File: images/Pasted image 20230526115550.png Graphic file (type png)
 <use images/Pasted image 20230526115550.png>
 Package pdftex.def Info: images/Pasted image 20230526115550.png  used on input 
-line 6927.
+line 6923.
 (pdftex.def)             Requested size: 210.28511pt x 90.33727pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230526120142.png, id=3311, 675.52374pt x 335.2525pt>
+<images/Pasted image 20230526120142.png, id=3298, 675.52374pt x 335.2525pt>
 File: images/Pasted image 20230526120142.png Graphic file (type png)
 <use images/Pasted image 20230526120142.png>
 Package pdftex.def Info: images/Pasted image 20230526120142.png  used on input 
-line 6936.
+line 6932.
 (pdftex.def)             Requested size: 337.76105pt x 167.62584pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Pasted image 20230526120124.png, id=3313, 580.1675pt x 204.765pt>
+<images/Pasted image 20230526120124.png, id=3300, 580.1675pt x 204.765pt>
 File: images/Pasted image 20230526120124.png Graphic file (type png)
 <use images/Pasted image 20230526120124.png>
 Package pdftex.def Info: images/Pasted image 20230526120124.png  used on input 
-line 6943.
+line 6939.
 (pdftex.def)             Requested size: 290.08302pt x 102.38223pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Pasted image 20230526120312.png, id=3315, 386.44376pt x 136.51pt>
+<images/Pasted image 20230526120312.png, id=3302, 386.44376pt x 136.51pt>
 File: images/Pasted image 20230526120312.png Graphic file (type png)
 <use images/Pasted image 20230526120312.png>
 Package pdftex.def Info: images/Pasted image 20230526120312.png  used on input 
-line 6951.
+line 6947.
 (pdftex.def)             Requested size: 193.2214pt x 68.25482pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6957--6962
+Underfull \hbox (badness 10000) in paragraph at lines 6953--6958
 
  []
 
@@ -3793,25 +3801,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 6957--6962
 115252.png> <./images/Pasted image 20230526115356.png>] [193 <./images/Pasted i
 mage 20230526115550.png> <./images/Pasted image 20230526120142.png> <./images/P
 asted image 20230526120124.png> <./images/Pasted image 20230526120312.png>]
-<images/Pasted image 20230526140651.png, id=3347, 445.665pt x 335.2525pt>
+<images/Pasted image 20230526140651.png, id=3330, 445.665pt x 335.2525pt>
 File: images/Pasted image 20230526140651.png Graphic file (type png)
 <use images/Pasted image 20230526140651.png>
 Package pdftex.def Info: images/Pasted image 20230526140651.png  used on input 
-line 6991.
+line 6987.
 (pdftex.def)             Requested size: 222.83195pt x 167.62584pt.
 
 [194 <./images/Pasted image 20230526140651.png>]
-<images/Pasted image 20230526142358.png, id=3359, 559.08875pt x 274.02374pt>
+<images/Pasted image 20230526142358.png, id=3343, 559.08875pt x 274.02374pt>
 File: images/Pasted image 20230526142358.png Graphic file (type png)
 <use images/Pasted image 20230526142358.png>
 Package pdftex.def Info: images/Pasted image 20230526142358.png  used on input 
-line 7017.
+line 7013.
 (pdftex.def)             Requested size: 279.54369pt x 137.01154pt.
-<images/Pasted image 20230526142412.png, id=3360, 520.94624pt x 221.82875pt>
+<images/Pasted image 20230526142412.png, id=3344, 520.94624pt x 221.82875pt>
 File: images/Pasted image 20230526142412.png Graphic file (type png)
 <use images/Pasted image 20230526142412.png>
 Package pdftex.def Info: images/Pasted image 20230526142412.png  used on input 
-line 7023.
+line 7019.
 (pdftex.def)             Requested size: 260.47249pt x 110.9141pt.
  [195 <./images/Pasted image 20230526142358.png> <./images/Pasted image 2023052
 6142412.png>]
@@ -3869,13 +3877,13 @@ Package pdftex.def Info: images/Pasted image 20230328174646.png  used on input
 line 210.
 (pdftex.def)             Requested size: 246.42001pt x 148.55463pt.
  [199] [200]
-<images/Pasted image 20230601095844.png, id=3441, 631.35875pt x 174.6525pt>
+<images/Pasted image 20230601095844.png, id=3423, 631.35875pt x 174.6525pt>
 File: images/Pasted image 20230601095844.png Graphic file (type png)
 <use images/Pasted image 20230601095844.png>
 Package pdftex.def Info: images/Pasted image 20230601095844.png  used on input 
 line 359.
 (pdftex.def)             Requested size: 315.6786pt x 87.32603pt.
-<images/Pasted image 20230601100433.png, id=3443, 493.845pt x 188.705pt>
+<images/Pasted image 20230601100433.png, id=3425, 493.845pt x 188.705pt>
 File: images/Pasted image 20230601100433.png Graphic file (type png)
 <use images/Pasted image 20230601100433.png>
 Package pdftex.def Info: images/Pasted image 20230601100433.png  used on input 
@@ -3891,7 +3899,7 @@ Package pdftex.def Info: images/Pasted image 20230531110613.png  used on input
 line 397.
 (pdftex.def)             Requested size: 134.50217pt x 64.23984pt.
 [201 <./images/Pasted image 20230601095844.png>]
-<images/Pasted image 20230601094121.png, id=3454, 551.05875pt x 207.77625pt>
+<images/Pasted image 20230601094121.png, id=3436, 551.05875pt x 207.77625pt>
 File: images/Pasted image 20230601094121.png Graphic file (type png)
 <use images/Pasted image 20230601094121.png>
 Package pdftex.def Info: images/Pasted image 20230601094121.png  used on input 
@@ -3902,7 +3910,7 @@ line 436.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [202 <./images/Pasted image 20230601100433.png>]
-<images/Pasted image 20230601094724.png, id=3465, 669.50125pt x 254.9525pt>
+<images/Pasted image 20230601094724.png, id=3446, 669.50125pt x 254.9525pt>
 File: images/Pasted image 20230601094724.png Graphic file (type png)
 <use images/Pasted image 20230601094724.png>
 Package pdftex.def Info: images/Pasted image 20230601094724.png  used on input 
@@ -3917,120 +3925,52 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `notes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `notes.out':
-(rerunfilecheck)             Before: D24F7AB774B65D4B21ACE7331BF80FD4;23093
-(rerunfilecheck)             After:  FA292F6BDA5F8269B99A3215D662B925;22939.
+Package rerunfilecheck Info: File `notes.out' has not changed.
+(rerunfilecheck)             Checksum: FA292F6BDA5F8269B99A3215D662B925;22939.
  ) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 1 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 30150 strings out of 480171
- 610878 string characters out of 5894490
- 1119752 words of memory out of 5000000
- 46043 multiletter control sequences out of 15000+600000
+ 30122 strings out of 480171
+ 610359 string characters out of 5894490
+ 1120752 words of memory out of 5000000
+ 46034 multiletter control sequences out of 15000+600000
  482172 words of font info for 76 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 99i,12n,94p,859b,2033s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.447} has been refere
-nced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.446} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.444} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.443} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.430} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.425} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.421} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.419} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.411} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.405} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.402} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.390} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.389} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.386} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.380} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.375} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.374} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.366} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.358} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.445} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.11.4} has been referenced but does not exis
-t, replaced by a fixed one
-
- </home/luca/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1000.600pk>
- </home/luca/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcit1000.600pk>
- </home/luca/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on notes.pdf (205 pages, 20452116 bytes).
+ 99i,12n,94p,863b,2033s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/luca/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec
+/tcbx1000.600pk> </home/luca/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec
+/tcit1000.600pk> </home/luca/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec
+/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb>
+Output written on notes.pdf (205 pages, 20453399 bytes).
 PDF statistics:
- 3876 PDF objects out of 4296 (max. 8388607)
- 2978 compressed objects within 30 object streams
- 1309 named destinations out of 1440 (max. 500000)
- 2653 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3848 PDF objects out of 4296 (max. 8388607)
+ 2950 compressed objects within 30 object streams
+ 1290 named destinations out of 1440 (max. 500000)
+ 2645 words of extra memory for PDF output out of 10000 (max. 10000000)
 
